@@ -4,7 +4,10 @@ This repo contains Python scripts which run LOST evaluations, generating appropr
 
 ## Setup
 
-Compile [LOST](https://github.com/uwcubesat/lost) and symlink it into the current directory (`ln -s /home/my-user/development/lost/lost ./lost`, for example. Always make sure to use an absolute filepath as the first argument to `ln -s`!)
+Compile [LOST](https://github.com/uwcubesat/lost). Symlink the `lost` executable and
+`bright-star-catalog.tsv` into the current directory (`ln -s /home/my-user/development/lost/lost
+./lost`, for example. Always make sure to use an absolute filepath as the first argument to `ln
+-s`!)
 
 Install Python dependencies from `requirements.txt`. There are any number of ways to do this, but I recommend creating either a virtualenv or a conda environment, then running `pip install -r requirements.txt`.
 

@@ -1,3 +1,6 @@
 *#*
 *~*
 /lost
+/bright-star-catalog.tsv
+*.png
+__pycache__

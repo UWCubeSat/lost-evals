@@ -1,0 +1,35 @@
+2023-03-23 21:11:01,719:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-23 21:11:01,719:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-23 21:11:01,719:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-23 21:11:01,720:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-23 21:11:01,720:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-23 21:11:01,741:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-23 21:11:02,577:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-23 21:11:02,577:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-23 21:11:02,577:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-23 21:11:02,577:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-23 21:11:02,577:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-23 21:11:02,577:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-23 21:11:02,577:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-23 21:11:02,578:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-23 21:11:02,578:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-23 21:11:02,578:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-23 21:11:02,712:tetra3.Tetra3-DEBUG: NEW P: 1.131e-25
+2023-03-23 21:11:02,714:tetra3.Tetra3-DEBUG: RA:    272.00000303 deg
+2023-03-23 21:11:02,714:tetra3.Tetra3-DEBUG: DEC:   7.99982492 deg
+2023-03-23 21:11:02,717:tetra3.Tetra3-DEBUG: ROLL:  11.99991256 deg
+2023-03-23 21:11:02,717:tetra3.Tetra3-DEBUG: FOV:   22.00051372 deg
+2023-03-23 21:11:02,717:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-23 21:11:02,717:tetra3.Tetra3-DEBUG: SOLVE: 42.90 ms
+2023-03-23 21:11:02,717:tetra3.Tetra3-DEBUG: RESID: 9.44 asec
+2023-03-23 21:11:02,813:tetra3.Tetra3-DEBUG: NEW P: 2.036e-34
+2023-03-23 21:11:02,815:tetra3.Tetra3-DEBUG: RA:    101.00126850 deg
+2023-03-23 21:11:02,815:tetra3.Tetra3-DEBUG: DEC:   62.99860257 deg
+2023-03-23 21:11:02,815:tetra3.Tetra3-DEBUG: ROLL:  62.98587876 deg
+2023-03-23 21:11:02,823:tetra3.Tetra3-DEBUG: FOV:   15.00113488 deg
+2023-03-23 21:11:02,823:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-23 21:11:02,823:tetra3.Tetra3-DEBUG: SOLVE: 25.42 ms
+2023-03-23 21:11:02,823:tetra3.Tetra3-DEBUG: RESID: 11.05 asec
+2023-03-23 21:11:03,547:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 644 ms.
+2023-03-23 21:11:04,636:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1008 ms.
+2023-03-23 21:11:05,287:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 573 ms.

@@ -8,23 +8,23 @@ import common.runner as runner
 
 fig, ax = plt.subplots()
 
-blur_exposures = np.linspace(0, params.centroid_blur_max_exposure, num=params.centroid_blur_num_pts)
+read_noise_levels = np.linspace(0, params.centroid_noise_max_noise, num=params.centroid_noise_num_pts)
 
-def run_at_exposure(algo, exposure):
+def run_at_noise(algo, noise):
     ran = runner.run_lost(['--generate', params.centroid_num_trials,
                            '--generate-random-attitudes', 'true']
-                          + params.centroid_blur_base_args
-                          + ['--centroid-algo', algo, '--generate-exposure', exposure]
+                          + params.centroid_noise_base_args
+                          + ['--centroid-algo', algo, '--generate-read-noise', noise]
                           + ['--compare-centroids', '-'])
     return ran['mean_error']
 
 for algo_name, algo_code in params.centroid_algos:
-    ax.plot(blur_exposures, [run_at_exposure(algo_code, expo) for expo in blur_exposures],
+    ax.plot(read_noise_levels, [run_at_noise(algo_code, noise_level) for noise_level in read_noise_levels],
             label=algo_name,
             marker='.')
 
-ax.set_title('Centroid error vs Motion Blur')
-ax.set_xlabel('Exposure')
+ax.set_title('Centroid error vs Read Noise')
+ax.set_xlabel('Read noise stddev (fraction of full-scale)')
 ax.set_ylabel('Mean centroid error (pixels)')
 ax.legend()
         

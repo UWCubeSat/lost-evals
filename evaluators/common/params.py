@@ -46,7 +46,7 @@ centroid_noise_base_args = centroid_base_args + ['--generate-dark-current', 0.25
 # PERTURBATION VS SKY COVERAGE PARAMS
 perturbation_max_perturbation = 2
 perturbation_num_perturbations = 5
-perturbation_num_trials = 10
+perturbation_num_trials = 100
 perturbation_base_args = []
 
 # FALSE STARS VS SKY COVERAGE PARAMS

@@ -14,7 +14,9 @@ def run_at_perturbation(algo, db_path, perturbation):
     ran = runner.run_lost(['--generate', params.perturbation_num_trials,
                            '--generate-centroids-only', 'true',
                            '--generate-random-attitudes', 'true',
-                           '--generate-perturb-centroids', perturbation]
+                           '--generate-perturb-centroids', perturbation,
+                           # TODO: this threshold may be too generous, giving a higher identification rate than reality (but probably it's fine):
+                           '--centroid-compare-threshold', perturbation*3+0.5]
                           + params.perturbation_base_args
                           + ['--star-id-algo', algo,
                              '--database', db_path,

@@ -18,7 +18,7 @@ function rand_int {
 }
 
 # CHANGE THIS
-n=5
+n=100
 
 echo "$PWD"
 
@@ -38,7 +38,8 @@ for _ in $(seq "${1:-$n}"); do
     --fov "$fov" \
     --generate-reference-brightness 100 \
     --generate-spread-stddev 1 \
-    --generate-read-noise-stddev 0.05 \
+    --generate-read-noise-stddev 0 \
+    --generate-shot-noise false \
     --generate-ra "$ra" \
     --generate-de "$de" \
     --generate-roll "$roll" \
@@ -58,7 +59,7 @@ raFail=$(echo "$output" | grep -o "RA fail" | wc -l)
 decFail=$(echo "$output" | grep -o "Dec fail" | wc -l)
 rollFail=$(echo "$output" | grep -o "Roll fail" | wc -l)
 
-# echo "OUTPUT IS $output"
+echo "$output"
 
 echo "##################################################################"
 echo "##################################################################"

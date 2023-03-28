@@ -33,3 +33,1471 @@
 2023-03-23 21:11:03,547:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 644 ms.
 2023-03-23 21:11:04,636:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1008 ms.
 2023-03-23 21:11:05,287:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 573 ms.
+2023-03-27 20:45:30,867:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 20:45:30,867:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 20:45:30,867:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 20:45:30,867:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 20:45:30,867:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 20:45:31,017:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 20:45:32,403:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 20:45:33,145:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 605 ms.
+2023-03-27 20:45:33,803:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 573 ms.
+2023-03-27 20:45:34,670:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 784 ms.
+2023-03-27 20:45:35,296:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 542 ms.
+2023-03-27 20:45:35,705:tetra3.Tetra3-DEBUG: NEW P: 7.441e-24
+2023-03-27 20:45:35,707:tetra3.Tetra3-DEBUG: RA:    319.99986200 deg
+2023-03-27 20:45:35,708:tetra3.Tetra3-DEBUG: DEC:   36.00048496 deg
+2023-03-27 20:45:35,708:tetra3.Tetra3-DEBUG: ROLL:  99.00005188 deg
+2023-03-27 20:45:35,708:tetra3.Tetra3-DEBUG: FOV:   24.99715829 deg
+2023-03-27 20:45:35,708:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-27 20:45:35,708:tetra3.Tetra3-DEBUG: SOLVE: 331.24 ms
+2023-03-27 20:45:35,708:tetra3.Tetra3-DEBUG: RESID: 4.87 asec
+2023-03-27 20:45:36,398:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 604 ms.
+2023-03-27 20:45:36,514:tetra3.Tetra3-DEBUG: NEW P: 6.911e-31
+2023-03-27 20:45:36,516:tetra3.Tetra3-DEBUG: RA:    35.00075713 deg
+2023-03-27 20:45:36,516:tetra3.Tetra3-DEBUG: DEC:   37.99968177 deg
+2023-03-27 20:45:36,516:tetra3.Tetra3-DEBUG: ROLL:  131.00208671 deg
+2023-03-27 20:45:36,516:tetra3.Tetra3-DEBUG: FOV:   10.00010802 deg
+2023-03-27 20:45:36,516:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 20:45:36,516:tetra3.Tetra3-DEBUG: SOLVE: 13.26 ms
+2023-03-27 20:45:36,516:tetra3.Tetra3-DEBUG: RESID: 5.03 asec
+2023-03-27 20:45:36,676:tetra3.Tetra3-DEBUG: NEW P: 7.939e-36
+2023-03-27 20:45:36,678:tetra3.Tetra3-DEBUG: RA:    276.99992120 deg
+2023-03-27 20:45:36,678:tetra3.Tetra3-DEBUG: DEC:   13.00008914 deg
+2023-03-27 20:45:36,678:tetra3.Tetra3-DEBUG: ROLL:  78.99866096 deg
+2023-03-27 20:45:36,679:tetra3.Tetra3-DEBUG: FOV:   12.99961425 deg
+2023-03-27 20:45:36,679:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:45:36,679:tetra3.Tetra3-DEBUG: SOLVE: 86.03 ms
+2023-03-27 20:45:36,679:tetra3.Tetra3-DEBUG: RESID: 2.45 asec
+2023-03-27 20:45:37,555:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 783 ms.
+2023-03-27 20:45:38,194:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 548 ms.
+2023-03-27 20:45:38,796:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 521 ms.
+2023-03-27 20:45:39,632:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 738 ms.
+2023-03-27 20:45:40,160:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 422 ms.
+2023-03-27 20:45:40,843:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 597 ms.
+2023-03-27 20:45:40,928:tetra3.Tetra3-DEBUG: NEW P: 3.311e-35
+2023-03-27 20:45:40,929:tetra3.Tetra3-DEBUG: RA:    184.00008669 deg
+2023-03-27 20:45:40,929:tetra3.Tetra3-DEBUG: DEC:   62.00008388 deg
+2023-03-27 20:45:40,929:tetra3.Tetra3-DEBUG: ROLL:  60.00012328 deg
+2023-03-27 20:45:40,930:tetra3.Tetra3-DEBUG: FOV:   12.99991139 deg
+2023-03-27 20:45:40,931:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:45:40,931:tetra3.Tetra3-DEBUG: SOLVE: 12.82 ms
+2023-03-27 20:45:40,931:tetra3.Tetra3-DEBUG: RESID: 2.62 asec
+2023-03-27 20:45:41,812:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 726 ms.
+2023-03-27 20:45:42,536:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 628 ms.
+2023-03-27 20:45:43,357:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 734 ms.
+2023-03-27 20:45:44,057:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 603 ms.
+2023-03-27 20:45:44,259:tetra3.Tetra3-DEBUG: NEW P: 3.585e-34
+2023-03-27 20:45:44,260:tetra3.Tetra3-DEBUG: RA:    234.99963423 deg
+2023-03-27 20:45:44,260:tetra3.Tetra3-DEBUG: DEC:   18.00000445 deg
+2023-03-27 20:45:44,260:tetra3.Tetra3-DEBUG: ROLL:  76.00043522 deg
+2023-03-27 20:45:44,261:tetra3.Tetra3-DEBUG: FOV:   10.00078130 deg
+2023-03-27 20:45:44,261:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 20:45:44,261:tetra3.Tetra3-DEBUG: SOLVE: 129.22 ms
+2023-03-27 20:45:44,261:tetra3.Tetra3-DEBUG: RESID: 3.75 asec
+2023-03-27 20:46:06,639:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 20:46:06,639:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 20:46:06,639:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 20:46:06,639:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 20:46:06,639:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 20:46:06,644:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 20:46:07,125:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 20:46:07,125:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 20:46:07,125:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 20:46:07,125:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 20:46:07,125:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 20:46:07,125:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 20:46:07,126:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 20:46:07,126:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 20:46:07,126:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 20:46:07,126:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 20:46:07,213:tetra3.Tetra3-DEBUG: NEW P: 4.436e-38
+2023-03-27 20:46:07,216:tetra3.Tetra3-DEBUG: RA:    66.00015774 deg
+2023-03-27 20:46:07,216:tetra3.Tetra3-DEBUG: DEC:   52.99967069 deg
+2023-03-27 20:46:07,216:tetra3.Tetra3-DEBUG: ROLL:  246.00039042 deg
+2023-03-27 20:46:07,216:tetra3.Tetra3-DEBUG: FOV:   11.99974564 deg
+2023-03-27 20:46:07,216:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:07,216:tetra3.Tetra3-DEBUG: SOLVE: 7.62 ms
+2023-03-27 20:46:07,217:tetra3.Tetra3-DEBUG: RESID: 1.83 asec
+2023-03-27 20:46:07,287:tetra3.Tetra3-DEBUG: NEW P: 4.286e-37
+2023-03-27 20:46:07,289:tetra3.Tetra3-DEBUG: RA:    145.99941158 deg
+2023-03-27 20:46:07,289:tetra3.Tetra3-DEBUG: DEC:   47.99948379 deg
+2023-03-27 20:46:07,289:tetra3.Tetra3-DEBUG: ROLL:  46.99743134 deg
+2023-03-27 20:46:07,289:tetra3.Tetra3-DEBUG: FOV:   11.99804954 deg
+2023-03-27 20:46:07,289:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:07,290:tetra3.Tetra3-DEBUG: SOLVE: 6.78 ms
+2023-03-27 20:46:07,290:tetra3.Tetra3-DEBUG: RESID: 6.57 asec
+2023-03-27 20:46:07,367:tetra3.Tetra3-DEBUG: NEW P: 4.067e-43
+2023-03-27 20:46:07,369:tetra3.Tetra3-DEBUG: RA:    219.99991609 deg
+2023-03-27 20:46:07,369:tetra3.Tetra3-DEBUG: DEC:   38.00011518 deg
+2023-03-27 20:46:07,369:tetra3.Tetra3-DEBUG: ROLL:  41.99990967 deg
+2023-03-27 20:46:07,369:tetra3.Tetra3-DEBUG: FOV:   10.99963695 deg
+2023-03-27 20:46:07,370:tetra3.Tetra3-DEBUG: MATCH: 20 stars
+2023-03-27 20:46:07,370:tetra3.Tetra3-DEBUG: SOLVE: 7.60 ms
+2023-03-27 20:46:07,370:tetra3.Tetra3-DEBUG: RESID: 2.94 asec
+2023-03-27 20:46:07,472:tetra3.Tetra3-DEBUG: NEW P: 1.2e-36
+2023-03-27 20:46:07,474:tetra3.Tetra3-DEBUG: RA:    346.99992254 deg
+2023-03-27 20:46:07,474:tetra3.Tetra3-DEBUG: DEC:   67.99981835 deg
+2023-03-27 20:46:07,475:tetra3.Tetra3-DEBUG: ROLL:  46.00036527 deg
+2023-03-27 20:46:07,475:tetra3.Tetra3-DEBUG: FOV:   12.00071138 deg
+2023-03-27 20:46:07,475:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:07,475:tetra3.Tetra3-DEBUG: SOLVE: 31.33 ms
+2023-03-27 20:46:07,475:tetra3.Tetra3-DEBUG: RESID: 1.85 asec
+2023-03-27 20:46:07,605:tetra3.Tetra3-DEBUG: NEW P: 1.347e-34
+2023-03-27 20:46:07,607:tetra3.Tetra3-DEBUG: RA:    139.99960556 deg
+2023-03-27 20:46:07,607:tetra3.Tetra3-DEBUG: DEC:   79.99995764 deg
+2023-03-27 20:46:07,607:tetra3.Tetra3-DEBUG: ROLL:  55.00132755 deg
+2023-03-27 20:46:07,607:tetra3.Tetra3-DEBUG: FOV:   10.99998102 deg
+2023-03-27 20:46:07,607:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-27 20:46:07,607:tetra3.Tetra3-DEBUG: SOLVE: 58.69 ms
+2023-03-27 20:46:07,607:tetra3.Tetra3-DEBUG: RESID: 1.44 asec
+2023-03-27 20:46:07,688:tetra3.Tetra3-DEBUG: NEW P: 5.15e-39
+2023-03-27 20:46:07,691:tetra3.Tetra3-DEBUG: RA:    145.99988270 deg
+2023-03-27 20:46:07,691:tetra3.Tetra3-DEBUG: DEC:   69.99983549 deg
+2023-03-27 20:46:07,691:tetra3.Tetra3-DEBUG: ROLL:  333.99790263 deg
+2023-03-27 20:46:07,691:tetra3.Tetra3-DEBUG: FOV:   10.00023868 deg
+2023-03-27 20:46:07,691:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:07,692:tetra3.Tetra3-DEBUG: SOLVE: 7.79 ms
+2023-03-27 20:46:07,692:tetra3.Tetra3-DEBUG: RESID: 2.24 asec
+2023-03-27 20:46:07,891:tetra3.Tetra3-DEBUG: NEW P: 1.259e-38
+2023-03-27 20:46:07,892:tetra3.Tetra3-DEBUG: RA:    31.99994953 deg
+2023-03-27 20:46:07,892:tetra3.Tetra3-DEBUG: DEC:   70.99980896 deg
+2023-03-27 20:46:07,892:tetra3.Tetra3-DEBUG: ROLL:  133.99994358 deg
+2023-03-27 20:46:07,893:tetra3.Tetra3-DEBUG: FOV:   10.99981883 deg
+2023-03-27 20:46:07,893:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:07,893:tetra3.Tetra3-DEBUG: SOLVE: 123.56 ms
+2023-03-27 20:46:07,893:tetra3.Tetra3-DEBUG: RESID: 1.66 asec
+2023-03-27 20:46:07,990:tetra3.Tetra3-DEBUG: NEW P: 3.585e-34
+2023-03-27 20:46:07,991:tetra3.Tetra3-DEBUG: RA:    284.99986333 deg
+2023-03-27 20:46:07,992:tetra3.Tetra3-DEBUG: DEC:   42.00035358 deg
+2023-03-27 20:46:07,992:tetra3.Tetra3-DEBUG: ROLL:  208.99957584 deg
+2023-03-27 20:46:07,992:tetra3.Tetra3-DEBUG: FOV:   10.00002347 deg
+2023-03-27 20:46:07,992:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 20:46:07,992:tetra3.Tetra3-DEBUG: SOLVE: 25.35 ms
+2023-03-27 20:46:07,992:tetra3.Tetra3-DEBUG: RESID: 3.09 asec
+2023-03-27 20:46:08,150:tetra3.Tetra3-DEBUG: NEW P: 2.365e-32
+2023-03-27 20:46:08,151:tetra3.Tetra3-DEBUG: RA:    254.99981837 deg
+2023-03-27 20:46:08,151:tetra3.Tetra3-DEBUG: DEC:   10.99996703 deg
+2023-03-27 20:46:08,151:tetra3.Tetra3-DEBUG: ROLL:  194.99912752 deg
+2023-03-27 20:46:08,152:tetra3.Tetra3-DEBUG: FOV:   11.00012008 deg
+2023-03-27 20:46:08,152:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 20:46:08,152:tetra3.Tetra3-DEBUG: SOLVE: 81.89 ms
+2023-03-27 20:46:08,152:tetra3.Tetra3-DEBUG: RESID: 2.35 asec
+2023-03-27 20:46:08,274:tetra3.Tetra3-DEBUG: NEW P: 2.173e-34
+2023-03-27 20:46:08,275:tetra3.Tetra3-DEBUG: RA:    224.00042532 deg
+2023-03-27 20:46:08,276:tetra3.Tetra3-DEBUG: DEC:   62.99996896 deg
+2023-03-27 20:46:08,277:tetra3.Tetra3-DEBUG: ROLL:  54.99653697 deg
+2023-03-27 20:46:08,277:tetra3.Tetra3-DEBUG: FOV:   9.99811641 deg
+2023-03-27 20:46:08,277:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 20:46:08,278:tetra3.Tetra3-DEBUG: SOLVE: 49.61 ms
+2023-03-27 20:46:08,278:tetra3.Tetra3-DEBUG: RESID: 2.90 asec
+2023-03-27 20:46:08,361:tetra3.Tetra3-DEBUG: NEW P: 1.602e-40
+2023-03-27 20:46:08,363:tetra3.Tetra3-DEBUG: RA:    50.00022764 deg
+2023-03-27 20:46:08,363:tetra3.Tetra3-DEBUG: DEC:   3.99968143 deg
+2023-03-27 20:46:08,363:tetra3.Tetra3-DEBUG: ROLL:  263.99857607 deg
+2023-03-27 20:46:08,363:tetra3.Tetra3-DEBUG: FOV:   12.00129856 deg
+2023-03-27 20:46:08,363:tetra3.Tetra3-DEBUG: MATCH: 20 stars
+2023-03-27 20:46:08,363:tetra3.Tetra3-DEBUG: SOLVE: 8.71 ms
+2023-03-27 20:46:08,363:tetra3.Tetra3-DEBUG: RESID: 3.82 asec
+2023-03-27 20:46:08,461:tetra3.Tetra3-DEBUG: NEW P: 1.946e-42
+2023-03-27 20:46:08,463:tetra3.Tetra3-DEBUG: RA:    309.00193670 deg
+2023-03-27 20:46:08,463:tetra3.Tetra3-DEBUG: DEC:   88.00001897 deg
+2023-03-27 20:46:08,463:tetra3.Tetra3-DEBUG: ROLL:  301.99745634 deg
+2023-03-27 20:46:08,464:tetra3.Tetra3-DEBUG: FOV:   10.99898203 deg
+2023-03-27 20:46:08,464:tetra3.Tetra3-DEBUG: MATCH: 20 stars
+2023-03-27 20:46:08,464:tetra3.Tetra3-DEBUG: SOLVE: 20.79 ms
+2023-03-27 20:46:08,464:tetra3.Tetra3-DEBUG: RESID: 2.31 asec
+2023-03-27 20:46:08,632:tetra3.Tetra3-DEBUG: NEW P: 9.776e-38
+2023-03-27 20:46:08,633:tetra3.Tetra3-DEBUG: RA:    358.99963892 deg
+2023-03-27 20:46:08,634:tetra3.Tetra3-DEBUG: DEC:   10.99965318 deg
+2023-03-27 20:46:08,634:tetra3.Tetra3-DEBUG: ROLL:  26.99961431 deg
+2023-03-27 20:46:08,634:tetra3.Tetra3-DEBUG: FOV:   12.00031139 deg
+2023-03-27 20:46:08,634:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:08,634:tetra3.Tetra3-DEBUG: SOLVE: 95.89 ms
+2023-03-27 20:46:08,634:tetra3.Tetra3-DEBUG: RESID: 7.54 asec
+2023-03-27 20:46:08,724:tetra3.Tetra3-DEBUG: NEW P: 5.199e-28
+2023-03-27 20:46:08,725:tetra3.Tetra3-DEBUG: RA:    138.99994028 deg
+2023-03-27 20:46:08,725:tetra3.Tetra3-DEBUG: DEC:   43.99925486 deg
+2023-03-27 20:46:08,725:tetra3.Tetra3-DEBUG: ROLL:  64.99640293 deg
+2023-03-27 20:46:08,725:tetra3.Tetra3-DEBUG: FOV:   10.00173193 deg
+2023-03-27 20:46:08,725:tetra3.Tetra3-DEBUG: MATCH: 14 stars
+2023-03-27 20:46:08,725:tetra3.Tetra3-DEBUG: SOLVE: 17.85 ms
+2023-03-27 20:46:08,725:tetra3.Tetra3-DEBUG: RESID: 3.30 asec
+2023-03-27 20:46:08,816:tetra3.Tetra3-DEBUG: NEW P: 7.179e-40
+2023-03-27 20:46:08,818:tetra3.Tetra3-DEBUG: RA:    103.99991730 deg
+2023-03-27 20:46:08,818:tetra3.Tetra3-DEBUG: DEC:   22.99994931 deg
+2023-03-27 20:46:08,818:tetra3.Tetra3-DEBUG: ROLL:  274.00101165 deg
+2023-03-27 20:46:08,819:tetra3.Tetra3-DEBUG: FOV:   11.99990271 deg
+2023-03-27 20:46:08,819:tetra3.Tetra3-DEBUG: MATCH: 20 stars
+2023-03-27 20:46:08,819:tetra3.Tetra3-DEBUG: SOLVE: 13.61 ms
+2023-03-27 20:46:08,819:tetra3.Tetra3-DEBUG: RESID: 1.53 asec
+2023-03-27 20:46:08,911:tetra3.Tetra3-DEBUG: NEW P: 1.573e-30
+2023-03-27 20:46:08,912:tetra3.Tetra3-DEBUG: RA:    341.00009683 deg
+2023-03-27 20:46:08,912:tetra3.Tetra3-DEBUG: DEC:   68.00001419 deg
+2023-03-27 20:46:08,912:tetra3.Tetra3-DEBUG: ROLL:  99.99941536 deg
+2023-03-27 20:46:08,913:tetra3.Tetra3-DEBUG: FOV:   9.99988714 deg
+2023-03-27 20:46:08,913:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 20:46:08,913:tetra3.Tetra3-DEBUG: SOLVE: 19.17 ms
+2023-03-27 20:46:08,913:tetra3.Tetra3-DEBUG: RESID: 1.62 asec
+2023-03-27 20:46:09,011:tetra3.Tetra3-DEBUG: NEW P: 2.003e-39
+2023-03-27 20:46:09,012:tetra3.Tetra3-DEBUG: RA:    351.00023223 deg
+2023-03-27 20:46:09,012:tetra3.Tetra3-DEBUG: DEC:   33.99997517 deg
+2023-03-27 20:46:09,012:tetra3.Tetra3-DEBUG: ROLL:  226.99776173 deg
+2023-03-27 20:46:09,013:tetra3.Tetra3-DEBUG: FOV:   10.99919417 deg
+2023-03-27 20:46:09,013:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:09,013:tetra3.Tetra3-DEBUG: SOLVE: 26.91 ms
+2023-03-27 20:46:09,014:tetra3.Tetra3-DEBUG: RESID: 2.38 asec
+2023-03-27 20:46:09,094:tetra3.Tetra3-DEBUG: NEW P: 1.431e-33
+2023-03-27 20:46:09,095:tetra3.Tetra3-DEBUG: RA:    357.99963704 deg
+2023-03-27 20:46:09,095:tetra3.Tetra3-DEBUG: DEC:   79.99995802 deg
+2023-03-27 20:46:09,095:tetra3.Tetra3-DEBUG: ROLL:  153.00062033 deg
+2023-03-27 20:46:09,096:tetra3.Tetra3-DEBUG: FOV:   10.00070187 deg
+2023-03-27 20:46:09,096:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 20:46:09,096:tetra3.Tetra3-DEBUG: SOLVE: 6.32 ms
+2023-03-27 20:46:09,097:tetra3.Tetra3-DEBUG: RESID: 1.82 asec
+2023-03-27 20:46:09,292:tetra3.Tetra3-DEBUG: NEW P: 2.946e-38
+2023-03-27 20:46:09,294:tetra3.Tetra3-DEBUG: RA:    84.99995432 deg
+2023-03-27 20:46:09,294:tetra3.Tetra3-DEBUG: DEC:   40.99957001 deg
+2023-03-27 20:46:09,294:tetra3.Tetra3-DEBUG: ROLL:  145.00226964 deg
+2023-03-27 20:46:09,295:tetra3.Tetra3-DEBUG: FOV:   10.99972984 deg
+2023-03-27 20:46:09,295:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:09,295:tetra3.Tetra3-DEBUG: SOLVE: 120.96 ms
+2023-03-27 20:46:09,295:tetra3.Tetra3-DEBUG: RESID: 3.87 asec
+2023-03-27 20:46:09,794:tetra3.Tetra3-DEBUG: NEW P: 1.432e-37
+2023-03-27 20:46:09,796:tetra3.Tetra3-DEBUG: RA:    38.00026389 deg
+2023-03-27 20:46:09,796:tetra3.Tetra3-DEBUG: DEC:   65.99977815 deg
+2023-03-27 20:46:09,796:tetra3.Tetra3-DEBUG: ROLL:  331.99952980 deg
+2023-03-27 20:46:09,802:tetra3.Tetra3-DEBUG: FOV:   11.99987473 deg
+2023-03-27 20:46:09,802:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 20:46:09,802:tetra3.Tetra3-DEBUG: SOLVE: 425.17 ms
+2023-03-27 20:46:09,802:tetra3.Tetra3-DEBUG: RESID: 2.24 asec
+2023-03-27 20:46:29,572:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 20:46:29,572:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 20:46:29,572:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 20:46:29,572:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 20:46:29,572:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 20:46:29,578:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 20:46:30,041:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 20:46:30,042:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 20:46:30,577:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 424 ms.
+2023-03-27 20:46:31,446:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 775 ms.
+2023-03-27 20:46:32,094:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 547 ms.
+2023-03-27 20:46:33,074:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 888 ms.
+2023-03-27 20:46:33,672:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 503 ms.
+2023-03-27 20:46:34,936:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1167 ms.
+2023-03-27 20:46:35,514:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 489 ms.
+2023-03-27 20:46:36,198:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 589 ms.
+2023-03-27 20:46:36,953:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 665 ms.
+2023-03-27 20:46:38,150:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1106 ms.
+2023-03-27 20:46:38,758:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 514 ms.
+2023-03-27 20:46:39,468:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 614 ms.
+2023-03-27 20:46:40,462:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 905 ms.
+2023-03-27 20:46:41,039:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 480 ms.
+2023-03-27 20:46:41,733:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 591 ms.
+2023-03-27 20:46:42,895:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1070 ms.
+2023-03-27 20:46:43,669:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 684 ms.
+2023-03-27 20:46:44,436:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 669 ms.
+2023-03-27 20:46:45,060:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 530 ms.
+2023-03-27 20:46:45,592:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 434 ms.
+2023-03-27 21:46:34,558:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:46:34,559:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:46:34,559:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:46:34,559:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:46:34,559:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:46:34,564:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:46:35,068:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:46:35,068:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:46:35,069:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:46:36,122:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 944 ms.
+2023-03-27 21:46:36,980:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 766 ms.
+2023-03-27 21:46:37,822:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 750 ms.
+2023-03-27 21:46:38,437:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 521 ms.
+2023-03-27 21:46:39,279:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 748 ms.
+2023-03-27 21:46:40,590:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1221 ms.
+2023-03-27 21:47:03,410:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:47:03,410:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:47:03,410:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:47:03,410:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:47:03,410:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:47:03,416:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:47:03,914:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:47:04,004:tetra3.Tetra3-DEBUG: NEW P: 5.77e-34
+2023-03-27 21:47:04,007:tetra3.Tetra3-DEBUG: RA:    245.98881702 deg
+2023-03-27 21:47:04,008:tetra3.Tetra3-DEBUG: DEC:   88.99990039 deg
+2023-03-27 21:47:04,008:tetra3.Tetra3-DEBUG: ROLL:  350.01335377 deg
+2023-03-27 21:47:04,009:tetra3.Tetra3-DEBUG: FOV:   10.00100070 deg
+2023-03-27 21:47:04,009:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:47:04,009:tetra3.Tetra3-DEBUG: SOLVE: 7.57 ms
+2023-03-27 21:47:04,009:tetra3.Tetra3-DEBUG: RESID: 3.06 asec
+2023-03-27 21:47:04,170:tetra3.Tetra3-DEBUG: NEW P: 5.069e-27
+2023-03-27 21:47:04,172:tetra3.Tetra3-DEBUG: RA:    74.00049656 deg
+2023-03-27 21:47:04,172:tetra3.Tetra3-DEBUG: DEC:   20.99984664 deg
+2023-03-27 21:47:04,172:tetra3.Tetra3-DEBUG: ROLL:  12.00079493 deg
+2023-03-27 21:47:04,172:tetra3.Tetra3-DEBUG: FOV:   11.00198718 deg
+2023-03-27 21:47:04,172:tetra3.Tetra3-DEBUG: MATCH: 15 stars
+2023-03-27 21:47:04,172:tetra3.Tetra3-DEBUG: SOLVE: 91.11 ms
+2023-03-27 21:47:04,173:tetra3.Tetra3-DEBUG: RESID: 3.78 asec
+2023-03-27 21:47:04,383:tetra3.Tetra3-DEBUG: NEW P: 6.512e-35
+2023-03-27 21:47:04,385:tetra3.Tetra3-DEBUG: RA:    139.99960569 deg
+2023-03-27 21:47:04,385:tetra3.Tetra3-DEBUG: DEC:   42.99973274 deg
+2023-03-27 21:47:04,385:tetra3.Tetra3-DEBUG: ROLL:  142.99998985 deg
+2023-03-27 21:47:04,386:tetra3.Tetra3-DEBUG: FOV:   11.99910588 deg
+2023-03-27 21:47:04,386:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-27 21:47:04,386:tetra3.Tetra3-DEBUG: SOLVE: 135.95 ms
+2023-03-27 21:47:04,386:tetra3.Tetra3-DEBUG: RESID: 3.43 asec
+2023-03-27 21:47:04,486:tetra3.Tetra3-DEBUG: NEW P: 4.436e-38
+2023-03-27 21:47:04,487:tetra3.Tetra3-DEBUG: RA:    95.99994110 deg
+2023-03-27 21:47:04,487:tetra3.Tetra3-DEBUG: DEC:   12.00002642 deg
+2023-03-27 21:47:04,487:tetra3.Tetra3-DEBUG: ROLL:  161.99886085 deg
+2023-03-27 21:47:04,496:tetra3.Tetra3-DEBUG: FOV:   10.99946253 deg
+2023-03-27 21:47:04,496:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 21:47:04,496:tetra3.Tetra3-DEBUG: SOLVE: 25.38 ms
+2023-03-27 21:47:04,496:tetra3.Tetra3-DEBUG: RESID: 2.08 asec
+2023-03-27 21:47:04,583:tetra3.Tetra3-DEBUG: NEW P: 5.95e-28
+2023-03-27 21:47:04,584:tetra3.Tetra3-DEBUG: RA:    249.00012871 deg
+2023-03-27 21:47:04,584:tetra3.Tetra3-DEBUG: DEC:   5.00045744 deg
+2023-03-27 21:47:04,584:tetra3.Tetra3-DEBUG: ROLL:  177.99621512 deg
+2023-03-27 21:47:04,585:tetra3.Tetra3-DEBUG: FOV:   10.00102606 deg
+2023-03-27 21:47:04,585:tetra3.Tetra3-DEBUG: MATCH: 14 stars
+2023-03-27 21:47:04,587:tetra3.Tetra3-DEBUG: SOLVE: 17.22 ms
+2023-03-27 21:47:04,587:tetra3.Tetra3-DEBUG: RESID: 4.77 asec
+2023-03-27 21:47:04,842:tetra3.Tetra3-DEBUG: NEW P: 7.276e-17
+2023-03-27 21:47:04,843:tetra3.Tetra3-DEBUG: RA:    7.00035987 deg
+2023-03-27 21:47:04,843:tetra3.Tetra3-DEBUG: DEC:   -0.00025963 deg
+2023-03-27 21:47:04,843:tetra3.Tetra3-DEBUG: ROLL:  52.99618746 deg
+2023-03-27 21:47:04,843:tetra3.Tetra3-DEBUG: FOV:   10.00056269 deg
+2023-03-27 21:47:04,843:tetra3.Tetra3-DEBUG: MATCH: 9 stars
+2023-03-27 21:47:04,843:tetra3.Tetra3-DEBUG: SOLVE: 180.41 ms
+2023-03-27 21:47:04,843:tetra3.Tetra3-DEBUG: RESID: 1.46 asec
+2023-03-27 21:47:21,112:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:47:21,112:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:47:21,112:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:47:21,112:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:47:21,112:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:47:21,121:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:47:21,640:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:47:21,641:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:47:21,641:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:47:21,963:tetra3.Tetra3-DEBUG: NEW P: 3.169e-36
+2023-03-27 21:47:21,965:tetra3.Tetra3-DEBUG: RA:    330.00016686 deg
+2023-03-27 21:47:21,965:tetra3.Tetra3-DEBUG: DEC:   26.00008282 deg
+2023-03-27 21:47:21,965:tetra3.Tetra3-DEBUG: ROLL:  216.00134396 deg
+2023-03-27 21:47:21,965:tetra3.Tetra3-DEBUG: FOV:   12.00016941 deg
+2023-03-27 21:47:21,965:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 21:47:21,965:tetra3.Tetra3-DEBUG: SOLVE: 237.00 ms
+2023-03-27 21:47:21,965:tetra3.Tetra3-DEBUG: RESID: 1.87 asec
+2023-03-27 21:47:22,076:tetra3.Tetra3-DEBUG: NEW P: 2.996e-26
+2023-03-27 21:47:22,078:tetra3.Tetra3-DEBUG: RA:    168.99970864 deg
+2023-03-27 21:47:22,078:tetra3.Tetra3-DEBUG: DEC:   11.99969154 deg
+2023-03-27 21:47:22,078:tetra3.Tetra3-DEBUG: ROLL:  254.00197308 deg
+2023-03-27 21:47:22,078:tetra3.Tetra3-DEBUG: FOV:   10.00055021 deg
+2023-03-27 21:47:22,078:tetra3.Tetra3-DEBUG: MATCH: 13 stars
+2023-03-27 21:47:22,078:tetra3.Tetra3-DEBUG: SOLVE: 45.18 ms
+2023-03-27 21:47:22,078:tetra3.Tetra3-DEBUG: RESID: 3.20 asec
+2023-03-27 21:47:22,170:tetra3.Tetra3-DEBUG: NEW P: 1.259e-38
+2023-03-27 21:47:22,172:tetra3.Tetra3-DEBUG: RA:    330.00013666 deg
+2023-03-27 21:47:22,172:tetra3.Tetra3-DEBUG: DEC:   67.99998564 deg
+2023-03-27 21:47:22,172:tetra3.Tetra3-DEBUG: ROLL:  317.99919732 deg
+2023-03-27 21:47:22,172:tetra3.Tetra3-DEBUG: FOV:   11.00035353 deg
+2023-03-27 21:47:22,172:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 21:47:22,177:tetra3.Tetra3-DEBUG: SOLVE: 17.20 ms
+2023-03-27 21:47:22,177:tetra3.Tetra3-DEBUG: RESID: 2.09 asec
+2023-03-27 21:47:22,268:tetra3.Tetra3-DEBUG: NEW P: 8.677e-30
+2023-03-27 21:47:22,269:tetra3.Tetra3-DEBUG: RA:    220.00017916 deg
+2023-03-27 21:47:22,269:tetra3.Tetra3-DEBUG: DEC:   80.99987260 deg
+2023-03-27 21:47:22,269:tetra3.Tetra3-DEBUG: ROLL:  218.00230747 deg
+2023-03-27 21:47:22,270:tetra3.Tetra3-DEBUG: FOV:   9.99885284 deg
+2023-03-27 21:47:22,270:tetra3.Tetra3-DEBUG: MATCH: 15 stars
+2023-03-27 21:47:22,270:tetra3.Tetra3-DEBUG: SOLVE: 19.71 ms
+2023-03-27 21:47:22,270:tetra3.Tetra3-DEBUG: RESID: 2.60 asec
+2023-03-27 21:47:22,362:tetra3.Tetra3-DEBUG: NEW P: 2.003e-39
+2023-03-27 21:47:22,364:tetra3.Tetra3-DEBUG: RA:    307.00018469 deg
+2023-03-27 21:47:22,364:tetra3.Tetra3-DEBUG: DEC:   80.00003673 deg
+2023-03-27 21:47:22,364:tetra3.Tetra3-DEBUG: ROLL:  65.99942657 deg
+2023-03-27 21:47:22,364:tetra3.Tetra3-DEBUG: FOV:   11.00019527 deg
+2023-03-27 21:47:22,364:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 21:47:22,364:tetra3.Tetra3-DEBUG: SOLVE: 19.66 ms
+2023-03-27 21:47:22,364:tetra3.Tetra3-DEBUG: RESID: 1.76 asec
+2023-03-27 21:47:22,453:tetra3.Tetra3-DEBUG: NEW P: 4.86e-25
+2023-03-27 21:47:22,454:tetra3.Tetra3-DEBUG: RA:    140.99986116 deg
+2023-03-27 21:47:22,454:tetra3.Tetra3-DEBUG: DEC:   24.99964545 deg
+2023-03-27 21:47:22,454:tetra3.Tetra3-DEBUG: ROLL:  126.00116898 deg
+2023-03-27 21:47:22,464:tetra3.Tetra3-DEBUG: FOV:   10.00014910 deg
+2023-03-27 21:47:22,465:tetra3.Tetra3-DEBUG: MATCH: 13 stars
+2023-03-27 21:47:22,465:tetra3.Tetra3-DEBUG: SOLVE: 17.94 ms
+2023-03-27 21:47:22,465:tetra3.Tetra3-DEBUG: RESID: 2.28 asec
+2023-03-27 21:48:56,757:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:48:56,758:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:48:56,758:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:48:56,758:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:48:56,758:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:48:56,763:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:48:57,240:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:48:57,240:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:48:57,240:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:48:57,240:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:48:57,240:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:48:57,240:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:48:57,240:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:48:57,241:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:48:57,241:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:48:57,241:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:48:57,353:tetra3.Tetra3-DEBUG: NEW P: 7.372e-40
+2023-03-27 21:48:57,355:tetra3.Tetra3-DEBUG: RA:    256.00039168 deg
+2023-03-27 21:48:57,355:tetra3.Tetra3-DEBUG: DEC:   60.99983939 deg
+2023-03-27 21:48:57,356:tetra3.Tetra3-DEBUG: ROLL:  317.99570157 deg
+2023-03-27 21:48:57,356:tetra3.Tetra3-DEBUG: FOV:   10.99994863 deg
+2023-03-27 21:48:57,356:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 21:48:57,356:tetra3.Tetra3-DEBUG: SOLVE: 31.17 ms
+2023-03-27 21:48:57,356:tetra3.Tetra3-DEBUG: RESID: 3.42 asec
+2023-03-27 21:48:57,456:tetra3.Tetra3-DEBUG: NEW P: 3.613e-31
+2023-03-27 21:48:57,458:tetra3.Tetra3-DEBUG: RA:    39.00027391 deg
+2023-03-27 21:48:57,458:tetra3.Tetra3-DEBUG: DEC:   8.99988406 deg
+2023-03-27 21:48:57,458:tetra3.Tetra3-DEBUG: ROLL:  114.99574293 deg
+2023-03-27 21:48:57,458:tetra3.Tetra3-DEBUG: FOV:   10.00038245 deg
+2023-03-27 21:48:57,458:tetra3.Tetra3-DEBUG: MATCH: 15 stars
+2023-03-27 21:48:57,458:tetra3.Tetra3-DEBUG: SOLVE: 33.82 ms
+2023-03-27 21:48:57,458:tetra3.Tetra3-DEBUG: RESID: 2.26 asec
+2023-03-27 21:48:57,664:tetra3.Tetra3-DEBUG: NEW P: 7.255e-34
+2023-03-27 21:48:57,665:tetra3.Tetra3-DEBUG: RA:    295.99992496 deg
+2023-03-27 21:48:57,665:tetra3.Tetra3-DEBUG: DEC:   26.99997708 deg
+2023-03-27 21:48:57,665:tetra3.Tetra3-DEBUG: ROLL:  335.00019661 deg
+2023-03-27 21:48:57,666:tetra3.Tetra3-DEBUG: FOV:   12.00101841 deg
+2023-03-27 21:48:57,666:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-27 21:48:57,666:tetra3.Tetra3-DEBUG: SOLVE: 132.24 ms
+2023-03-27 21:48:57,666:tetra3.Tetra3-DEBUG: RESID: 2.30 asec
+2023-03-27 21:48:57,744:tetra3.Tetra3-DEBUG: NEW P: 6.64e-40
+2023-03-27 21:48:57,746:tetra3.Tetra3-DEBUG: RA:    226.00020737 deg
+2023-03-27 21:48:57,746:tetra3.Tetra3-DEBUG: DEC:   63.00002508 deg
+2023-03-27 21:48:57,746:tetra3.Tetra3-DEBUG: ROLL:  123.99782976 deg
+2023-03-27 21:48:57,747:tetra3.Tetra3-DEBUG: FOV:   9.99818765 deg
+2023-03-27 21:48:57,747:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-27 21:48:57,747:tetra3.Tetra3-DEBUG: SOLVE: 7.57 ms
+2023-03-27 21:48:57,747:tetra3.Tetra3-DEBUG: RESID: 3.21 asec
+2023-03-27 21:48:58,004:tetra3.Tetra3-DEBUG: NEW P: 7.199e-41
+2023-03-27 21:48:58,006:tetra3.Tetra3-DEBUG: RA:    6.00023302 deg
+2023-03-27 21:48:58,006:tetra3.Tetra3-DEBUG: DEC:   61.99996576 deg
+2023-03-27 21:48:58,006:tetra3.Tetra3-DEBUG: ROLL:  158.00030571 deg
+2023-03-27 21:48:58,014:tetra3.Tetra3-DEBUG: FOV:   11.00132595 deg
+2023-03-27 21:48:58,015:tetra3.Tetra3-DEBUG: MATCH: 20 stars
+2023-03-27 21:48:58,015:tetra3.Tetra3-DEBUG: SOLVE: 179.15 ms
+2023-03-27 21:48:58,015:tetra3.Tetra3-DEBUG: RESID: 4.25 asec
+2023-03-27 21:48:58,111:tetra3.Tetra3-DEBUG: NEW P: 4.067e-43
+2023-03-27 21:48:58,113:tetra3.Tetra3-DEBUG: RA:    310.99893954 deg
+2023-03-27 21:48:58,113:tetra3.Tetra3-DEBUG: DEC:   86.00012827 deg
+2023-03-27 21:48:58,113:tetra3.Tetra3-DEBUG: ROLL:  324.00060743 deg
+2023-03-27 21:48:58,113:tetra3.Tetra3-DEBUG: FOV:   9.99960252 deg
+2023-03-27 21:48:58,113:tetra3.Tetra3-DEBUG: MATCH: 20 stars
+2023-03-27 21:48:58,114:tetra3.Tetra3-DEBUG: SOLVE: 7.33 ms
+2023-03-27 21:48:58,114:tetra3.Tetra3-DEBUG: RESID: 1.65 asec
+2023-03-27 21:49:22,393:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:49:22,393:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:49:22,393:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:49:22,393:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:49:22,393:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:49:22,398:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:49:22,890:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:49:22,890:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:49:22,890:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:49:22,890:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:49:22,890:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:49:22,890:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:49:22,891:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:49:22,891:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:49:22,891:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:49:22,891:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:49:23,581:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 602 ms.
+2023-03-27 21:49:24,322:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 650 ms.
+2023-03-27 21:49:24,875:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 470 ms.
+2023-03-27 21:49:26,054:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1094 ms.
+2023-03-27 21:49:26,773:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 619 ms.
+2023-03-27 21:49:27,518:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 672 ms.
+2023-03-27 21:50:21,341:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:50:21,341:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:50:21,341:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:50:21,341:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:50:21,341:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:50:21,347:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:50:21,841:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:50:21,842:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:50:21,842:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:50:22,000:tetra3.Tetra3-DEBUG: NEW P: 2.243e-32
+2023-03-27 21:50:22,002:tetra3.Tetra3-DEBUG: RA:    110.99984048 deg
+2023-03-27 21:50:22,002:tetra3.Tetra3-DEBUG: DEC:   40.99976808 deg
+2023-03-27 21:50:22,002:tetra3.Tetra3-DEBUG: ROLL:  308.00076830 deg
+2023-03-27 21:50:22,006:tetra3.Tetra3-DEBUG: FOV:   10.99948702 deg
+2023-03-27 21:50:22,007:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 21:50:22,007:tetra3.Tetra3-DEBUG: SOLVE: 71.72 ms
+2023-03-27 21:50:22,007:tetra3.Tetra3-DEBUG: RESID: 1.23 asec
+2023-03-27 21:50:22,092:tetra3.Tetra3-DEBUG: NEW P: 8.795e-32
+2023-03-27 21:50:22,093:tetra3.Tetra3-DEBUG: RA:    184.99971656 deg
+2023-03-27 21:50:22,093:tetra3.Tetra3-DEBUG: DEC:   2.99969857 deg
+2023-03-27 21:50:22,093:tetra3.Tetra3-DEBUG: ROLL:  312.99961682 deg
+2023-03-27 21:50:22,094:tetra3.Tetra3-DEBUG: FOV:   11.99851507 deg
+2023-03-27 21:50:22,095:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 21:50:22,095:tetra3.Tetra3-DEBUG: SOLVE: 18.55 ms
+2023-03-27 21:50:22,095:tetra3.Tetra3-DEBUG: RESID: 5.49 asec
+2023-03-27 21:50:22,783:tetra3.Tetra3-DEBUG: NEW P: 9.776e-38
+2023-03-27 21:50:22,784:tetra3.Tetra3-DEBUG: RA:    121.00010654 deg
+2023-03-27 21:50:22,784:tetra3.Tetra3-DEBUG: DEC:   34.99972077 deg
+2023-03-27 21:50:22,784:tetra3.Tetra3-DEBUG: ROLL:  351.99926299 deg
+2023-03-27 21:50:22,793:tetra3.Tetra3-DEBUG: FOV:   12.00025743 deg
+2023-03-27 21:50:22,793:tetra3.Tetra3-DEBUG: MATCH: 19 stars
+2023-03-27 21:50:22,793:tetra3.Tetra3-DEBUG: SOLVE: 606.30 ms
+2023-03-27 21:50:22,794:tetra3.Tetra3-DEBUG: RESID: 1.95 asec
+2023-03-27 21:50:22,922:tetra3.Tetra3-DEBUG: NEW P: 6.512e-35
+2023-03-27 21:50:22,924:tetra3.Tetra3-DEBUG: RA:    193.00002160 deg
+2023-03-27 21:50:22,924:tetra3.Tetra3-DEBUG: DEC:   55.00013887 deg
+2023-03-27 21:50:22,924:tetra3.Tetra3-DEBUG: ROLL:  248.99928363 deg
+2023-03-27 21:50:22,933:tetra3.Tetra3-DEBUG: FOV:   11.99983499 deg
+2023-03-27 21:50:22,934:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-27 21:50:22,934:tetra3.Tetra3-DEBUG: SOLVE: 59.68 ms
+2023-03-27 21:50:22,934:tetra3.Tetra3-DEBUG: RESID: 1.91 asec
+2023-03-27 21:50:23,024:tetra3.Tetra3-DEBUG: NEW P: 3.445e-40
+2023-03-27 21:50:23,026:tetra3.Tetra3-DEBUG: RA:    344.00008349 deg
+2023-03-27 21:50:23,026:tetra3.Tetra3-DEBUG: DEC:   83.00011807 deg
+2023-03-27 21:50:23,026:tetra3.Tetra3-DEBUG: ROLL:  296.99935931 deg
+2023-03-27 21:50:23,031:tetra3.Tetra3-DEBUG: FOV:   11.99909152 deg
+2023-03-27 21:50:23,031:tetra3.Tetra3-DEBUG: MATCH: 20 stars
+2023-03-27 21:50:23,031:tetra3.Tetra3-DEBUG: SOLVE: 19.93 ms
+2023-03-27 21:50:23,031:tetra3.Tetra3-DEBUG: RESID: 2.09 asec
+2023-03-27 21:50:23,113:tetra3.Tetra3-DEBUG: NEW P: 3.192e-23
+2023-03-27 21:50:23,114:tetra3.Tetra3-DEBUG: RA:    137.99996188 deg
+2023-03-27 21:50:23,114:tetra3.Tetra3-DEBUG: DEC:   20.99987070 deg
+2023-03-27 21:50:23,114:tetra3.Tetra3-DEBUG: ROLL:  283.00137489 deg
+2023-03-27 21:50:23,114:tetra3.Tetra3-DEBUG: FOV:   10.00018426 deg
+2023-03-27 21:50:23,114:tetra3.Tetra3-DEBUG: MATCH: 12 stars
+2023-03-27 21:50:23,115:tetra3.Tetra3-DEBUG: SOLVE: 11.79 ms
+2023-03-27 21:50:23,115:tetra3.Tetra3-DEBUG: RESID: 1.63 asec
+2023-03-27 21:50:59,883:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:50:59,883:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:50:59,883:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:50:59,883:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:50:59,883:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:50:59,888:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:51:00,383:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:51:01,198:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 706 ms.
+2023-03-27 21:51:01,754:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 468 ms.
+2023-03-27 21:51:02,241:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 392 ms.
+2023-03-27 21:51:02,919:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 578 ms.
+2023-03-27 21:51:03,576:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 566 ms.
+2023-03-27 21:51:04,306:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 622 ms.
+2023-03-27 21:52:35,481:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:52:35,481:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:52:35,481:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:52:35,481:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:52:35,481:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:52:35,487:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:52:35,986:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:52:36,713:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 617 ms.
+2023-03-27 21:52:37,396:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 570 ms.
+2023-03-27 21:52:37,786:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 288 ms.
+2023-03-27 21:52:38,216:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 336 ms.
+2023-03-27 21:52:38,767:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 450 ms.
+2023-03-27 21:52:39,724:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 857 ms.
+2023-03-27 21:53:30,830:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=default_database
+2023-03-27 21:53:30,830:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:53:30,830:tetra3.Tetra3-DEBUG: Got load database with: default_database
+2023-03-27 21:53:30,830:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:53:30,830:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../default_database.npz
+2023-03-27 21:53:30,835:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 12.0
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 10
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 20
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:53:31,345:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:53:31,827:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 380 ms.
+2023-03-27 21:53:32,589:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 673 ms.
+2023-03-27 21:53:33,012:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 321 ms.
+2023-03-27 21:53:33,753:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 645 ms.
+2023-03-27 21:53:34,381:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 531 ms.
+2023-03-27 21:53:34,905:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 421 ms.
+2023-03-27 21:53:40,868:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=large_db
+2023-03-27 21:53:40,868:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:53:40,868:tetra3.Tetra3-DEBUG: Got load database with: large_db
+2023-03-27 21:53:40,868:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:53:40,869:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../large_db.npz
+2023-03-27 21:53:40,875:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 60.0
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 30
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 40
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:53:43,690:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:53:43,848:tetra3.Tetra3-DEBUG: NEW P: 6.558e-72
+2023-03-27 21:53:43,850:tetra3.Tetra3-DEBUG: RA:    275.00140276 deg
+2023-03-27 21:53:43,850:tetra3.Tetra3-DEBUG: DEC:   19.99918499 deg
+2023-03-27 21:53:43,850:tetra3.Tetra3-DEBUG: ROLL:  209.99795099 deg
+2023-03-27 21:53:43,851:tetra3.Tetra3-DEBUG: FOV:   59.00793314 deg
+2023-03-27 21:53:43,851:tetra3.Tetra3-DEBUG: MATCH: 39 stars
+2023-03-27 21:53:43,851:tetra3.Tetra3-DEBUG: SOLVE: 44.33 ms
+2023-03-27 21:53:43,851:tetra3.Tetra3-DEBUG: RESID: 34.88 asec
+2023-03-27 21:53:44,944:tetra3.Tetra3-DEBUG: NEW P: 1.339e-56
+2023-03-27 21:53:44,946:tetra3.Tetra3-DEBUG: RA:    56.00152797 deg
+2023-03-27 21:53:44,946:tetra3.Tetra3-DEBUG: DEC:   24.99721553 deg
+2023-03-27 21:53:44,946:tetra3.Tetra3-DEBUG: ROLL:  351.00019026 deg
+2023-03-27 21:53:44,946:tetra3.Tetra3-DEBUG: FOV:   58.98804942 deg
+2023-03-27 21:53:44,946:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:53:44,946:tetra3.Tetra3-DEBUG: SOLVE: 1000.25 ms
+2023-03-27 21:53:44,946:tetra3.Tetra3-DEBUG: RESID: 36.27 asec
+2023-03-27 21:53:45,057:tetra3.Tetra3-DEBUG: NEW P: 1.741e-59
+2023-03-27 21:53:45,059:tetra3.Tetra3-DEBUG: RA:    74.00149080 deg
+2023-03-27 21:53:45,059:tetra3.Tetra3-DEBUG: DEC:   52.99752816 deg
+2023-03-27 21:53:45,059:tetra3.Tetra3-DEBUG: ROLL:  167.99682107 deg
+2023-03-27 21:53:45,059:tetra3.Tetra3-DEBUG: FOV:   60.00175907 deg
+2023-03-27 21:53:45,059:tetra3.Tetra3-DEBUG: MATCH: 35 stars
+2023-03-27 21:53:45,059:tetra3.Tetra3-DEBUG: SOLVE: 10.01 ms
+2023-03-27 21:53:45,059:tetra3.Tetra3-DEBUG: RESID: 20.13 asec
+2023-03-27 21:53:45,174:tetra3.Tetra3-DEBUG: NEW P: 2.161e-65
+2023-03-27 21:53:45,176:tetra3.Tetra3-DEBUG: RA:    311.99643713 deg
+2023-03-27 21:53:45,176:tetra3.Tetra3-DEBUG: DEC:   82.00565246 deg
+2023-03-27 21:53:45,176:tetra3.Tetra3-DEBUG: ROLL:  260.00766192 deg
+2023-03-27 21:53:45,176:tetra3.Tetra3-DEBUG: FOV:   60.04283189 deg
+2023-03-27 21:53:45,176:tetra3.Tetra3-DEBUG: MATCH: 37 stars
+2023-03-27 21:53:45,176:tetra3.Tetra3-DEBUG: SOLVE: 16.14 ms
+2023-03-27 21:53:45,176:tetra3.Tetra3-DEBUG: RESID: 84.56 asec
+2023-03-27 21:53:45,290:tetra3.Tetra3-DEBUG: NEW P: 4.432e-63
+2023-03-27 21:53:45,292:tetra3.Tetra3-DEBUG: RA:    287.95542137 deg
+2023-03-27 21:53:45,292:tetra3.Tetra3-DEBUG: DEC:   86.00426833 deg
+2023-03-27 21:53:45,292:tetra3.Tetra3-DEBUG: ROLL:  313.04826634 deg
+2023-03-27 21:53:45,292:tetra3.Tetra3-DEBUG: FOV:   59.02491499 deg
+2023-03-27 21:53:45,292:tetra3.Tetra3-DEBUG: MATCH: 36 stars
+2023-03-27 21:53:45,292:tetra3.Tetra3-DEBUG: SOLVE: 15.26 ms
+2023-03-27 21:53:45,292:tetra3.Tetra3-DEBUG: RESID: 73.20 asec
+2023-03-27 21:53:45,418:tetra3.Tetra3-DEBUG: NEW P: 5.873e-70
+2023-03-27 21:53:45,420:tetra3.Tetra3-DEBUG: RA:    343.99990538 deg
+2023-03-27 21:53:45,420:tetra3.Tetra3-DEBUG: DEC:   73.99862311 deg
+2023-03-27 21:53:45,420:tetra3.Tetra3-DEBUG: ROLL:  279.99990086 deg
+2023-03-27 21:53:45,420:tetra3.Tetra3-DEBUG: FOV:   58.99927842 deg
+2023-03-27 21:53:45,420:tetra3.Tetra3-DEBUG: MATCH: 38 stars
+2023-03-27 21:53:45,420:tetra3.Tetra3-DEBUG: SOLVE: 25.13 ms
+2023-03-27 21:53:45,420:tetra3.Tetra3-DEBUG: RESID: 33.97 asec
+2023-03-27 21:55:25,992:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=large_db
+2023-03-27 21:55:25,992:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:55:25,992:tetra3.Tetra3-DEBUG: Got load database with: large_db
+2023-03-27 21:55:25,992:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:55:25,992:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../large_db.npz
+2023-03-27 21:55:25,998:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 60.0
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 30
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 40
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:55:27,878:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:55:28,410:tetra3.Tetra3-DEBUG: NEW P: 3.503e-58
+2023-03-27 21:55:28,412:tetra3.Tetra3-DEBUG: RA:    58.00176501 deg
+2023-03-27 21:55:28,412:tetra3.Tetra3-DEBUG: DEC:   49.99667122 deg
+2023-03-27 21:55:28,412:tetra3.Tetra3-DEBUG: ROLL:  160.99880749 deg
+2023-03-27 21:55:28,412:tetra3.Tetra3-DEBUG: FOV:   59.99695520 deg
+2023-03-27 21:55:28,412:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:55:28,413:tetra3.Tetra3-DEBUG: SOLVE: 419.33 ms
+2023-03-27 21:55:28,413:tetra3.Tetra3-DEBUG: RESID: 32.14 asec
+2023-03-27 21:55:28,555:tetra3.Tetra3-DEBUG: NEW P: 1.049e-71
+2023-03-27 21:55:28,557:tetra3.Tetra3-DEBUG: RA:    154.99937134 deg
+2023-03-27 21:55:28,557:tetra3.Tetra3-DEBUG: DEC:   0.99911974 deg
+2023-03-27 21:55:28,557:tetra3.Tetra3-DEBUG: ROLL:  46.99837176 deg
+2023-03-27 21:55:28,557:tetra3.Tetra3-DEBUG: FOV:   48.00133642 deg
+2023-03-27 21:55:28,557:tetra3.Tetra3-DEBUG: MATCH: 37 stars
+2023-03-27 21:55:28,557:tetra3.Tetra3-DEBUG: SOLVE: 62.89 ms
+2023-03-27 21:55:28,558:tetra3.Tetra3-DEBUG: RESID: 17.46 asec
+2023-03-27 21:55:28,654:tetra3.Tetra3-DEBUG: NEW P: 3.245e-65
+2023-03-27 21:55:28,656:tetra3.Tetra3-DEBUG: RA:    184.99834485 deg
+2023-03-27 21:55:28,656:tetra3.Tetra3-DEBUG: DEC:   63.99723398 deg
+2023-03-27 21:55:28,656:tetra3.Tetra3-DEBUG: ROLL:  340.99985865 deg
+2023-03-27 21:55:28,656:tetra3.Tetra3-DEBUG: FOV:   49.97563693 deg
+2023-03-27 21:55:28,656:tetra3.Tetra3-DEBUG: MATCH: 35 stars
+2023-03-27 21:55:28,656:tetra3.Tetra3-DEBUG: SOLVE: 8.51 ms
+2023-03-27 21:55:28,656:tetra3.Tetra3-DEBUG: RESID: 63.32 asec
+2023-03-27 21:55:30,448:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1722 ms.
+2023-03-27 21:55:32,226:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1699 ms.
+2023-03-27 21:55:32,834:tetra3.Tetra3-DEBUG: NEW P: 1.723e-58
+2023-03-27 21:55:32,836:tetra3.Tetra3-DEBUG: RA:    43.00198827 deg
+2023-03-27 21:55:32,836:tetra3.Tetra3-DEBUG: DEC:   38.99792674 deg
+2023-03-27 21:55:32,836:tetra3.Tetra3-DEBUG: ROLL:  304.00090898 deg
+2023-03-27 21:55:32,836:tetra3.Tetra3-DEBUG: FOV:   57.00236967 deg
+2023-03-27 21:55:32,836:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:55:32,836:tetra3.Tetra3-DEBUG: SOLVE: 510.76 ms
+2023-03-27 21:55:32,836:tetra3.Tetra3-DEBUG: RESID: 13.36 asec
+2023-03-27 21:55:51,178:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=large_db
+2023-03-27 21:55:51,178:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:55:51,178:tetra3.Tetra3-DEBUG: Got load database with: large_db
+2023-03-27 21:55:51,178:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:55:51,178:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../large_db.npz
+2023-03-27 21:55:51,184:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 60.0
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 30
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 40
+2023-03-27 21:55:53,015:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:55:53,016:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:55:54,061:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 965 ms.
+2023-03-27 21:55:54,180:tetra3.Tetra3-DEBUG: NEW P: 2.881e-19
+2023-03-27 21:55:54,181:tetra3.Tetra3-DEBUG: RA:    27.00003688 deg
+2023-03-27 21:55:54,181:tetra3.Tetra3-DEBUG: DEC:   0.99719993 deg
+2023-03-27 21:55:54,181:tetra3.Tetra3-DEBUG: ROLL:  359.00889361 deg
+2023-03-27 21:55:54,181:tetra3.Tetra3-DEBUG: FOV:   23.00200621 deg
+2023-03-27 21:55:54,181:tetra3.Tetra3-DEBUG: MATCH: 12 stars
+2023-03-27 21:55:54,181:tetra3.Tetra3-DEBUG: SOLVE: 52.49 ms
+2023-03-27 21:55:54,181:tetra3.Tetra3-DEBUG: RESID: 23.33 asec
+2023-03-27 21:55:54,288:tetra3.Tetra3-DEBUG: NEW P: 4.605e-27
+2023-03-27 21:55:54,289:tetra3.Tetra3-DEBUG: RA:    204.99629154 deg
+2023-03-27 21:55:54,289:tetra3.Tetra3-DEBUG: DEC:   19.99866027 deg
+2023-03-27 21:55:54,289:tetra3.Tetra3-DEBUG: ROLL:  66.99399830 deg
+2023-03-27 21:55:54,289:tetra3.Tetra3-DEBUG: FOV:   32.99625350 deg
+2023-03-27 21:55:54,289:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 21:55:54,289:tetra3.Tetra3-DEBUG: SOLVE: 28.86 ms
+2023-03-27 21:55:54,289:tetra3.Tetra3-DEBUG: RESID: 47.71 asec
+2023-03-27 21:55:57,097:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 2740 ms.
+2023-03-27 21:55:57,197:tetra3.Tetra3-DEBUG: NEW P: 8.219e-19
+2023-03-27 21:55:57,198:tetra3.Tetra3-DEBUG: RA:    312.00117640 deg
+2023-03-27 21:55:57,198:tetra3.Tetra3-DEBUG: DEC:   68.00131216 deg
+2023-03-27 21:55:57,198:tetra3.Tetra3-DEBUG: ROLL:  251.99757703 deg
+2023-03-27 21:55:57,198:tetra3.Tetra3-DEBUG: FOV:   26.99823144 deg
+2023-03-27 21:55:57,198:tetra3.Tetra3-DEBUG: MATCH: 12 stars
+2023-03-27 21:55:57,198:tetra3.Tetra3-DEBUG: SOLVE: 21.04 ms
+2023-03-27 21:55:57,198:tetra3.Tetra3-DEBUG: RESID: 19.13 asec
+2023-03-27 21:55:57,336:tetra3.Tetra3-DEBUG: NEW P: 1.835e-40
+2023-03-27 21:55:57,337:tetra3.Tetra3-DEBUG: RA:    63.00079669 deg
+2023-03-27 21:55:57,337:tetra3.Tetra3-DEBUG: DEC:   42.99868247 deg
+2023-03-27 21:55:57,337:tetra3.Tetra3-DEBUG: ROLL:  74.99980445 deg
+2023-03-27 21:55:57,337:tetra3.Tetra3-DEBUG: FOV:   34.99977888 deg
+2023-03-27 21:55:57,337:tetra3.Tetra3-DEBUG: MATCH: 23 stars
+2023-03-27 21:55:57,337:tetra3.Tetra3-DEBUG: SOLVE: 54.64 ms
+2023-03-27 21:55:57,337:tetra3.Tetra3-DEBUG: RESID: 8.15 asec
+2023-03-27 21:56:34,596:tetra3.Tetra3-DEBUG: Tetra3 Constructor called with load_database=large_db
+2023-03-27 21:56:34,597:tetra3.Tetra3-DEBUG: Trying to load database
+2023-03-27 21:56:34,597:tetra3.Tetra3-DEBUG: Got load database with: large_db
+2023-03-27 21:56:34,597:tetra3.Tetra3-DEBUG: String given, append to tetra3 directory
+2023-03-27 21:56:34,597:tetra3.Tetra3-INFO: Loading database from: /homes/iws/ezhang8/lost-evals/tetra/examples/../large_db.npz
+2023-03-27 21:56:34,603:tetra3.Tetra3-DEBUG: Loaded database, unpack files
+2023-03-27 21:56:36,507:tetra3.Tetra3-DEBUG: Unpacking properties
+2023-03-27 21:56:36,507:tetra3.Tetra3-DEBUG: Unpacked pattern_mode to: edge_ratio
+2023-03-27 21:56:36,507:tetra3.Tetra3-DEBUG: Unpacked pattern_size to: 4
+2023-03-27 21:56:36,507:tetra3.Tetra3-DEBUG: Unpacked pattern_bins to: 25
+2023-03-27 21:56:36,507:tetra3.Tetra3-DEBUG: Unpacked pattern_max_error to: 0.005
+2023-03-27 21:56:36,507:tetra3.Tetra3-DEBUG: Unpacked max_fov to: 60.0
+2023-03-27 21:56:36,508:tetra3.Tetra3-DEBUG: Unpacked pattern_stars_per_fov to: 30
+2023-03-27 21:56:36,508:tetra3.Tetra3-DEBUG: Unpacked verification_stars_per_fov to: 40
+2023-03-27 21:56:36,508:tetra3.Tetra3-DEBUG: Unpacked star_max_magnitude to: 7.0
+2023-03-27 21:56:36,508:tetra3.Tetra3-DEBUG: Unpacked star_min_separation to: 0.05
+2023-03-27 21:56:36,732:tetra3.Tetra3-DEBUG: NEW P: 3.533e-29
+2023-03-27 21:56:36,733:tetra3.Tetra3-DEBUG: RA:    109.99757148 deg
+2023-03-27 21:56:36,733:tetra3.Tetra3-DEBUG: DEC:   14.99780405 deg
+2023-03-27 21:56:36,733:tetra3.Tetra3-DEBUG: ROLL:  79.99511039 deg
+2023-03-27 21:56:36,733:tetra3.Tetra3-DEBUG: FOV:   29.00247215 deg
+2023-03-27 21:56:36,733:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:56:36,733:tetra3.Tetra3-DEBUG: SOLVE: 126.59 ms
+2023-03-27 21:56:36,733:tetra3.Tetra3-DEBUG: RESID: 22.75 asec
+2023-03-27 21:56:36,833:tetra3.Tetra3-DEBUG: NEW P: 2.525e-57
+2023-03-27 21:56:36,835:tetra3.Tetra3-DEBUG: RA:    255.00349161 deg
+2023-03-27 21:56:36,835:tetra3.Tetra3-DEBUG: DEC:   61.99671121 deg
+2023-03-27 21:56:36,835:tetra3.Tetra3-DEBUG: ROLL:  177.00759339 deg
+2023-03-27 21:56:36,835:tetra3.Tetra3-DEBUG: FOV:   53.96015810 deg
+2023-03-27 21:56:36,835:tetra3.Tetra3-DEBUG: MATCH: 33 stars
+2023-03-27 21:56:36,835:tetra3.Tetra3-DEBUG: SOLVE: 10.19 ms
+2023-03-27 21:56:36,835:tetra3.Tetra3-DEBUG: RESID: 97.94 asec
+2023-03-27 21:56:38,288:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1383 ms.
+2023-03-27 21:56:39,708:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1351 ms.
+2023-03-27 21:56:39,799:tetra3.Tetra3-DEBUG: NEW P: 1.72e-38
+2023-03-27 21:56:39,801:tetra3.Tetra3-DEBUG: RA:    62.00094584 deg
+2023-03-27 21:56:39,801:tetra3.Tetra3-DEBUG: DEC:   58.99955702 deg
+2023-03-27 21:56:39,801:tetra3.Tetra3-DEBUG: ROLL:  68.99830487 deg
+2023-03-27 21:56:39,801:tetra3.Tetra3-DEBUG: FOV:   36.00464590 deg
+2023-03-27 21:56:39,801:tetra3.Tetra3-DEBUG: MATCH: 22 stars
+2023-03-27 21:56:39,801:tetra3.Tetra3-DEBUG: SOLVE: 7.20 ms
+2023-03-27 21:56:39,801:tetra3.Tetra3-DEBUG: RESID: 9.74 asec
+2023-03-27 21:56:39,980:tetra3.Tetra3-DEBUG: NEW P: 1.395e-48
+2023-03-27 21:56:39,981:tetra3.Tetra3-DEBUG: RA:    19.00054752 deg
+2023-03-27 21:56:39,981:tetra3.Tetra3-DEBUG: DEC:   25.99884255 deg
+2023-03-27 21:56:39,981:tetra3.Tetra3-DEBUG: ROLL:  337.99929313 deg
+2023-03-27 21:56:39,982:tetra3.Tetra3-DEBUG: FOV:   45.00031482 deg
+2023-03-27 21:56:39,982:tetra3.Tetra3-DEBUG: MATCH: 27 stars
+2023-03-27 21:56:39,982:tetra3.Tetra3-DEBUG: SOLVE: 89.61 ms
+2023-03-27 21:56:39,982:tetra3.Tetra3-DEBUG: RESID: 11.46 asec
+2023-03-27 21:56:40,157:tetra3.Tetra3-DEBUG: NEW P: 6.442e-57
+2023-03-27 21:56:40,159:tetra3.Tetra3-DEBUG: RA:    321.00305408 deg
+2023-03-27 21:56:40,159:tetra3.Tetra3-DEBUG: DEC:   75.00057261 deg
+2023-03-27 21:56:40,159:tetra3.Tetra3-DEBUG: ROLL:  41.99877040 deg
+2023-03-27 21:56:40,159:tetra3.Tetra3-DEBUG: FOV:   47.00304980 deg
+2023-03-27 21:56:40,159:tetra3.Tetra3-DEBUG: MATCH: 31 stars
+2023-03-27 21:56:40,159:tetra3.Tetra3-DEBUG: SOLVE: 81.82 ms
+2023-03-27 21:56:40,159:tetra3.Tetra3-DEBUG: RESID: 18.15 asec
+2023-03-27 21:56:40,257:tetra3.Tetra3-DEBUG: NEW P: 4.658e-54
+2023-03-27 21:56:40,258:tetra3.Tetra3-DEBUG: RA:    255.00302194 deg
+2023-03-27 21:56:40,258:tetra3.Tetra3-DEBUG: DEC:   48.99976978 deg
+2023-03-27 21:56:40,258:tetra3.Tetra3-DEBUG: ROLL:  197.99863880 deg
+2023-03-27 21:56:40,259:tetra3.Tetra3-DEBUG: FOV:   44.98807377 deg
+2023-03-27 21:56:40,259:tetra3.Tetra3-DEBUG: MATCH: 30 stars
+2023-03-27 21:56:40,259:tetra3.Tetra3-DEBUG: SOLVE: 10.96 ms
+2023-03-27 21:56:40,259:tetra3.Tetra3-DEBUG: RESID: 40.38 asec
+2023-03-27 21:56:40,352:tetra3.Tetra3-DEBUG: NEW P: 4.619e-16
+2023-03-27 21:56:40,353:tetra3.Tetra3-DEBUG: RA:    132.99825491 deg
+2023-03-27 21:56:40,353:tetra3.Tetra3-DEBUG: DEC:   40.99939434 deg
+2023-03-27 21:56:40,353:tetra3.Tetra3-DEBUG: ROLL:  269.00004194 deg
+2023-03-27 21:56:40,353:tetra3.Tetra3-DEBUG: FOV:   27.98448598 deg
+2023-03-27 21:56:40,353:tetra3.Tetra3-DEBUG: MATCH: 11 stars
+2023-03-27 21:56:40,353:tetra3.Tetra3-DEBUG: SOLVE: 18.65 ms
+2023-03-27 21:56:40,353:tetra3.Tetra3-DEBUG: RESID: 23.17 asec
+2023-03-27 21:56:40,459:tetra3.Tetra3-DEBUG: NEW P: 1.92e-28
+2023-03-27 21:56:40,460:tetra3.Tetra3-DEBUG: RA:    247.99822622 deg
+2023-03-27 21:56:40,460:tetra3.Tetra3-DEBUG: DEC:   24.99927379 deg
+2023-03-27 21:56:40,460:tetra3.Tetra3-DEBUG: ROLL:  296.00781197 deg
+2023-03-27 21:56:40,460:tetra3.Tetra3-DEBUG: FOV:   30.99176642 deg
+2023-03-27 21:56:40,460:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:56:40,460:tetra3.Tetra3-DEBUG: SOLVE: 27.60 ms
+2023-03-27 21:56:40,460:tetra3.Tetra3-DEBUG: RESID: 28.37 asec
+2023-03-27 21:56:42,054:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1526 ms.
+2023-03-27 21:56:44,533:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 2406 ms.
+2023-03-27 21:56:44,625:tetra3.Tetra3-DEBUG: NEW P: 3.988e-41
+2023-03-27 21:56:44,626:tetra3.Tetra3-DEBUG: RA:    124.99735489 deg
+2023-03-27 21:56:44,626:tetra3.Tetra3-DEBUG: DEC:   42.99811805 deg
+2023-03-27 21:56:44,626:tetra3.Tetra3-DEBUG: ROLL:  170.99868012 deg
+2023-03-27 21:56:44,626:tetra3.Tetra3-DEBUG: FOV:   38.99791285 deg
+2023-03-27 21:56:44,627:tetra3.Tetra3-DEBUG: MATCH: 24 stars
+2023-03-27 21:56:44,627:tetra3.Tetra3-DEBUG: SOLVE: 8.63 ms
+2023-03-27 21:56:44,627:tetra3.Tetra3-DEBUG: RESID: 16.31 asec
+2023-03-27 21:56:44,741:tetra3.Tetra3-DEBUG: NEW P: 6.436e-26
+2023-03-27 21:56:44,742:tetra3.Tetra3-DEBUG: RA:    334.00512579 deg
+2023-03-27 21:56:44,742:tetra3.Tetra3-DEBUG: DEC:   30.99981750 deg
+2023-03-27 21:56:44,742:tetra3.Tetra3-DEBUG: ROLL:  243.99274356 deg
+2023-03-27 21:56:44,742:tetra3.Tetra3-DEBUG: FOV:   34.00202147 deg
+2023-03-27 21:56:44,742:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 21:56:44,742:tetra3.Tetra3-DEBUG: SOLVE: 33.37 ms
+2023-03-27 21:56:44,742:tetra3.Tetra3-DEBUG: RESID: 34.16 asec
+2023-03-27 21:56:44,868:tetra3.Tetra3-DEBUG: NEW P: 1.228e-62
+2023-03-27 21:56:44,870:tetra3.Tetra3-DEBUG: RA:    351.00400086 deg
+2023-03-27 21:56:44,870:tetra3.Tetra3-DEBUG: DEC:   18.99828582 deg
+2023-03-27 21:56:44,870:tetra3.Tetra3-DEBUG: ROLL:  336.99793965 deg
+2023-03-27 21:56:44,870:tetra3.Tetra3-DEBUG: FOV:   52.00185945 deg
+2023-03-27 21:56:44,871:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:56:44,871:tetra3.Tetra3-DEBUG: SOLVE: 35.64 ms
+2023-03-27 21:56:44,871:tetra3.Tetra3-DEBUG: RESID: 25.07 asec
+2023-03-27 21:56:46,117:tetra3.Tetra3-DEBUG: NEW P: 3.38e-56
+2023-03-27 21:56:46,119:tetra3.Tetra3-DEBUG: RA:    32.00214198 deg
+2023-03-27 21:56:46,119:tetra3.Tetra3-DEBUG: DEC:   32.99820943 deg
+2023-03-27 21:56:46,119:tetra3.Tetra3-DEBUG: ROLL:  267.00105972 deg
+2023-03-27 21:56:46,119:tetra3.Tetra3-DEBUG: FOV:   56.00055812 deg
+2023-03-27 21:56:46,119:tetra3.Tetra3-DEBUG: MATCH: 33 stars
+2023-03-27 21:56:46,119:tetra3.Tetra3-DEBUG: SOLVE: 1151.85 ms
+2023-03-27 21:56:46,119:tetra3.Tetra3-DEBUG: RESID: 12.58 asec
+2023-03-27 21:56:46,240:tetra3.Tetra3-DEBUG: NEW P: 1.405e-26
+2023-03-27 21:56:46,242:tetra3.Tetra3-DEBUG: RA:    36.00074401 deg
+2023-03-27 21:56:46,242:tetra3.Tetra3-DEBUG: DEC:   4.99902243 deg
+2023-03-27 21:56:46,242:tetra3.Tetra3-DEBUG: ROLL:  155.99710891 deg
+2023-03-27 21:56:46,242:tetra3.Tetra3-DEBUG: FOV:   29.99927894 deg
+2023-03-27 21:56:46,242:tetra3.Tetra3-DEBUG: MATCH: 16 stars
+2023-03-27 21:56:46,242:tetra3.Tetra3-DEBUG: SOLVE: 45.09 ms
+2023-03-27 21:56:46,242:tetra3.Tetra3-DEBUG: RESID: 8.85 asec
+2023-03-27 21:56:46,380:tetra3.Tetra3-DEBUG: NEW P: 2.734e-46
+2023-03-27 21:56:46,381:tetra3.Tetra3-DEBUG: RA:    68.99927896 deg
+2023-03-27 21:56:46,381:tetra3.Tetra3-DEBUG: DEC:   44.99975857 deg
+2023-03-27 21:56:46,381:tetra3.Tetra3-DEBUG: ROLL:  306.99784556 deg
+2023-03-27 21:56:46,381:tetra3.Tetra3-DEBUG: FOV:   33.00089020 deg
+2023-03-27 21:56:46,382:tetra3.Tetra3-DEBUG: MATCH: 25 stars
+2023-03-27 21:56:46,382:tetra3.Tetra3-DEBUG: SOLVE: 55.88 ms
+2023-03-27 21:56:46,382:tetra3.Tetra3-DEBUG: RESID: 23.03 asec
+2023-03-27 21:56:46,484:tetra3.Tetra3-DEBUG: NEW P: 5.167e-58
+2023-03-27 21:56:46,486:tetra3.Tetra3-DEBUG: RA:    115.00622323 deg
+2023-03-27 21:56:46,486:tetra3.Tetra3-DEBUG: DEC:   75.99787386 deg
+2023-03-27 21:56:46,486:tetra3.Tetra3-DEBUG: ROLL:  198.98780769 deg
+2023-03-27 21:56:46,486:tetra3.Tetra3-DEBUG: FOV:   52.00127585 deg
+2023-03-27 21:56:46,487:tetra3.Tetra3-DEBUG: MATCH: 33 stars
+2023-03-27 21:56:46,487:tetra3.Tetra3-DEBUG: SOLVE: 11.01 ms
+2023-03-27 21:56:46,487:tetra3.Tetra3-DEBUG: RESID: 54.19 asec
+2023-03-27 21:56:48,169:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1615 ms.
+2023-03-27 21:56:48,266:tetra3.Tetra3-DEBUG: NEW P: 5.315e-35
+2023-03-27 21:56:48,267:tetra3.Tetra3-DEBUG: RA:    21.00200053 deg
+2023-03-27 21:56:48,267:tetra3.Tetra3-DEBUG: DEC:   58.99846720 deg
+2023-03-27 21:56:48,267:tetra3.Tetra3-DEBUG: ROLL:  285.00312769 deg
+2023-03-27 21:56:48,267:tetra3.Tetra3-DEBUG: FOV:   37.99737947 deg
+2023-03-27 21:56:48,267:tetra3.Tetra3-DEBUG: MATCH: 21 stars
+2023-03-27 21:56:48,267:tetra3.Tetra3-DEBUG: SOLVE: 9.92 ms
+2023-03-27 21:56:48,267:tetra3.Tetra3-DEBUG: RESID: 15.14 asec
+2023-03-27 21:56:48,372:tetra3.Tetra3-DEBUG: NEW P: 1.067e-72
+2023-03-27 21:56:48,374:tetra3.Tetra3-DEBUG: RA:    288.00316445 deg
+2023-03-27 21:56:48,374:tetra3.Tetra3-DEBUG: DEC:   51.99883961 deg
+2023-03-27 21:56:48,374:tetra3.Tetra3-DEBUG: ROLL:  238.00312245 deg
+2023-03-27 21:56:48,374:tetra3.Tetra3-DEBUG: FOV:   52.99167547 deg
+2023-03-27 21:56:48,374:tetra3.Tetra3-DEBUG: MATCH: 38 stars
+2023-03-27 21:56:48,374:tetra3.Tetra3-DEBUG: SOLVE: 7.71 ms
+2023-03-27 21:56:48,374:tetra3.Tetra3-DEBUG: RESID: 36.83 asec
+2023-03-27 21:56:48,505:tetra3.Tetra3-DEBUG: NEW P: 5.725e-25
+2023-03-27 21:56:48,506:tetra3.Tetra3-DEBUG: RA:    79.99968908 deg
+2023-03-27 21:56:48,506:tetra3.Tetra3-DEBUG: DEC:   9.99382604 deg
+2023-03-27 21:56:48,506:tetra3.Tetra3-DEBUG: ROLL:  30.01172602 deg
+2023-03-27 21:56:48,506:tetra3.Tetra3-DEBUG: FOV:   26.97896202 deg
+2023-03-27 21:56:48,506:tetra3.Tetra3-DEBUG: MATCH: 15 stars
+2023-03-27 21:56:48,506:tetra3.Tetra3-DEBUG: SOLVE: 50.65 ms
+2023-03-27 21:56:48,506:tetra3.Tetra3-DEBUG: RESID: 39.17 asec
+2023-03-27 21:56:48,610:tetra3.Tetra3-DEBUG: NEW P: 9.93e-25
+2023-03-27 21:56:48,611:tetra3.Tetra3-DEBUG: RA:    153.99802898 deg
+2023-03-27 21:56:48,611:tetra3.Tetra3-DEBUG: DEC:   42.99892146 deg
+2023-03-27 21:56:48,611:tetra3.Tetra3-DEBUG: ROLL:  351.00293060 deg
+2023-03-27 21:56:48,611:tetra3.Tetra3-DEBUG: FOV:   27.00076561 deg
+2023-03-27 21:56:48,611:tetra3.Tetra3-DEBUG: MATCH: 15 stars
+2023-03-27 21:56:48,611:tetra3.Tetra3-DEBUG: SOLVE: 29.19 ms
+2023-03-27 21:56:48,611:tetra3.Tetra3-DEBUG: RESID: 16.60 asec
+2023-03-27 21:56:48,715:tetra3.Tetra3-DEBUG: NEW P: 1.2e-46
+2023-03-27 21:56:48,717:tetra3.Tetra3-DEBUG: RA:    190.00016958 deg
+2023-03-27 21:56:48,717:tetra3.Tetra3-DEBUG: DEC:   73.00015100 deg
+2023-03-27 21:56:48,717:tetra3.Tetra3-DEBUG: ROLL:  288.99844079 deg
+2023-03-27 21:56:48,717:tetra3.Tetra3-DEBUG: FOV:   42.99832540 deg
+2023-03-27 21:56:48,717:tetra3.Tetra3-DEBUG: MATCH: 27 stars
+2023-03-27 21:56:48,717:tetra3.Tetra3-DEBUG: SOLVE: 19.88 ms
+2023-03-27 21:56:48,717:tetra3.Tetra3-DEBUG: RESID: 10.23 asec
+2023-03-27 21:56:52,138:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 3353 ms.
+2023-03-27 21:56:53,379:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1170 ms.
+2023-03-27 21:56:53,488:tetra3.Tetra3-DEBUG: NEW P: 3.156e-15
+2023-03-27 21:56:53,488:tetra3.Tetra3-DEBUG: RA:    44.00232858 deg
+2023-03-27 21:56:53,488:tetra3.Tetra3-DEBUG: DEC:   85.00017170 deg
+2023-03-27 21:56:53,489:tetra3.Tetra3-DEBUG: ROLL:  352.99493566 deg
+2023-03-27 21:56:53,489:tetra3.Tetra3-DEBUG: FOV:   27.99771682 deg
+2023-03-27 21:56:53,489:tetra3.Tetra3-DEBUG: MATCH: 10 stars
+2023-03-27 21:56:53,489:tetra3.Tetra3-DEBUG: SOLVE: 29.36 ms
+2023-03-27 21:56:53,489:tetra3.Tetra3-DEBUG: RESID: 7.10 asec
+2023-03-27 21:56:53,685:tetra3.Tetra3-DEBUG: NEW P: 5.401e-50
+2023-03-27 21:56:53,686:tetra3.Tetra3-DEBUG: RA:    170.99855400 deg
+2023-03-27 21:56:53,686:tetra3.Tetra3-DEBUG: DEC:   6.99945307 deg
+2023-03-27 21:56:53,686:tetra3.Tetra3-DEBUG: ROLL:  312.99959644 deg
+2023-03-27 21:56:53,686:tetra3.Tetra3-DEBUG: FOV:   41.98918581 deg
+2023-03-27 21:56:53,686:tetra3.Tetra3-DEBUG: MATCH: 28 stars
+2023-03-27 21:56:53,686:tetra3.Tetra3-DEBUG: SOLVE: 112.26 ms
+2023-03-27 21:56:53,687:tetra3.Tetra3-DEBUG: RESID: 21.91 asec
+2023-03-27 21:56:53,798:tetra3.Tetra3-DEBUG: NEW P: 6.931e-64
+2023-03-27 21:56:53,799:tetra3.Tetra3-DEBUG: RA:    38.00845991 deg
+2023-03-27 21:56:53,800:tetra3.Tetra3-DEBUG: DEC:   76.99928331 deg
+2023-03-27 21:56:53,800:tetra3.Tetra3-DEBUG: ROLL:  273.99327579 deg
+2023-03-27 21:56:53,800:tetra3.Tetra3-DEBUG: FOV:   59.00546230 deg
+2023-03-27 21:56:53,800:tetra3.Tetra3-DEBUG: MATCH: 36 stars
+2023-03-27 21:56:53,800:tetra3.Tetra3-DEBUG: SOLVE: 11.52 ms
+2023-03-27 21:56:53,800:tetra3.Tetra3-DEBUG: RESID: 20.00 asec
+2023-03-27 21:56:53,901:tetra3.Tetra3-DEBUG: NEW P: 3.281e-41
+2023-03-27 21:56:53,902:tetra3.Tetra3-DEBUG: RA:    160.00577151 deg
+2023-03-27 21:56:53,902:tetra3.Tetra3-DEBUG: DEC:   63.98588471 deg
+2023-03-27 21:56:53,902:tetra3.Tetra3-DEBUG: ROLL:  354.94059279 deg
+2023-03-27 21:56:53,903:tetra3.Tetra3-DEBUG: FOV:   35.01232924 deg
+2023-03-27 21:56:53,903:tetra3.Tetra3-DEBUG: MATCH: 23 stars
+2023-03-27 21:56:53,903:tetra3.Tetra3-DEBUG: SOLVE: 22.81 ms
+2023-03-27 21:56:53,903:tetra3.Tetra3-DEBUG: RESID: 186.54 asec
+2023-03-27 21:56:54,088:tetra3.Tetra3-DEBUG: NEW P: 2.033e-54
+2023-03-27 21:56:54,089:tetra3.Tetra3-DEBUG: RA:    58.00239271 deg
+2023-03-27 21:56:54,089:tetra3.Tetra3-DEBUG: DEC:   74.99917368 deg
+2023-03-27 21:56:54,089:tetra3.Tetra3-DEBUG: ROLL:  201.99834555 deg
+2023-03-27 21:56:54,089:tetra3.Tetra3-DEBUG: FOV:   54.00136476 deg
+2023-03-27 21:56:54,089:tetra3.Tetra3-DEBUG: MATCH: 32 stars
+2023-03-27 21:56:54,089:tetra3.Tetra3-DEBUG: SOLVE: 89.59 ms
+2023-03-27 21:56:54,090:tetra3.Tetra3-DEBUG: RESID: 12.93 asec
+2023-03-27 21:56:54,370:tetra3.Tetra3-DEBUG: NEW P: 6.453e-14
+2023-03-27 21:56:54,370:tetra3.Tetra3-DEBUG: RA:    36.00079296 deg
+2023-03-27 21:56:54,370:tetra3.Tetra3-DEBUG: DEC:   57.99922072 deg
+2023-03-27 21:56:54,370:tetra3.Tetra3-DEBUG: ROLL:  18.99944145 deg
+2023-03-27 21:56:54,370:tetra3.Tetra3-DEBUG: FOV:   19.99950332 deg
+2023-03-27 21:56:54,371:tetra3.Tetra3-DEBUG: MATCH: 9 stars
+2023-03-27 21:56:54,371:tetra3.Tetra3-DEBUG: SOLVE: 206.21 ms
+2023-03-27 21:56:54,371:tetra3.Tetra3-DEBUG: RESID: 2.98 asec
+2023-03-27 21:56:54,537:tetra3.Tetra3-DEBUG: NEW P: 2.964e-47
+2023-03-27 21:56:54,539:tetra3.Tetra3-DEBUG: RA:    232.00121405 deg
+2023-03-27 21:56:54,539:tetra3.Tetra3-DEBUG: DEC:   52.00177231 deg
+2023-03-27 21:56:54,539:tetra3.Tetra3-DEBUG: ROLL:  204.99579649 deg
+2023-03-27 21:56:54,539:tetra3.Tetra3-DEBUG: FOV:   42.03278159 deg
+2023-03-27 21:56:54,539:tetra3.Tetra3-DEBUG: MATCH: 27 stars
+2023-03-27 21:56:54,539:tetra3.Tetra3-DEBUG: SOLVE: 84.09 ms
+2023-03-27 21:56:54,539:tetra3.Tetra3-DEBUG: RESID: 57.86 asec
+2023-03-27 21:56:55,689:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1080 ms.
+2023-03-27 21:56:55,800:tetra3.Tetra3-DEBUG: NEW P: 5.208e-71
+2023-03-27 21:56:55,802:tetra3.Tetra3-DEBUG: RA:    124.99701756 deg
+2023-03-27 21:56:55,802:tetra3.Tetra3-DEBUG: DEC:   10.99856318 deg
+2023-03-27 21:56:55,802:tetra3.Tetra3-DEBUG: ROLL:  136.99831104 deg
+2023-03-27 21:56:55,803:tetra3.Tetra3-DEBUG: FOV:   53.01548693 deg
+2023-03-27 21:56:55,803:tetra3.Tetra3-DEBUG: MATCH: 37 stars
+2023-03-27 21:56:55,803:tetra3.Tetra3-DEBUG: SOLVE: 12.33 ms
+2023-03-27 21:56:55,803:tetra3.Tetra3-DEBUG: RESID: 40.40 asec
+2023-03-27 21:56:58,190:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 2318 ms.
+2023-03-27 21:56:58,337:tetra3.Tetra3-DEBUG: NEW P: 3.186e-62
+2023-03-27 21:56:58,339:tetra3.Tetra3-DEBUG: RA:    233.99838218 deg
+2023-03-27 21:56:58,339:tetra3.Tetra3-DEBUG: DEC:   56.99981494 deg
+2023-03-27 21:56:58,339:tetra3.Tetra3-DEBUG: ROLL:  199.99969439 deg
+2023-03-27 21:56:58,339:tetra3.Tetra3-DEBUG: FOV:   50.01903905 deg
+2023-03-27 21:56:58,339:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:56:58,339:tetra3.Tetra3-DEBUG: SOLVE: 59.01 ms
+2023-03-27 21:56:58,339:tetra3.Tetra3-DEBUG: RESID: 36.61 asec
+2023-03-27 21:56:58,431:tetra3.Tetra3-DEBUG: NEW P: 1.274e-20
+2023-03-27 21:56:58,431:tetra3.Tetra3-DEBUG: RA:    106.99916894 deg
+2023-03-27 21:56:58,432:tetra3.Tetra3-DEBUG: DEC:   72.99972704 deg
+2023-03-27 21:56:58,432:tetra3.Tetra3-DEBUG: ROLL:  115.99943685 deg
+2023-03-27 21:56:58,432:tetra3.Tetra3-DEBUG: FOV:   31.00248410 deg
+2023-03-27 21:56:58,432:tetra3.Tetra3-DEBUG: MATCH: 13 stars
+2023-03-27 21:56:58,432:tetra3.Tetra3-DEBUG: SOLVE: 14.80 ms
+2023-03-27 21:56:58,432:tetra3.Tetra3-DEBUG: RESID: 6.80 asec
+2023-03-27 21:56:58,534:tetra3.Tetra3-DEBUG: NEW P: 7.658e-21
+2023-03-27 21:56:58,535:tetra3.Tetra3-DEBUG: RA:    336.00290055 deg
+2023-03-27 21:56:58,535:tetra3.Tetra3-DEBUG: DEC:   17.99930504 deg
+2023-03-27 21:56:58,535:tetra3.Tetra3-DEBUG: ROLL:  174.99939866 deg
+2023-03-27 21:56:58,535:tetra3.Tetra3-DEBUG: FOV:   28.00187269 deg
+2023-03-27 21:56:58,535:tetra3.Tetra3-DEBUG: MATCH: 13 stars
+2023-03-27 21:56:58,535:tetra3.Tetra3-DEBUG: SOLVE: 28.72 ms
+2023-03-27 21:56:58,535:tetra3.Tetra3-DEBUG: RESID: 10.98 asec
+2023-03-27 21:56:58,672:tetra3.Tetra3-DEBUG: NEW P: 3.521e-52
+2023-03-27 21:56:58,674:tetra3.Tetra3-DEBUG: RA:    67.00064055 deg
+2023-03-27 21:56:58,674:tetra3.Tetra3-DEBUG: DEC:   47.99901216 deg
+2023-03-27 21:56:58,674:tetra3.Tetra3-DEBUG: ROLL:  216.99898870 deg
+2023-03-27 21:56:58,674:tetra3.Tetra3-DEBUG: FOV:   35.00086456 deg
+2023-03-27 21:56:58,674:tetra3.Tetra3-DEBUG: MATCH: 27 stars
+2023-03-27 21:56:58,674:tetra3.Tetra3-DEBUG: SOLVE: 55.68 ms
+2023-03-27 21:56:58,675:tetra3.Tetra3-DEBUG: RESID: 8.61 asec
+2023-03-27 21:56:58,785:tetra3.Tetra3-DEBUG: NEW P: 1.785e-56
+2023-03-27 21:56:58,786:tetra3.Tetra3-DEBUG: RA:    246.98663577 deg
+2023-03-27 21:56:58,787:tetra3.Tetra3-DEBUG: DEC:   70.99917152 deg
+2023-03-27 21:56:58,787:tetra3.Tetra3-DEBUG: ROLL:  193.01884527 deg
+2023-03-27 21:56:58,787:tetra3.Tetra3-DEBUG: FOV:   53.01403373 deg
+2023-03-27 21:56:58,787:tetra3.Tetra3-DEBUG: MATCH: 32 stars
+2023-03-27 21:56:58,787:tetra3.Tetra3-DEBUG: SOLVE: 18.58 ms
+2023-03-27 21:56:58,787:tetra3.Tetra3-DEBUG: RESID: 56.24 asec
+2023-03-27 21:56:58,948:tetra3.Tetra3-DEBUG: NEW P: 1.918e-22
+2023-03-27 21:56:58,949:tetra3.Tetra3-DEBUG: RA:    72.00149176 deg
+2023-03-27 21:56:58,949:tetra3.Tetra3-DEBUG: DEC:   63.99922319 deg
+2023-03-27 21:56:58,949:tetra3.Tetra3-DEBUG: ROLL:  33.99671150 deg
+2023-03-27 21:56:58,949:tetra3.Tetra3-DEBUG: FOV:   32.00083176 deg
+2023-03-27 21:56:58,949:tetra3.Tetra3-DEBUG: MATCH: 14 stars
+2023-03-27 21:56:58,949:tetra3.Tetra3-DEBUG: SOLVE: 83.48 ms
+2023-03-27 21:56:58,949:tetra3.Tetra3-DEBUG: RESID: 6.82 asec
+2023-03-27 21:56:59,030:tetra3.Tetra3-DEBUG: NEW P: 7.573e-22
+2023-03-27 21:56:59,031:tetra3.Tetra3-DEBUG: RA:    47.01311457 deg
+2023-03-27 21:56:59,031:tetra3.Tetra3-DEBUG: DEC:   34.98895898 deg
+2023-03-27 21:56:59,031:tetra3.Tetra3-DEBUG: ROLL:  257.03450124 deg
+2023-03-27 21:56:59,031:tetra3.Tetra3-DEBUG: FOV:   23.00048673 deg
+2023-03-27 21:56:59,031:tetra3.Tetra3-DEBUG: MATCH: 13 stars
+2023-03-27 21:56:59,031:tetra3.Tetra3-DEBUG: SOLVE: 7.56 ms
+2023-03-27 21:56:59,031:tetra3.Tetra3-DEBUG: RESID: 163.12 asec
+2023-03-27 21:56:59,288:tetra3.Tetra3-DEBUG: NEW P: 3.533e-29
+2023-03-27 21:56:59,289:tetra3.Tetra3-DEBUG: RA:    220.02628378 deg
+2023-03-27 21:56:59,289:tetra3.Tetra3-DEBUG: DEC:   72.99120857 deg
+2023-03-27 21:56:59,289:tetra3.Tetra3-DEBUG: ROLL:  64.04045092 deg
+2023-03-27 21:56:59,290:tetra3.Tetra3-DEBUG: FOV:   28.99814204 deg
+2023-03-27 21:56:59,290:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:56:59,290:tetra3.Tetra3-DEBUG: SOLVE: 183.05 ms
+2023-03-27 21:56:59,290:tetra3.Tetra3-DEBUG: RESID: 331.23 asec
+2023-03-27 21:56:59,447:tetra3.Tetra3-DEBUG: NEW P: 1.117e-55
+2023-03-27 21:56:59,449:tetra3.Tetra3-DEBUG: RA:    246.99912390 deg
+2023-03-27 21:56:59,449:tetra3.Tetra3-DEBUG: DEC:   26.99858405 deg
+2023-03-27 21:56:59,449:tetra3.Tetra3-DEBUG: ROLL:  255.99983376 deg
+2023-03-27 21:56:59,449:tetra3.Tetra3-DEBUG: FOV:   43.00228984 deg
+2023-03-27 21:56:59,449:tetra3.Tetra3-DEBUG: MATCH: 30 stars
+2023-03-27 21:56:59,449:tetra3.Tetra3-DEBUG: SOLVE: 70.16 ms
+2023-03-27 21:56:59,450:tetra3.Tetra3-DEBUG: RESID: 22.68 asec
+2023-03-27 21:56:59,547:tetra3.Tetra3-DEBUG: NEW P: 1.117e-55
+2023-03-27 21:56:59,549:tetra3.Tetra3-DEBUG: RA:    273.00359650 deg
+2023-03-27 21:56:59,549:tetra3.Tetra3-DEBUG: DEC:   50.99794780 deg
+2023-03-27 21:56:59,549:tetra3.Tetra3-DEBUG: ROLL:  128.00031373 deg
+2023-03-27 21:56:59,549:tetra3.Tetra3-DEBUG: FOV:   42.98919347 deg
+2023-03-27 21:56:59,549:tetra3.Tetra3-DEBUG: MATCH: 30 stars
+2023-03-27 21:56:59,549:tetra3.Tetra3-DEBUG: SOLVE: 6.65 ms
+2023-03-27 21:56:59,550:tetra3.Tetra3-DEBUG: RESID: 42.48 asec
+2023-03-27 21:56:59,683:tetra3.Tetra3-DEBUG: NEW P: 2.272e-36
+2023-03-27 21:56:59,684:tetra3.Tetra3-DEBUG: RA:    202.99450936 deg
+2023-03-27 21:56:59,684:tetra3.Tetra3-DEBUG: DEC:   26.99952646 deg
+2023-03-27 21:56:59,684:tetra3.Tetra3-DEBUG: ROLL:  68.99618927 deg
+2023-03-27 21:56:59,684:tetra3.Tetra3-DEBUG: FOV:   42.00596576 deg
+2023-03-27 21:56:59,684:tetra3.Tetra3-DEBUG: MATCH: 22 stars
+2023-03-27 21:56:59,684:tetra3.Tetra3-DEBUG: SOLVE: 52.65 ms
+2023-03-27 21:56:59,685:tetra3.Tetra3-DEBUG: RESID: 40.80 asec
+2023-03-27 21:56:59,776:tetra3.Tetra3-DEBUG: NEW P: 5.38e-28
+2023-03-27 21:56:59,777:tetra3.Tetra3-DEBUG: RA:    68.00241326 deg
+2023-03-27 21:56:59,777:tetra3.Tetra3-DEBUG: DEC:   25.99436872 deg
+2023-03-27 21:56:59,777:tetra3.Tetra3-DEBUG: ROLL:  125.00628142 deg
+2023-03-27 21:56:59,777:tetra3.Tetra3-DEBUG: FOV:   32.02489620 deg
+2023-03-27 21:56:59,777:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:56:59,777:tetra3.Tetra3-DEBUG: SOLVE: 8.98 ms
+2023-03-27 21:56:59,778:tetra3.Tetra3-DEBUG: RESID: 45.72 asec
+2023-03-27 21:57:01,540:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1688 ms.
+2023-03-27 21:57:03,318:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1709 ms.
+2023-03-27 21:57:04,905:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1520 ms.
+2023-03-27 21:57:06,975:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1999 ms.
+2023-03-27 21:57:07,076:tetra3.Tetra3-DEBUG: NEW P: 6.348e-29
+2023-03-27 21:57:07,078:tetra3.Tetra3-DEBUG: RA:    302.01470127 deg
+2023-03-27 21:57:07,078:tetra3.Tetra3-DEBUG: DEC:   81.00414150 deg
+2023-03-27 21:57:07,078:tetra3.Tetra3-DEBUG: ROLL:  235.99668931 deg
+2023-03-27 21:57:07,078:tetra3.Tetra3-DEBUG: FOV:   31.99716870 deg
+2023-03-27 21:57:07,078:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:57:07,078:tetra3.Tetra3-DEBUG: SOLVE: 19.45 ms
+2023-03-27 21:57:07,078:tetra3.Tetra3-DEBUG: RESID: 60.68 asec
+2023-03-27 21:57:09,311:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 2162 ms.
+2023-03-27 21:57:09,405:tetra3.Tetra3-DEBUG: NEW P: 7.293e-24
+2023-03-27 21:57:09,406:tetra3.Tetra3-DEBUG: RA:    225.99995131 deg
+2023-03-27 21:57:09,406:tetra3.Tetra3-DEBUG: DEC:   43.00086343 deg
+2023-03-27 21:57:09,407:tetra3.Tetra3-DEBUG: ROLL:  329.00274304 deg
+2023-03-27 21:57:09,407:tetra3.Tetra3-DEBUG: FOV:   30.00366145 deg
+2023-03-27 21:57:09,407:tetra3.Tetra3-DEBUG: MATCH: 15 stars
+2023-03-27 21:57:09,407:tetra3.Tetra3-DEBUG: SOLVE: 18.25 ms
+2023-03-27 21:57:09,407:tetra3.Tetra3-DEBUG: RESID: 14.66 asec
+2023-03-27 21:57:11,315:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1837 ms.
+2023-03-27 21:57:11,546:tetra3.Tetra3-DEBUG: NEW P: 3.718e-51
+2023-03-27 21:57:11,547:tetra3.Tetra3-DEBUG: RA:    244.00060770 deg
+2023-03-27 21:57:11,548:tetra3.Tetra3-DEBUG: DEC:   23.99849019 deg
+2023-03-27 21:57:11,548:tetra3.Tetra3-DEBUG: ROLL:  84.00059030 deg
+2023-03-27 21:57:11,548:tetra3.Tetra3-DEBUG: FOV:   40.99329888 deg
+2023-03-27 21:57:11,548:tetra3.Tetra3-DEBUG: MATCH: 28 stars
+2023-03-27 21:57:11,548:tetra3.Tetra3-DEBUG: SOLVE: 146.25 ms
+2023-03-27 21:57:11,548:tetra3.Tetra3-DEBUG: RESID: 32.45 asec
+2023-03-27 21:57:11,663:tetra3.Tetra3-DEBUG: NEW P: 3.763e-62
+2023-03-27 21:57:11,665:tetra3.Tetra3-DEBUG: RA:    199.96649186 deg
+2023-03-27 21:57:11,665:tetra3.Tetra3-DEBUG: DEC:   84.99931088 deg
+2023-03-27 21:57:11,665:tetra3.Tetra3-DEBUG: ROLL:  335.03673010 deg
+2023-03-27 21:57:11,665:tetra3.Tetra3-DEBUG: FOV:   55.03000958 deg
+2023-03-27 21:57:11,665:tetra3.Tetra3-DEBUG: MATCH: 35 stars
+2023-03-27 21:57:11,665:tetra3.Tetra3-DEBUG: SOLVE: 19.34 ms
+2023-03-27 21:57:11,665:tetra3.Tetra3-DEBUG: RESID: 75.12 asec
+2023-03-27 21:57:13,188:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1455 ms.
+2023-03-27 21:57:13,285:tetra3.Tetra3-DEBUG: NEW P: 1.86e-14
+2023-03-27 21:57:13,286:tetra3.Tetra3-DEBUG: RA:    28.00034009 deg
+2023-03-27 21:57:13,286:tetra3.Tetra3-DEBUG: DEC:   43.99849519 deg
+2023-03-27 21:57:13,286:tetra3.Tetra3-DEBUG: ROLL:  106.00451408 deg
+2023-03-27 21:57:13,286:tetra3.Tetra3-DEBUG: FOV:   24.99912472 deg
+2023-03-27 21:57:13,286:tetra3.Tetra3-DEBUG: MATCH: 10 stars
+2023-03-27 21:57:13,286:tetra3.Tetra3-DEBUG: SOLVE: 21.83 ms
+2023-03-27 21:57:13,286:tetra3.Tetra3-DEBUG: RESID: 11.25 asec
+2023-03-27 21:57:13,531:tetra3.Tetra3-DEBUG: NEW P: 6.464e-69
+2023-03-27 21:57:13,533:tetra3.Tetra3-DEBUG: RA:    328.00258614 deg
+2023-03-27 21:57:13,533:tetra3.Tetra3-DEBUG: DEC:   19.00101643 deg
+2023-03-27 21:57:13,533:tetra3.Tetra3-DEBUG: ROLL:  52.99987087 deg
+2023-03-27 21:57:13,533:tetra3.Tetra3-DEBUG: FOV:   57.98977915 deg
+2023-03-27 21:57:13,533:tetra3.Tetra3-DEBUG: MATCH: 38 stars
+2023-03-27 21:57:13,533:tetra3.Tetra3-DEBUG: SOLVE: 149.23 ms
+2023-03-27 21:57:13,533:tetra3.Tetra3-DEBUG: RESID: 32.17 asec
+2023-03-27 21:57:13,740:tetra3.Tetra3-DEBUG: NEW P: 5.368e-27
+2023-03-27 21:57:13,741:tetra3.Tetra3-DEBUG: RA:    4.04346845 deg
+2023-03-27 21:57:13,742:tetra3.Tetra3-DEBUG: DEC:   85.00015478 deg
+2023-03-27 21:57:13,742:tetra3.Tetra3-DEBUG: ROLL:  21.96856558 deg
+2023-03-27 21:57:13,742:tetra3.Tetra3-DEBUG: FOV:   37.00352415 deg
+2023-03-27 21:57:13,742:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:57:13,742:tetra3.Tetra3-DEBUG: SOLVE: 123.51 ms
+2023-03-27 21:57:13,742:tetra3.Tetra3-DEBUG: RESID: 57.88 asec
+2023-03-27 21:57:13,837:tetra3.Tetra3-DEBUG: NEW P: 2.736e-44
+2023-03-27 21:57:13,839:tetra3.Tetra3-DEBUG: RA:    73.00002869 deg
+2023-03-27 21:57:13,839:tetra3.Tetra3-DEBUG: DEC:   51.99896111 deg
+2023-03-27 21:57:13,839:tetra3.Tetra3-DEBUG: ROLL:  299.99896366 deg
+2023-03-27 21:57:13,839:tetra3.Tetra3-DEBUG: FOV:   35.99942320 deg
+2023-03-27 21:57:13,839:tetra3.Tetra3-DEBUG: MATCH: 24 stars
+2023-03-27 21:57:13,839:tetra3.Tetra3-DEBUG: SOLVE: 8.83 ms
+2023-03-27 21:57:13,839:tetra3.Tetra3-DEBUG: RESID: 7.61 asec
+2023-03-27 21:57:13,940:tetra3.Tetra3-DEBUG: NEW P: 6e-70
+2023-03-27 21:57:13,942:tetra3.Tetra3-DEBUG: RA:    303.99992919 deg
+2023-03-27 21:57:13,942:tetra3.Tetra3-DEBUG: DEC:   76.00071208 deg
+2023-03-27 21:57:13,942:tetra3.Tetra3-DEBUG: ROLL:  225.00483289 deg
+2023-03-27 21:57:13,942:tetra3.Tetra3-DEBUG: FOV:   49.01328643 deg
+2023-03-27 21:57:13,942:tetra3.Tetra3-DEBUG: MATCH: 36 stars
+2023-03-27 21:57:13,943:tetra3.Tetra3-DEBUG: SOLVE: 8.52 ms
+2023-03-27 21:57:13,943:tetra3.Tetra3-DEBUG: RESID: 31.89 asec
+2023-03-27 21:57:14,034:tetra3.Tetra3-DEBUG: NEW P: 2.48e-40
+2023-03-27 21:57:14,035:tetra3.Tetra3-DEBUG: RA:    146.99771709 deg
+2023-03-27 21:57:14,035:tetra3.Tetra3-DEBUG: DEC:   67.99955881 deg
+2023-03-27 21:57:14,035:tetra3.Tetra3-DEBUG: ROLL:  158.99999910 deg
+2023-03-27 21:57:14,035:tetra3.Tetra3-DEBUG: FOV:   42.99960446 deg
+2023-03-27 21:57:14,035:tetra3.Tetra3-DEBUG: MATCH: 24 stars
+2023-03-27 21:57:14,035:tetra3.Tetra3-DEBUG: SOLVE: 7.93 ms
+2023-03-27 21:57:14,036:tetra3.Tetra3-DEBUG: RESID: 14.23 asec
+2023-03-27 21:57:14,304:tetra3.Tetra3-DEBUG: NEW P: 3.186e-62
+2023-03-27 21:57:14,306:tetra3.Tetra3-DEBUG: RA:    6.00158555 deg
+2023-03-27 21:57:14,306:tetra3.Tetra3-DEBUG: DEC:   19.99798401 deg
+2023-03-27 21:57:14,306:tetra3.Tetra3-DEBUG: ROLL:  27.00105261 deg
+2023-03-27 21:57:14,306:tetra3.Tetra3-DEBUG: FOV:   50.00248460 deg
+2023-03-27 21:57:14,306:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:57:14,306:tetra3.Tetra3-DEBUG: SOLVE: 183.22 ms
+2023-03-27 21:57:14,307:tetra3.Tetra3-DEBUG: RESID: 18.76 asec
+2023-03-27 21:57:15,076:tetra3.Tetra3-DEBUG: NEW P: 3.094e-55
+2023-03-27 21:57:15,078:tetra3.Tetra3-DEBUG: RA:    62.00087122 deg
+2023-03-27 21:57:15,078:tetra3.Tetra3-DEBUG: DEC:   14.99837635 deg
+2023-03-27 21:57:15,078:tetra3.Tetra3-DEBUG: ROLL:  194.99751598 deg
+2023-03-27 21:57:15,078:tetra3.Tetra3-DEBUG: FOV:   50.99452098 deg
+2023-03-27 21:57:15,078:tetra3.Tetra3-DEBUG: MATCH: 32 stars
+2023-03-27 21:57:15,078:tetra3.Tetra3-DEBUG: SOLVE: 673.83 ms
+2023-03-27 21:57:15,078:tetra3.Tetra3-DEBUG: RESID: 31.75 asec
+2023-03-27 21:57:15,267:tetra3.Tetra3-DEBUG: NEW P: 3.092e-17
+2023-03-27 21:57:15,267:tetra3.Tetra3-DEBUG: RA:    263.00069581 deg
+2023-03-27 21:57:15,267:tetra3.Tetra3-DEBUG: DEC:   85.00064063 deg
+2023-03-27 21:57:15,267:tetra3.Tetra3-DEBUG: ROLL:  356.00122483 deg
+2023-03-27 21:57:15,267:tetra3.Tetra3-DEBUG: FOV:   22.00005364 deg
+2023-03-27 21:57:15,268:tetra3.Tetra3-DEBUG: MATCH: 11 stars
+2023-03-27 21:57:15,268:tetra3.Tetra3-DEBUG: SOLVE: 115.37 ms
+2023-03-27 21:57:15,268:tetra3.Tetra3-DEBUG: RESID: 6.65 asec
+2023-03-27 21:57:15,362:tetra3.Tetra3-DEBUG: NEW P: 2.796e-67
+2023-03-27 21:57:15,363:tetra3.Tetra3-DEBUG: RA:    162.99703174 deg
+2023-03-27 21:57:15,363:tetra3.Tetra3-DEBUG: DEC:   43.99885324 deg
+2023-03-27 21:57:15,364:tetra3.Tetra3-DEBUG: ROLL:  203.00386639 deg
+2023-03-27 21:57:15,364:tetra3.Tetra3-DEBUG: FOV:   45.00090140 deg
+2023-03-27 21:57:15,364:tetra3.Tetra3-DEBUG: MATCH: 35 stars
+2023-03-27 21:57:15,364:tetra3.Tetra3-DEBUG: SOLVE: 9.41 ms
+2023-03-27 21:57:15,364:tetra3.Tetra3-DEBUG: RESID: 19.04 asec
+2023-03-27 21:57:15,482:tetra3.Tetra3-DEBUG: NEW P: 2.775e-11
+2023-03-27 21:57:15,483:tetra3.Tetra3-DEBUG: RA:    0.99941011 deg
+2023-03-27 21:57:15,483:tetra3.Tetra3-DEBUG: DEC:   75.00048154 deg
+2023-03-27 21:57:15,483:tetra3.Tetra3-DEBUG: ROLL:  192.99968160 deg
+2023-03-27 21:57:15,483:tetra3.Tetra3-DEBUG: FOV:   25.00226391 deg
+2023-03-27 21:57:15,483:tetra3.Tetra3-DEBUG: MATCH: 8 stars
+2023-03-27 21:57:15,483:tetra3.Tetra3-DEBUG: SOLVE: 42.66 ms
+2023-03-27 21:57:15,483:tetra3.Tetra3-DEBUG: RESID: 6.54 asec
+2023-03-27 21:57:15,689:tetra3.Tetra3-DEBUG: NEW P: 3.785e-10
+2023-03-27 21:57:15,690:tetra3.Tetra3-DEBUG: RA:    101.99961831 deg
+2023-03-27 21:57:15,690:tetra3.Tetra3-DEBUG: DEC:   17.99861573 deg
+2023-03-27 21:57:15,690:tetra3.Tetra3-DEBUG: ROLL:  138.99695659 deg
+2023-03-27 21:57:15,690:tetra3.Tetra3-DEBUG: FOV:   16.00122261 deg
+2023-03-27 21:57:15,690:tetra3.Tetra3-DEBUG: MATCH: 7 stars
+2023-03-27 21:57:15,690:tetra3.Tetra3-DEBUG: SOLVE: 135.65 ms
+2023-03-27 21:57:15,690:tetra3.Tetra3-DEBUG: RESID: 6.38 asec
+2023-03-27 21:57:15,958:tetra3.Tetra3-DEBUG: NEW P: 1.221e-20
+2023-03-27 21:57:15,959:tetra3.Tetra3-DEBUG: RA:    90.00066706 deg
+2023-03-27 21:57:15,959:tetra3.Tetra3-DEBUG: DEC:   74.99969056 deg
+2023-03-27 21:57:15,959:tetra3.Tetra3-DEBUG: ROLL:  61.99871268 deg
+2023-03-27 21:57:15,959:tetra3.Tetra3-DEBUG: FOV:   37.00048894 deg
+2023-03-27 21:57:15,959:tetra3.Tetra3-DEBUG: MATCH: 14 stars
+2023-03-27 21:57:15,959:tetra3.Tetra3-DEBUG: SOLVE: 184.73 ms
+2023-03-27 21:57:15,959:tetra3.Tetra3-DEBUG: RESID: 6.23 asec
+2023-03-27 21:57:16,170:tetra3.Tetra3-DEBUG: NEW P: 1.309e-34
+2023-03-27 21:57:16,171:tetra3.Tetra3-DEBUG: RA:    25.00207180 deg
+2023-03-27 21:57:16,171:tetra3.Tetra3-DEBUG: DEC:   65.99876487 deg
+2023-03-27 21:57:16,171:tetra3.Tetra3-DEBUG: ROLL:  249.00199998 deg
+2023-03-27 21:57:16,172:tetra3.Tetra3-DEBUG: FOV:   39.99591325 deg
+2023-03-27 21:57:16,172:tetra3.Tetra3-DEBUG: MATCH: 21 stars
+2023-03-27 21:57:16,172:tetra3.Tetra3-DEBUG: SOLVE: 122.45 ms
+2023-03-27 21:57:16,172:tetra3.Tetra3-DEBUG: RESID: 16.08 asec
+2023-03-27 21:57:16,304:tetra3.Tetra3-DEBUG: NEW P: 2.584e-31
+2023-03-27 21:57:16,305:tetra3.Tetra3-DEBUG: RA:    102.00010689 deg
+2023-03-27 21:57:16,305:tetra3.Tetra3-DEBUG: DEC:   34.99825863 deg
+2023-03-27 21:57:16,305:tetra3.Tetra3-DEBUG: ROLL:  171.99689379 deg
+2023-03-27 21:57:16,305:tetra3.Tetra3-DEBUG: FOV:   29.99462042 deg
+2023-03-27 21:57:16,305:tetra3.Tetra3-DEBUG: MATCH: 18 stars
+2023-03-27 21:57:16,305:tetra3.Tetra3-DEBUG: SOLVE: 53.06 ms
+2023-03-27 21:57:16,305:tetra3.Tetra3-DEBUG: RESID: 13.51 asec
+2023-03-27 21:57:16,410:tetra3.Tetra3-DEBUG: NEW P: 6.495e-51
+2023-03-27 21:57:16,412:tetra3.Tetra3-DEBUG: RA:    3.00072555 deg
+2023-03-27 21:57:16,412:tetra3.Tetra3-DEBUG: DEC:   24.99841378 deg
+2023-03-27 21:57:16,412:tetra3.Tetra3-DEBUG: ROLL:  90.00114944 deg
+2023-03-27 21:57:16,412:tetra3.Tetra3-DEBUG: FOV:   41.99988578 deg
+2023-03-27 21:57:16,412:tetra3.Tetra3-DEBUG: MATCH: 28 stars
+2023-03-27 21:57:16,412:tetra3.Tetra3-DEBUG: SOLVE: 22.25 ms
+2023-03-27 21:57:16,412:tetra3.Tetra3-DEBUG: RESID: 12.57 asec
+2023-03-27 21:57:16,633:tetra3.Tetra3-DEBUG: NEW P: 4.934e-19
+2023-03-27 21:57:16,633:tetra3.Tetra3-DEBUG: RA:    304.00865198 deg
+2023-03-27 21:57:16,633:tetra3.Tetra3-DEBUG: DEC:   39.99973690 deg
+2023-03-27 21:57:16,634:tetra3.Tetra3-DEBUG: ROLL:  212.99838366 deg
+2023-03-27 21:57:16,634:tetra3.Tetra3-DEBUG: FOV:   25.95277509 deg
+2023-03-27 21:57:16,634:tetra3.Tetra3-DEBUG: MATCH: 12 stars
+2023-03-27 21:57:16,634:tetra3.Tetra3-DEBUG: SOLVE: 140.22 ms
+2023-03-27 21:57:16,634:tetra3.Tetra3-DEBUG: RESID: 55.75 asec
+2023-03-27 21:57:18,562:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1859 ms.
+2023-03-27 21:57:18,656:tetra3.Tetra3-DEBUG: NEW P: 2.536e-60
+2023-03-27 21:57:18,658:tetra3.Tetra3-DEBUG: RA:    170.99726426 deg
+2023-03-27 21:57:18,658:tetra3.Tetra3-DEBUG: DEC:   39.99969529 deg
+2023-03-27 21:57:18,658:tetra3.Tetra3-DEBUG: ROLL:  121.00688588 deg
+2023-03-27 21:57:18,658:tetra3.Tetra3-DEBUG: FOV:   47.00039582 deg
+2023-03-27 21:57:18,658:tetra3.Tetra3-DEBUG: MATCH: 33 stars
+2023-03-27 21:57:18,658:tetra3.Tetra3-DEBUG: SOLVE: 10.04 ms
+2023-03-27 21:57:18,659:tetra3.Tetra3-DEBUG: RESID: 21.78 asec
+2023-03-27 21:57:18,735:tetra3.Tetra3-DEBUG: NEW P: 1.784e-11
+2023-03-27 21:57:18,736:tetra3.Tetra3-DEBUG: RA:    307.00170839 deg
+2023-03-27 21:57:18,736:tetra3.Tetra3-DEBUG: DEC:   6.99943997 deg
+2023-03-27 21:57:18,736:tetra3.Tetra3-DEBUG: ROLL:  17.99802302 deg
+2023-03-27 21:57:18,736:tetra3.Tetra3-DEBUG: FOV:   18.99823015 deg
+2023-03-27 21:57:18,736:tetra3.Tetra3-DEBUG: MATCH: 8 stars
+2023-03-27 21:57:18,736:tetra3.Tetra3-DEBUG: SOLVE: 4.33 ms
+2023-03-27 21:57:18,736:tetra3.Tetra3-DEBUG: RESID: 19.27 asec
+2023-03-27 21:57:20,959:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 2155 ms.
+2023-03-27 21:57:21,235:tetra3.Tetra3-DEBUG: NEW P: 6.785e-23
+2023-03-27 21:57:21,236:tetra3.Tetra3-DEBUG: RA:    307.00038818 deg
+2023-03-27 21:57:21,236:tetra3.Tetra3-DEBUG: DEC:   74.00079715 deg
+2023-03-27 21:57:21,236:tetra3.Tetra3-DEBUG: ROLL:  287.00403575 deg
+2023-03-27 21:57:21,236:tetra3.Tetra3-DEBUG: FOV:   26.99834219 deg
+2023-03-27 21:57:21,236:tetra3.Tetra3-DEBUG: MATCH: 14 stars
+2023-03-27 21:57:21,236:tetra3.Tetra3-DEBUG: SOLVE: 199.58 ms
+2023-03-27 21:57:21,236:tetra3.Tetra3-DEBUG: RESID: 19.96 asec
+2023-03-27 21:57:21,336:tetra3.Tetra3-DEBUG: NEW P: 2.12e-18
+2023-03-27 21:57:21,336:tetra3.Tetra3-DEBUG: RA:    168.99821377 deg
+2023-03-27 21:57:21,336:tetra3.Tetra3-DEBUG: DEC:   38.99843144 deg
+2023-03-27 21:57:21,336:tetra3.Tetra3-DEBUG: ROLL:  195.99748915 deg
+2023-03-27 21:57:21,337:tetra3.Tetra3-DEBUG: FOV:   29.00105529 deg
+2023-03-27 21:57:21,337:tetra3.Tetra3-DEBUG: MATCH: 12 stars
+2023-03-27 21:57:21,337:tetra3.Tetra3-DEBUG: SOLVE: 25.98 ms
+2023-03-27 21:57:21,337:tetra3.Tetra3-DEBUG: RESID: 14.91 asec
+2023-03-27 21:57:21,526:tetra3.Tetra3-DEBUG: NEW P: 5.765e-59
+2023-03-27 21:57:21,528:tetra3.Tetra3-DEBUG: RA:    39.00366595 deg
+2023-03-27 21:57:21,528:tetra3.Tetra3-DEBUG: DEC:   75.99954315 deg
+2023-03-27 21:57:21,528:tetra3.Tetra3-DEBUG: ROLL:  18.99665772 deg
+2023-03-27 21:57:21,529:tetra3.Tetra3-DEBUG: FOV:   56.00155229 deg
+2023-03-27 21:57:21,529:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:57:21,529:tetra3.Tetra3-DEBUG: SOLVE: 89.46 ms
+2023-03-27 21:57:21,529:tetra3.Tetra3-DEBUG: RESID: 17.00 asec
+2023-03-27 21:57:21,718:tetra3.Tetra3-DEBUG: NEW P: 6.348e-29
+2023-03-27 21:57:21,719:tetra3.Tetra3-DEBUG: RA:    77.99980721 deg
+2023-03-27 21:57:21,720:tetra3.Tetra3-DEBUG: DEC:   39.99961528 deg
+2023-03-27 21:57:21,720:tetra3.Tetra3-DEBUG: ROLL:  205.99927234 deg
+2023-03-27 21:57:21,720:tetra3.Tetra3-DEBUG: FOV:   31.99601099 deg
+2023-03-27 21:57:21,720:tetra3.Tetra3-DEBUG: MATCH: 17 stars
+2023-03-27 21:57:21,720:tetra3.Tetra3-DEBUG: SOLVE: 109.93 ms
+2023-03-27 21:57:21,720:tetra3.Tetra3-DEBUG: RESID: 10.79 asec
+2023-03-27 21:57:21,809:tetra3.Tetra3-DEBUG: NEW P: 4.985e-22
+2023-03-27 21:57:21,810:tetra3.Tetra3-DEBUG: RA:    107.99770653 deg
+2023-03-27 21:57:21,810:tetra3.Tetra3-DEBUG: DEC:   9.99785761 deg
+2023-03-27 21:57:21,810:tetra3.Tetra3-DEBUG: ROLL:  162.99276685 deg
+2023-03-27 21:57:21,810:tetra3.Tetra3-DEBUG: FOV:   30.99890473 deg
+2023-03-27 21:57:21,810:tetra3.Tetra3-DEBUG: MATCH: 14 stars
+2023-03-27 21:57:21,810:tetra3.Tetra3-DEBUG: SOLVE: 7.86 ms
+2023-03-27 21:57:21,810:tetra3.Tetra3-DEBUG: RESID: 21.93 asec
+2023-03-27 21:57:21,943:tetra3.Tetra3-DEBUG: NEW P: 7.45e-68
+2023-03-27 21:57:21,945:tetra3.Tetra3-DEBUG: RA:    355.00418277 deg
+2023-03-27 21:57:21,945:tetra3.Tetra3-DEBUG: DEC:   40.99903021 deg
+2023-03-27 21:57:21,945:tetra3.Tetra3-DEBUG: ROLL:  253.99828943 deg
+2023-03-27 21:57:21,946:tetra3.Tetra3-DEBUG: FOV:   49.99732204 deg
+2023-03-27 21:57:21,946:tetra3.Tetra3-DEBUG: MATCH: 36 stars
+2023-03-27 21:57:21,946:tetra3.Tetra3-DEBUG: SOLVE: 39.29 ms
+2023-03-27 21:57:21,946:tetra3.Tetra3-DEBUG: RESID: 24.03 asec
+2023-03-27 21:57:22,113:tetra3.Tetra3-DEBUG: NEW P: 1.784e-11
+2023-03-27 21:57:22,113:tetra3.Tetra3-DEBUG: RA:    76.99304403 deg
+2023-03-27 21:57:22,114:tetra3.Tetra3-DEBUG: DEC:   88.99983298 deg
+2023-03-27 21:57:22,114:tetra3.Tetra3-DEBUG: ROLL:  265.00705317 deg
+2023-03-27 21:57:22,114:tetra3.Tetra3-DEBUG: FOV:   23.00121488 deg
+2023-03-27 21:57:22,114:tetra3.Tetra3-DEBUG: MATCH: 8 stars
+2023-03-27 21:57:22,114:tetra3.Tetra3-DEBUG: SOLVE: 92.61 ms
+2023-03-27 21:57:22,114:tetra3.Tetra3-DEBUG: RESID: 3.78 asec
+2023-03-27 21:57:23,924:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1743 ms.
+2023-03-27 21:57:24,055:tetra3.Tetra3-DEBUG: NEW P: 8.42e-53
+2023-03-27 21:57:24,058:tetra3.Tetra3-DEBUG: RA:    159.98856535 deg
+2023-03-27 21:57:24,058:tetra3.Tetra3-DEBUG: DEC:   50.00000673 deg
+2023-03-27 21:57:24,058:tetra3.Tetra3-DEBUG: ROLL:  256.00840841 deg
+2023-03-27 21:57:24,058:tetra3.Tetra3-DEBUG: FOV:   41.93739218 deg
+2023-03-27 21:57:24,058:tetra3.Tetra3-DEBUG: MATCH: 29 stars
+2023-03-27 21:57:24,059:tetra3.Tetra3-DEBUG: SOLVE: 32.32 ms
+2023-03-27 21:57:24,059:tetra3.Tetra3-DEBUG: RESID: 92.10 asec
+2023-03-27 21:57:24,508:tetra3.Tetra3-DEBUG: NEW P: 4.934e-19
+2023-03-27 21:57:24,510:tetra3.Tetra3-DEBUG: RA:    228.00328956 deg
+2023-03-27 21:57:24,510:tetra3.Tetra3-DEBUG: DEC:   89.00014567 deg
+2023-03-27 21:57:24,511:tetra3.Tetra3-DEBUG: ROLL:  270.99860585 deg
+2023-03-27 21:57:24,511:tetra3.Tetra3-DEBUG: FOV:   27.00175284 deg
+2023-03-27 21:57:24,511:tetra3.Tetra3-DEBUG: MATCH: 12 stars
+2023-03-27 21:57:24,511:tetra3.Tetra3-DEBUG: SOLVE: 338.22 ms
+2023-03-27 21:57:24,511:tetra3.Tetra3-DEBUG: RESID: 12.12 asec
+2023-03-27 21:57:26,451:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1849 ms.
+2023-03-27 21:57:26,789:tetra3.Tetra3-DEBUG: NEW P: 1.638e-44
+2023-03-27 21:57:26,790:tetra3.Tetra3-DEBUG: RA:    62.11625162 deg
+2023-03-27 21:57:26,790:tetra3.Tetra3-DEBUG: DEC:   3.99037206 deg
+2023-03-27 21:57:26,790:tetra3.Tetra3-DEBUG: ROLL:  23.99369112 deg
+2023-03-27 21:57:26,790:tetra3.Tetra3-DEBUG: FOV:   49.39883357 deg
+2023-03-27 21:57:26,790:tetra3.Tetra3-DEBUG: MATCH: 27 stars
+2023-03-27 21:57:26,790:tetra3.Tetra3-DEBUG: SOLVE: 244.05 ms
+2023-03-27 21:57:26,791:tetra3.Tetra3-DEBUG: RESID: 758.53 asec
+2023-03-27 21:57:28,355:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1496 ms.
+2023-03-27 21:57:29,886:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 1462 ms.
+2023-03-27 21:57:32,033:tetra3.Tetra3-DEBUG: FAIL: Did not find a match to the stars! It took 2075 ms.
+2023-03-27 21:57:32,136:tetra3.Tetra3-DEBUG: NEW P: 3.186e-62
+2023-03-27 21:57:32,138:tetra3.Tetra3-DEBUG: RA:    258.00098385 deg
+2023-03-27 21:57:32,138:tetra3.Tetra3-DEBUG: DEC:   42.99914941 deg
+2023-03-27 21:57:32,138:tetra3.Tetra3-DEBUG: ROLL:  114.99830295 deg
+2023-03-27 21:57:32,138:tetra3.Tetra3-DEBUG: FOV:   49.98630599 deg
+2023-03-27 21:57:32,138:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:57:32,138:tetra3.Tetra3-DEBUG: SOLVE: 12.05 ms
+2023-03-27 21:57:32,138:tetra3.Tetra3-DEBUG: RESID: 41.71 asec
+2023-03-27 21:57:32,293:tetra3.Tetra3-DEBUG: NEW P: 1.782e-51
+2023-03-27 21:57:32,295:tetra3.Tetra3-DEBUG: RA:    325.00134292 deg
+2023-03-27 21:57:32,295:tetra3.Tetra3-DEBUG: DEC:   88.00027175 deg
+2023-03-27 21:57:32,295:tetra3.Tetra3-DEBUG: ROLL:  313.99985945 deg
+2023-03-27 21:57:32,295:tetra3.Tetra3-DEBUG: FOV:   46.00039357 deg
+2023-03-27 21:57:32,295:tetra3.Tetra3-DEBUG: MATCH: 29 stars
+2023-03-27 21:57:32,295:tetra3.Tetra3-DEBUG: SOLVE: 65.21 ms
+2023-03-27 21:57:32,295:tetra3.Tetra3-DEBUG: RESID: 16.16 asec
+2023-03-27 21:57:32,416:tetra3.Tetra3-DEBUG: NEW P: 2.584e-42
+2023-03-27 21:57:32,417:tetra3.Tetra3-DEBUG: RA:    354.00649392 deg
+2023-03-27 21:57:32,417:tetra3.Tetra3-DEBUG: DEC:   72.00060986 deg
+2023-03-27 21:57:32,417:tetra3.Tetra3-DEBUG: ROLL:  60.99372818 deg
+2023-03-27 21:57:32,417:tetra3.Tetra3-DEBUG: FOV:   34.00134045 deg
+2023-03-27 21:57:32,417:tetra3.Tetra3-DEBUG: MATCH: 23 stars
+2023-03-27 21:57:32,417:tetra3.Tetra3-DEBUG: SOLVE: 36.74 ms
+2023-03-27 21:57:32,417:tetra3.Tetra3-DEBUG: RESID: 18.79 asec
+2023-03-27 21:57:33,191:tetra3.Tetra3-DEBUG: NEW P: 4.593e-63
+2023-03-27 21:57:33,193:tetra3.Tetra3-DEBUG: RA:    71.00048200 deg
+2023-03-27 21:57:33,193:tetra3.Tetra3-DEBUG: DEC:   20.99695748 deg
+2023-03-27 21:57:33,193:tetra3.Tetra3-DEBUG: ROLL:  154.99930834 deg
+2023-03-27 21:57:33,193:tetra3.Tetra3-DEBUG: FOV:   47.99688460 deg
+2023-03-27 21:57:33,193:tetra3.Tetra3-DEBUG: MATCH: 34 stars
+2023-03-27 21:57:33,194:tetra3.Tetra3-DEBUG: SOLVE: 677.62 ms
+2023-03-27 21:57:33,194:tetra3.Tetra3-DEBUG: RESID: 30.84 asec

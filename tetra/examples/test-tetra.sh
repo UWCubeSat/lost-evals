@@ -18,7 +18,7 @@ function rand_int {
 }
 
 # CHANGE THIS
-n=100
+n=20
 
 echo "$PWD"
 
@@ -29,7 +29,7 @@ for _ in $(seq "${1:-$n}"); do
   # Should be -89 to 89
   de=$(rand_int 0 89)
   roll=$(rand_int 0 359)
-  fov=$(rand_int 10 60)
+  fov=$(rand_int 30 40)
 
   ./lost pipeline \
     --generate 1 \
@@ -51,13 +51,13 @@ done
 
 output="$(python test_tetra3.py)"
 
-raNone=$(echo "$output" | grep -o "RA = None" | wc -l)
-decNone=$(echo "$output" | grep -o "Dec = None" | wc -l)
-rollNone=$(echo "$output" | grep -o "Roll = None" | wc -l)
+# raNone=$(echo "$output" | grep -o "RA = None" | wc -l)
+# decNone=$(echo "$output" | grep -o "Dec = None" | wc -l)
+# rollNone=$(echo "$output" | grep -o "Roll = None" | wc -l)
 
-raFail=$(echo "$output" | grep -o "RA fail" | wc -l)
-decFail=$(echo "$output" | grep -o "Dec fail" | wc -l)
-rollFail=$(echo "$output" | grep -o "Roll fail" | wc -l)
+# raFail=$(echo "$output" | grep -o "RA fail" | wc -l)
+# decFail=$(echo "$output" | grep -o "Dec fail" | wc -l)
+# rollFail=$(echo "$output" | grep -o "Roll fail" | wc -l)
 
 echo "$output"
 
@@ -65,10 +65,10 @@ echo "##################################################################"
 echo "##################################################################"
 
 echo "Total number of images: $n"
-echo "None: $raNone, $decNone, $rollNone"
-echo "RA fail: $raFail"
-echo "Dec fail: $decFail"
-echo "Roll fail: $rollFail"
+# echo "None: $raNone, $decNone, $rollNone"
+# echo "RA fail: $raFail"
+# echo "Dec fail: $decFail"
+# echo "Roll fail: $rollFail"
 
 
 

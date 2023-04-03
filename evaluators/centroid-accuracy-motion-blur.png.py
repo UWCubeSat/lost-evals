@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ def run_at_exposure(algo, exposure):
                           + params.centroid_blur_base_args
                           + ['--centroid-algo', algo, '--generate-exposure', exposure]
                           + ['--compare-centroids', '-'])
-    return ran['mean_error']
+    return ran['centroids_mean_error']
 
 for algo_name, algo_code in params.centroid_algos:
     ax.plot(blur_exposures, [run_at_exposure(algo_code, expo) for expo in blur_exposures],

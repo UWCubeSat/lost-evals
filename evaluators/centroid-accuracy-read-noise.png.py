@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ def run_at_noise(algo, noise):
                           + params.centroid_noise_base_args
                           + ['--centroid-algo', algo, '--generate-read-noise', noise]
                           + ['--compare-centroids', '-'])
-    return ran['mean_error']
+    return ran['centroids_mean_error']
 
 for algo_name, algo_code in params.centroid_algos:
     ax.plot(read_noise_levels, [run_at_noise(algo_code, noise_level) for noise_level in read_noise_levels],

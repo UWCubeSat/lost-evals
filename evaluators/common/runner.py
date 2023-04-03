@@ -5,6 +5,10 @@ import tempfile
 
 lost_output_re = re.compile(r"^([a-z0-9_]+) ([a-z0-9.]+)$")
 
+# matches the instruction read count in the first group, and the function name in the second group
+# (for the callgrind and callgrind_annotate options specified below)
+callgrind_annotate_re = re.compile(r"^\s*([0-9,]+)[^:]+:([^()]+)")
+
 def maybe_to_num(s):
     try:
         n = float(s)
@@ -12,15 +16,18 @@ def maybe_to_num(s):
         return s
     return int(n) if n.is_integer() else n
 
+def prepare_lost_args(args):
+    return [os.getcwd() + '/lost', 'pipeline'] + list(map(str, args))
+
 # Runs LOST with the given command-line parameters. Parses its output, returning a dictionary of
 # everything that got printed from comparators and similar.
 def run_lost(args):
-    stringy_args = ['pipeline'] + list(map(str, args))
-    print('Running: lost ' + ' '.join(stringy_args), flush=True)
-    proc = subprocess.run([os.getcwd() + '/lost'] + stringy_args,
+    actual_args = prepare_lost_args(args)
+    print('Running: ' + ' '.join(actual_args))
+    proc = subprocess.run(actual_args,
                           check=True, # throw an error if nonzero exit code
                           capture_output=True)
-    print('Done, stderr: ' + str(proc.stderr.decode('ascii')))
+    print('Done, stderr: ' + proc.stderr.decode('ascii'))
     result = dict()
     for line in proc.stdout.decode('ascii').splitlines():
         matched = lost_output_re.match(line)
@@ -45,3 +52,32 @@ class LostDatabase:
         return self.db_path
     def __exit__(self, *args):
         os.unlink(self.db_path)
+
+def run_callgrind_on_lost(args):
+    try:
+        fd, callgrind_out_file = tempfile.mkstemp()
+        os.close(fd)
+        actual_args = ['valgrind', '--tool=callgrind', '--callgrind-out-file=' + callgrind_out_file] + prepare_lost_args(args)
+        print('Running (callgrind): ' + ' '.join(actual_args))
+        proc = subprocess.run(actual_args,
+                              check=True,
+                              capture_output=True)
+        print('Done (callgrind), sending to callgrind_annotate')
+        # Run callgrind_analyze on proc.stdout
+        analyze_proc = subprocess.run(['callgrind_annotate', '--auto=no', '--context=0', '--inclusive=yes', '--threshold=100',
+                                       callgrind_out_file],
+                                      input=proc.stdout,
+                                      check=True,
+                                      capture_output=True)
+
+        # Parse output into hashmap from fns to counts. Use the first instance of a function name when it occurs multiple times
+        result = {}
+        for line in analyze_proc.stdout.decode('utf-8').splitlines():
+            match = callgrind_annotate_re.match(line)
+            if match and not match.group(2) in result:
+                    result[match.group(2)] = int(match.group(1).replace(',', ''))
+        return result
+
+    finally:
+        if callgrind_out_file:
+            os.remove(callgrind_out_file)

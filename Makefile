@@ -5,6 +5,6 @@ OUTFILES=$(patsubst evaluators/%.py, $(OUT_PREFIX)/%, $(EVALUATORS))
 all: $(OUTFILES)
 
 $(OUT_PREFIX)/%: evaluators/%.py lost
-	python $< $@
+	python3 $< $@
 
 .PHONY: all

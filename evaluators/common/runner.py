@@ -25,9 +25,11 @@ def run_lost(args):
     actual_args = prepare_lost_args(args)
     print('Running: ' + ' '.join(actual_args))
     proc = subprocess.run(actual_args,
-                          check=True, # throw an error if nonzero exit code
+                          check=False,
                           capture_output=True)
     print('Done, stderr: ' + proc.stderr.decode('ascii'))
+    if proc.returncode != 0:
+        raise RuntimeError('Nonzero exit code from LOST, %d' % proc.returncode)
     result = dict()
     for line in proc.stdout.decode('ascii').splitlines():
         matched = lost_output_re.match(line)

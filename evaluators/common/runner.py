@@ -37,21 +37,23 @@ def run_lost(args):
 
 class LostDatabase:
     """
-    Use this class via the `with` statement, eg `with LostDatabase(['--kvector', ...]) as db_path:`, then the database will automatically be deleted when you're done!
+    Use this class via the `with` statement, eg `with LostDatabase(['--kvector', ...]) as db_path:`. The actual database won't be generated until __enter__, so in fact it can /only/ be used via the `with` statement.
     """
 
     def __init__(self, cli_args):
+        self.cli_args = cli_args
+
+    def __enter__(self):
         fd, self.db_path = tempfile.mkstemp()
         os.close(fd)
-        stringy_args = ['database'] + list(map(str, cli_args)) + ['--output', self.db_path]
+        stringy_args = ['database'] + list(map(str, self.cli_args)) + ['--output', self.db_path]
         print('Creating database: lost ' + ' '.join(stringy_args), flush=True)
         subprocess.run([os.getcwd() + '/lost'] + stringy_args,
                        check=True)
-
-    def __enter__(self):
         return self.db_path
     def __exit__(self, *args):
-        os.unlink(self.db_path)
+        if self.db_path:
+            os.unlink(self.db_path)
 
 def run_callgrind_on_lost(args):
     try:

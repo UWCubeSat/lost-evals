@@ -2,8 +2,10 @@ import subprocess
 import os
 import re
 import tempfile
+import socket
+from time import sleep
 
-lost_output_re = re.compile(r"^([a-z0-9_]+) ([a-z0-9.]+)$")
+lost_output_re = re.compile(r"^([a-z0-9_]+) ([a-z0-9.-]+)$")
 
 # matches the instruction read count in the first group, and the function name in the second group
 # (for the callgrind and callgrind_annotate options specified below)
@@ -85,3 +87,73 @@ def run_callgrind_on_lost(args):
     finally:
         if callgrind_out_file:
             os.remove(callgrind_out_file)
+
+def run_openstartracker_calibrate(testdir):
+    # Call calibrate.py testdir
+    print('Running calibrate.py %s' % testdir)
+    proc = subprocess.run(['python3', 'calibrate.py', testdir],
+                          check=True)
+    print('Done calibrating, methinks')
+
+def start_openstartracker_server(testdir):
+    """Start the server, returning the process which should be terminated when appropriate"""
+    # Run startracker.py testdir/calibration.txt 2023 testdir/median_image.png
+    print('Running startracker.py %s/calibration.txt 2023 %s/median_image.png' % (testdir, testdir))
+    proc = subprocess.Popen(['python3', 'startracker.py', testdir + '/calibration.txt', '2023', testdir + '/median_image.png'],
+                            stderr=subprocess.PIPE)
+    sleep(5)
+    print('Server online!')
+    # os.set_blocking(proc.stderr.fileno(), False) # supposedly this makes readline nonblocking
+    return proc
+
+def solve_openstartracker(image, proc):
+    # Send `rgb.solve_image('image')` to the server
+    print('Solving %s with openstartracker' % image)
+    # Just send the text to 127.0.0.1:8010 over TCP
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(('127.0.0.1', 8010))
+    s.sendall(("rgb.solve_image('%s')\n" % image).encode('ascii'))
+    sleep(0.5);
+    s.close()
+    # Read lines from proc
+    times = []
+    dec = None
+    ra = None
+    roll = None
+    loops = 0
+    while True:
+        line = proc.stderr.readline().decode('ascii')
+        if not line:
+            raise RuntimeError('Server output ended too early!')
+        if line.startswith('Time'):
+            if line[5] != str(len(times)+1):
+                raise RuntimeError('Server `Time` output out of order!')
+            # strip line ending: this will only work on unix
+            times.append(float(line[7:-1]))
+            if line[5] == '6':
+                break
+
+        if line.startswith('DEC='):
+            assert dec is None
+            dec = float(line[4:-1])
+        if line.startswith('RA='):
+            assert ra is None
+            assert dec is not None
+            ra = float(line[3:-1])
+        if line.startswith('ORIENTATION='):
+            assert roll is None
+            assert dec is not None
+            assert ra is not None
+            roll = float(line[12:-1])
+
+        loops += 1
+        if loops > 1000:
+            raise RuntimeError('Server output too long!')
+
+        # There are some random lines that don't start with any of these things that we would like to ignore. As well as empty lines.
+
+    return times, dec, ra, roll
+
+def stop_openstartracker(proc):
+    proc.terminate()
+    proc.wait()

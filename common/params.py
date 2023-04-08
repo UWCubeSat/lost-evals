@@ -1,5 +1,7 @@
 # Most of the "configuration" for the evaluation is in this file
+import math
 import common.runner as runner
+from common.scenarios import Scenario
 
 class StarIdAlgoParams:
     def __init__(self, name, pipeline_params, db_params):
@@ -30,13 +32,13 @@ database_tetra_params = ['--tetra', '--min-separation=0.0']
 
 basic_star_id_algos = [
     StarIdAlgoParams('Pyramid', ['--star-id-algo=py'], database_catalog_params + database_kvector_params),
-    StarIdAlgoParams('Tetra', ['--star-id-algo=tetra'], database_catalog_params + database_tetra_params),
+    #StarIdAlgoParams('Tetra', ['--star-id-algo=tetra'], database_catalog_params + database_tetra_params),
 ]
 
 centroid_base_args = ['--generate-zero-mag-photons=20000',
                       '--generate-saturation-photons=50',
                       '--centroid-filter-brightest=5']
-centroid_num_trials = 3
+centroid_num_trials = 100
 
 star_id_num_trials = 100
 
@@ -54,18 +56,16 @@ centroid_noise_base_args = centroid_base_args + ['--generate-dark-current', 0.25
 centroid_noise_algos = basic_centroid_algos
 
 # CENTROID SHOT NOISE PARAMS
-centroid_exposure_base_args = centroid_base_args
+centroid_shot_noise_base_args = centroid_base_args
 # To effectively vary sensitivity, we need to adjust the zero magnitude photoelectrons
 # proportionally with the saturation photons. This way, the effective brightness of the stars stays
 # the same, and we only are effectively editing the shot noise. We'll use an exposure of 1.0 for
 # simplicity.
-centroid_exposure_zero_mag_photoelectrons = 20000
-# This one is scaled with exposure, from 1.0:
-centroid_exposure_saturation_photoelectrons_at_exposure_1 = 200
-centroid_exposure_min_exposure = 0.1
-centroid_exposure_max_exposure = 1.0
-centroid_exposure_num_pts = 10
-centroid_exposure_algos = basic_centroid_algos
+centroid_shot_noise_min_photoelectrons = 2000
+centroid_shot_noise_max_photoelectrons = 20000
+centroid_shot_noise_photoelectron_sensitivity_ratio = 100
+centroid_shot_noise_num_pts = 10
+centroid_shot_noise_algos = basic_centroid_algos
 
 # PERTURBATION VS SKY COVERAGE PARAMS
 perturbation_max_perturbation = 2
@@ -80,3 +80,43 @@ false_num_false_star_levels = 10
 false_base_args = []
 
 false_star_id_algos = basic_star_id_algos
+
+
+
+
+
+# COMPREHENSIVE
+
+low_noise_params = [
+    '--generate-false-stars=200',
+    '--generate-zero-mag-photons=20000',
+    '--generate-saturation-photons=200',
+    '--generate-exposure=0.2',
+]
+
+high_noise_params = [
+    '--generate-false-stars=1000',
+    '--generate-zero-mag-photons=10000',
+    '--generate-saturation-photons=100',
+    '--generate-blur-ra=.3',
+    '--generate-blur-de=0',
+    '--generate-blur-roll=4',
+    '--generate-exposure=0.2',
+]
+
+comprehensive_num_pngs = 100
+comprehensive_num_callgrinds = comprehensive_num_pngs // 10 # to keep speed alright
+comprehensive_num_ost_calibrations = comprehensive_num_pngs // 10
+comprehensive_attitude_tolerance = math.radians(0.5)
+
+scenarios = [
+    Scenario('20-deg FOV Low Noise', '20-low-noise',
+             ['--fov=20'] + low_noise_params),
+    Scenario('20-deg FOV High Noise', '20-high-noise',
+             ['--fov=20'] + high_noise_params),
+    # Higher FOV gives more stars but worse centroid accuracy
+    Scenario('45-deg FOV Low Noise', '45-low-noise',
+             ['--fov=45'] + low_noise_params),
+    Scenario('45-deg FOV High Noise', '20-high-noise',
+             ['--fov=45'] + high_noise_params),
+]

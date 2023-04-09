@@ -1,5 +1,6 @@
 # Most of the "configuration" for the evaluation is in this file
 import math
+
 import common.runner as runner
 from common.scenarios import Scenario
 
@@ -109,14 +110,41 @@ comprehensive_num_callgrinds = comprehensive_num_pngs // 10 # to keep speed alri
 comprehensive_num_ost_calibrations = comprehensive_num_pngs // 10
 comprehensive_attitude_tolerance = math.radians(0.5)
 
+comprehensive_columns = {
+    'lost_desktop_total_avg_us': 'LOST Desktop Speed (μs)',
+    # 'lost_raspi_total_speed': 'LOST Raspi Speed (μs)',
+    # 'lost_total_instrs': 'LOST CPU Instructions',
+    # 'lost_max_memory': 'LOST Memory (KiB)',
+    'lost_availability': 'LOST Availability (%)',
+    'lost_error_rate': 'LOST Error Rate (%)',
+    'lost_attitude_error': 'LOST Attitude Error (deg)'
+
+    # 'openstartracker_total_speed': 'OST Desktop Speed (μs)',
+    # 'openstartracker_starid_speed': 'OST StarID Desktop Speed (μs)',
+    # 'ost_availability': 'OST Availability (%)',
+    # 'ost_error_rate': 'OST Error Rate (%)',
+
+    # 'c_tetra_starid_speed': 'C-Tetra StarID Desktop Speed (μs)',
+    # 'c_tetra_availability': 'C-TETRA Availability (%)',
+    # 'c_tetra_error_rate': 'C-TETRA Error Rate (%)',
+}
+
 scenarios = [
     Scenario('20-deg FOV Low Noise', '20-low-noise',
-             ['--fov=20'] + low_noise_params),
-    Scenario('20-deg FOV High Noise', '20-high-noise',
-             ['--fov=20'] + high_noise_params),
-    # Higher FOV gives more stars but worse centroid accuracy
-    Scenario('45-deg FOV Low Noise', '45-low-noise',
-             ['--fov=45'] + low_noise_params),
-    Scenario('45-deg FOV High Noise', '20-high-noise',
-             ['--fov=45'] + high_noise_params),
+             generate_params = ['--fov=20'] + low_noise_params,
+             lost_database_params = ['--kvector',
+                                     '--kvector-max-distance=15',
+                                     '--min-mag=5.5'],
+             lost_params = ['--centroid-algo=cog',
+                            '--star-id-algo=py',
+                            '--attitude-algo=quest'],
+             lost_centroid_function_name = 'CentroidAlgorithm::Go',
+             lost_starid_function_name = 'PyramidStarIdAlgorithm::Go'),
+    # Scenario('20-deg FOV High Noise', '20-high-noise',
+    #          ['--fov=20'] + high_noise_params),
+    # # Higher FOV gives more stars but worse centroid accuracy
+    # Scenario('45-deg FOV Low Noise', '45-low-noise',
+    #          ['--fov=45'] + low_noise_params),
+    # Scenario('45-deg FOV High Noise', '20-high-noise',
+    #          ['--fov=45'] + high_noise_params),
 ]

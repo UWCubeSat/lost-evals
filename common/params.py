@@ -115,7 +115,7 @@ comprehensive_attitude_tolerance = math.radians(0.5)
 comprehensive_columns = {
     'lost_desktop_total_avg_us': 'LOST Desktop Speed (μs)',
     # 'lost_raspi_total_speed': 'LOST Raspi Speed (μs)',
-    # 'lost_total_instrs': 'LOST CPU Instructions',
+    'lost_total_avg_instrs': 'LOST CPU Instructions',
     # 'lost_max_memory': 'LOST Memory (KiB)',
     'lost_availability': 'LOST Availability (%)',
     'lost_error_rate': 'LOST Error Rate (%)',
@@ -141,8 +141,8 @@ scenarios = [
                             '--centroid-algo=cog',
                             '--star-id-algo=py',
                             '--attitude-algo=dqm'],
-             lost_centroid_function_name = 'CentroidAlgorithm::Go',
-             lost_starid_function_name = 'PyramidStarIdAlgorithm::Go'),
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go'),
     # Scenario('20-deg FOV High Noise', '20-high-noise',
     #          ['--fov=20'] + high_noise_params),
     # # Higher FOV gives more stars but worse centroid accuracy

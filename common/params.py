@@ -93,6 +93,8 @@ low_noise_params = [
     '--generate-zero-mag-photons=20000',
     '--generate-saturation-photons=50',
     '--generate-exposure=0.2',
+    '--generate-dark-current=0.25',
+    '--generate-read-noise=0.02'
 ]
 
 high_noise_params = [

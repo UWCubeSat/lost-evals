@@ -8,10 +8,12 @@ SCENARIO_JSON_GENERATORS := $(wildcard comprehensive/*.json.py)
 SCENARIO_JSONS           := $(patsubst comprehensive/%.json.py, $(SCENARIOS_PREFIX)/%.json, $(SCENARIO_JSON_GENERATORS))
 
 SCENARIOS_GENERATE_DONE := $(SCENARIOS_PREFIX)/generate-done
+OST_CALIBRATION_DONE    := $(SCENARIOS_PREFIX)/ost-calibration-done
 
 # So everyone can access `common` equally well:
 # also, if you add a comment on the same line as the variable, but leave a trailing space before the #, then that space gets added to the variable and python doesn't like it. Just completely normal Makefile things.
 export PYTHONPATH := $(PWD)
+export OPENSTARTRACKER_DIR ?= openstartracker
 
 all: $(OUTFILES)
 
@@ -30,6 +32,13 @@ $(OUT_PREFIX)/comprehensive.csv: comprehensive/combine-jsons.py common/params.py
 # Of course, these also depend on params.py...but we don't want to re-run everything every jjjj
 $(SCENARIOS_PREFIX)/%.json: comprehensive/%.json.py $(SCENARIOS_GENERATE_DONE)
 	python3 $< $@ $(SCENARIOS_PREFIX)
+
+# Override to add calibration dependency for openstartracker
+$(SCENARIOS_PREFIX)/openstartracker.json: $(OST_CALIBRATION_DONE)
+
+$(OST_CALIBRATION_DONE): comprehensive/calibrate-openstartracker.py $(SCENARIOS_GENERATE_DONE)
+	python3 $< $(SCENARIOS_PREFIX)
+	touch $@
 
 # Generated the PNGs and expected attitudes:
 $(SCENARIOS_GENERATE_DONE): comprehensive/generate-pngs.py common/scenarios.py

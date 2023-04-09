@@ -88,19 +88,24 @@ def run_callgrind_on_lost(args):
         if callgrind_out_file:
             os.remove(callgrind_out_file)
 
-def run_openstartracker_calibrate(testdir):
+def run_openstartracker_calibrate(ost_dir, testdir):
     # Call calibrate.py testdir
     print('Running calibrate.py %s' % testdir)
-    proc = subprocess.run(['python3', 'calibrate.py', testdir],
-                          check=True)
+    subprocess.run(['python3', 'tests/calibrate.py', os.path.abspath(testdir)],
+                   check=True, cwd=ost_dir)
+    assert os.path.exists(os.path.join(testdir, 'calibration.txt'))
     print('Done calibrating, methinks')
 
-def start_openstartracker_server(testdir):
+def start_openstartracker_server(ost_dir, testdir):
     """Start the server, returning the process which should be terminated when appropriate"""
     # Run startracker.py testdir/calibration.txt 2023 testdir/median_image.png
     print('Running startracker.py %s/calibration.txt 2023 %s/median_image.png' % (testdir, testdir))
-    proc = subprocess.Popen(['python3', 'startracker.py', testdir + '/calibration.txt', '2023', testdir + '/median_image.png'],
-                            stderr=subprocess.PIPE)
+    proc = subprocess.Popen(['python3', 'tests/startracker.py',
+                             os.path.abspath(os.path.join(testdir, 'calibration.txt')),
+                             '2023',
+                             os.path.abspath(os.path.join(testdir, 'median_image.png'))],
+                            stderr=subprocess.PIPE,
+                            cwd=ost_dir)
     sleep(5)
     print('Server online!')
     # os.set_blocking(proc.stderr.fileno(), False) # supposedly this makes readline nonblocking
@@ -126,11 +131,12 @@ def solve_openstartracker(image, proc):
         if not line:
             raise RuntimeError('Server output ended too early!')
         if line.startswith('Time'):
-            if line[5] != str(len(times)+1):
+            which_time = int(line[4])
+            if which_time != len(times)+1:
                 raise RuntimeError('Server `Time` output out of order!')
             # strip line ending: this will only work on unix
-            times.append(float(line[7:-1]))
-            if line[5] == '6':
+            times.append(float(line[6:-1]))
+            if which_time == 6:
                 break
 
         if line.startswith('DEC='):
@@ -152,7 +158,7 @@ def solve_openstartracker(image, proc):
 
         # There are some random lines that don't start with any of these things that we would like to ignore. As well as empty lines.
 
-    return times, dec, ra, roll
+    return times, ra, dec, roll
 
 def stop_openstartracker(proc):
     proc.terminate()

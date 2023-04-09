@@ -91,14 +91,14 @@ false_star_id_algos = basic_star_id_algos
 low_noise_params = [
     '--generate-false-stars=200',
     '--generate-zero-mag-photons=20000',
-    '--generate-saturation-photons=200',
+    '--generate-saturation-photons=50',
     '--generate-exposure=0.2',
 ]
 
 high_noise_params = [
     '--generate-false-stars=1000',
     '--generate-zero-mag-photons=10000',
-    '--generate-saturation-photons=100',
+    '--generate-saturation-photons=25',
     '--generate-blur-ra=.3',
     '--generate-blur-de=0',
     '--generate-blur-roll=4',
@@ -117,7 +117,7 @@ comprehensive_columns = {
     # 'lost_max_memory': 'LOST Memory (KiB)',
     'lost_availability': 'LOST Availability (%)',
     'lost_error_rate': 'LOST Error Rate (%)',
-    'lost_attitude_error': 'LOST Attitude Error (deg)'
+    'lost_attitude_error_deg': 'LOST Attitude Error (deg)'
 
     # 'openstartracker_total_speed': 'OST Desktop Speed (μs)',
     # 'openstartracker_starid_speed': 'OST StarID Desktop Speed (μs)',
@@ -135,9 +135,10 @@ scenarios = [
              lost_database_params = ['--kvector',
                                      '--kvector-max-distance=15',
                                      '--min-mag=5.5'],
-             lost_params = ['--centroid-algo=cog',
+             lost_params = ['--fov=20',
+                            '--centroid-algo=cog',
                             '--star-id-algo=py',
-                            '--attitude-algo=quest'],
+                            '--attitude-algo=dqm'],
              lost_centroid_function_name = 'CentroidAlgorithm::Go',
              lost_starid_function_name = 'PyramidStarIdAlgorithm::Go'),
     # Scenario('20-deg FOV High Noise', '20-high-noise',

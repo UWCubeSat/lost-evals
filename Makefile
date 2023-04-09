@@ -15,14 +15,19 @@ export PYTHONPATH := $(PWD)
 
 all: $(OUTFILES)
 
+# Convenience when typing at cli:
+comprehensive: $(OUT_PREFIX)/comprehensive.csv
+graphs: $(OUTFILES)
+
 $(OUT_PREFIX)/%: evaluators/%.py lost
 	python3 $< $@
 
-$(OUT_PREFIX)/comprehensive.csv: comprehensive/combine-jsons.py $(SCENARIO_JSONS)
+$(OUT_PREFIX)/comprehensive.csv: comprehensive/combine-jsons.py common/params.py $(SCENARIO_JSONS)
 	python3 $< $@ $(SCENARIOS_PREFIX)
 
 # For scenarios, we're really trying to do something which is fundamentally beyond Make's abilities: Have an outer folder parametrized 
 
+# Of course, these also depend on params.py...but we don't want to re-run everything every jjjj
 $(SCENARIOS_PREFIX)/%.json: comprehensive/%.json.py $(SCENARIOS_GENERATE_DONE)
 	python3 $< $@ $(SCENARIOS_PREFIX)
 
@@ -31,7 +36,15 @@ $(SCENARIOS_GENERATE_DONE): comprehensive/generate-pngs.py common/scenarios.py
 	python3 comprehensive/generate-pngs.py $(SCENARIOS_PREFIX)
 	touch $@
 
+# Force regeneration of images and, by consequence, all the jsons and comprehensive.csv
+clean-comprehensive:
+	rm -f $(SCENARIOS_GENERATE_DONE)
+
+# Force regeneration of jsons and comprehensive.csv, but keep same generated images:
+clean-jsons:
+	rm -f $(SCENARIO_JSONS)
+
 clean:
 	rm -rf $(SCENARIOS_PREFIX) $(OUTFILES)
 
-.PHONY: all clean
+.PHONY: all clean clean-comprehensive clean-jsons comprehensive graphs

@@ -3,14 +3,14 @@ import matplotlib.cm as cm
 import common.runner as runner
 import common.params as params
 
-def evaluate_starid(axes, star_id_algos, base_params, special_paramss, x_vals):
+def evaluate_starid(axes, special_paramss, x_vals):
     """axes is some matplotlib axes. star_id_algos list of starid info objects. Base params are params for every run. Special params is a 2-nested list, with the inner ones being the options for each test case. x_vals is the same length as special_params, the stuff plotted along the bottom"""
     ax_availability = axes
     ax_error = ax_availability.twinx()
 
-    num_algos = len(star_id_algos)
+    num_algos = len(params.star_id_algos)
     for star_id_algo_info, availability_color, error_color \
-        in zip(star_id_algos,
+        in zip(params.star_id_algos,
                cm.Blues(np.linspace(.8,.4,num_algos)),
                cm.Reds(np.linspace(.8,.4,num_algos))):
 
@@ -24,7 +24,7 @@ def evaluate_starid(axes, star_id_algos, base_params, special_paramss, x_vals):
                                        '--database', db_path,
                                        '--compare-star-ids=-']
                                       + star_id_algo_info.pipeline_params
-                                      + base_params
+                                      + params.starid_base_args
                                       + special_params)
                 availabilities.append(100.0 * ran['starid_num_images_correct'] / params.star_id_num_trials)
                 error_rates.append(100.0 * ran['starid_num_images_incorrect'] / params.star_id_num_trials)

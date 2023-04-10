@@ -11,17 +11,13 @@ class StarIdAlgoParams:
         self.db = runner.LostDatabase(db_params)
 
 # Which algorithms to evaluate
-basic_centroid_algos = [
+centroid_algos = [
     ('Center of Gravity', ['--centroid-algo=cog']),
     ('Iterative CoG', ['--centroid-algo=iwcog']),
     ('1D Gaussian Fit', ['--centroid-algo=lsgf1d']),
-    ('2D Gaussian Fit', ['--centroid-algo=lsgf2d']),
-    ('Gaussian Grid', ['--centroid-algo=ggrid']),
+    ('2D Gaussian Fit', ['--centroid-algo=lsgf2d', '--centroid-fit-radius=3']),
+    ('Gaussian Grid', ['--centroid-algo=ggrid', '--centroid-fit-radius=3']),
 ]
-
-# We don't evaluate attitude algos against each other, so just specify which one to use for whole-pipeline evaluations
-# TODO: check to see if there's any difference in the results between dqm and quest (shouldn't be anything that materially affects the results)
-attitude_algo='quest'
 
 database_catalog_params = ['--max-stars', 5000,
                            '--min-separation', 0.5]
@@ -31,9 +27,9 @@ database_kvector_params = ['--kvector',
                            '--kvector-distance-bins', 10000]
 database_tetra_params = ['--tetra', '--min-separation=0.0']
 
-basic_star_id_algos = [
+star_id_algos = [
     StarIdAlgoParams('Pyramid', ['--star-id-algo=py'], database_catalog_params + database_kvector_params),
-    #StarIdAlgoParams('Tetra', ['--star-id-algo=tetra'], database_catalog_params + database_tetra_params),
+    StarIdAlgoParams('Tetra', ['--star-id-algo=tetra'], database_catalog_params + database_tetra_params),
 ]
 
 centroid_base_args = ['--generate-zero-mag-photons=20000',
@@ -51,14 +47,10 @@ star_id_num_trials = 1000
 centroid_blur_num_pts = 10
 centroid_blur_base_args = centroid_base_args + ['--generate-saturation-photons=20']
 
-centroid_blur_algos = basic_centroid_algos
-
 # CENTROID READ NOISE PARAMS
 centroid_noise_max_noise = 0.1 # 5*.1 + 0.25 = 0.75, hopefully some stars will still be brighter than that.
 centroid_noise_num_pts = 10
 centroid_noise_base_args = centroid_base_args
-
-centroid_noise_algos = basic_centroid_algos
 
 # CENTROID SHOT NOISE PARAMS
 centroid_shot_noise_base_args = centroid_base_args
@@ -70,21 +62,16 @@ centroid_shot_noise_min_photoelectrons = 2000
 centroid_shot_noise_max_photoelectrons = 20000
 centroid_shot_noise_photoelectron_sensitivity_ratio = 100
 centroid_shot_noise_num_pts = 10
-centroid_shot_noise_algos = basic_centroid_algos
 
 # PERTURBATION VS SKY COVERAGE PARAMS
 perturbation_max_perturbation = 2
 perturbation_num_perturbations = 5
 perturbation_base_args = []
 
-perturbation_star_id_algos = basic_star_id_algos
-
 # FALSE STARS VS SKY COVERAGE PARAMS
 false_max_false_stars = 1500
 false_num_false_star_levels = 10
 false_base_args = []
-
-false_star_id_algos = basic_star_id_algos
 
 # DIMMEST VISIBLE STAR
 dimmest_brightest = 3
@@ -110,7 +97,7 @@ high_noise_params = [
     '--generate-false-stars=1000',
     '--generate-zero-mag-photons=10000',
     '--generate-saturation-photons=25',
-    '--generate-blur-ra=.3',
+    '--generate-blur-ra=0.3',
     '--generate-blur-de=0',
     '--generate-blur-roll=4',
     '--generate-exposure=0.2',

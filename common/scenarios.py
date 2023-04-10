@@ -50,37 +50,3 @@ class Scenario:
         with open(os.path.join(scenarios_dir, self.machine_name, 'expected-attitudes.pkl'), 'rb') as f:
             expected_attitudes = pickle.load(f)
         return expected_attitudes
-
-    # Each of the following "run" functions returns a dictionary of things we might want to include in the final table, but not certainly.
-
-    # def run_against_lost_callgrind(self, scenarios_dir):
-    #     print(f"Running {self.human_name} scenario with Callgrind against LOST")
-    #     centroid_cycles = []
-    #     starid_cycles = []
-    #     for i in range(params.comprehensive_num_pngs):
-    #         callgrind_result = runner.run_callgrind_on_lost(self.lost_params +
-    #                                                         ['--png', os.path.join(scenarios_dir, self.machine_name, 'images', str(i) + '.png')])
-    #         centroid_cycles.append(callgrind_result[self.lost_centroid_function_name])
-    #         starid_cycles.append(callgrind_result[self.lost_starid_function_name])
-    #     centroid_avg_cycles = np.mean(centroid_cycles)
-    #     starid_avg_cycles = np.mean(starid_cycles)
-    #     return {
-    #         'lost_centroid_avg_cycles': centroid_avg_cycles,
-    #         'lost_starid_avg_cycles': starid_avg_cycles,
-    #     }
-
-    # def run_against_openstartracker(self, scenarios_dir):
-    #     print(f"Running {self.human_name} scenario against OpenStarTracker")
-    #     print('Calibrating OpenStarTracker...')
-    #     # Create a folder for the calibration images
-    #     calibration_images_dir = os.path.join(scenarios_dir, self.machine_name, 'ost-calibration-images')
-    #     os.makedirs(calibration_images_dir, exist_ok=True)
-    #     # Remove any existing calibration images
-    #     for f in os.listdir(calibration_images_dir):
-    #         os.remove(os.path.join(calibration_images_dir, f))
-    #     # Hardlink images from the main scenario pngs folder into the calibration folder
-    #     for i in range(params.comprehensive_num_ost_calibrations):
-    #         os.link(os.path.join(scenarios_dir, self.machine_name, 'images', str(i) + '.png'),
-    #                 os.path.join(calibration_images_dir, str(i) + '.png'))
-    #     # Run OpenStarTracker calibration
-        

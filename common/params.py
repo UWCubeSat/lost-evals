@@ -41,7 +41,11 @@ centroid_base_args = ['--generate-zero-mag-photons=20000',
                       '--centroid-filter-brightest=5']
 centroid_num_trials = 100
 
-star_id_num_trials = 100
+starid_base_args = [
+    '--fov=25',
+    '--generate-cutoff-mag=4',
+]
+star_id_num_trials = 1000
 
 # CENTROID MOTION BLUR TESTING PARAMS
 centroid_blur_num_pts = 10
@@ -52,7 +56,7 @@ centroid_blur_algos = basic_centroid_algos
 # CENTROID READ NOISE PARAMS
 centroid_noise_max_noise = 0.1 # 5*.1 + 0.25 = 0.75, hopefully some stars will still be brighter than that.
 centroid_noise_num_pts = 10
-centroid_noise_base_args = centroid_base_args + ['--generate-dark-current', 0.25]
+centroid_noise_base_args = centroid_base_args
 
 centroid_noise_algos = basic_centroid_algos
 
@@ -76,11 +80,16 @@ perturbation_base_args = []
 perturbation_star_id_algos = basic_star_id_algos
 
 # FALSE STARS VS SKY COVERAGE PARAMS
-false_max_false_stars = 4000
+false_max_false_stars = 1500
 false_num_false_star_levels = 10
 false_base_args = []
 
 false_star_id_algos = basic_star_id_algos
+
+# DIMMEST VISIBLE STAR
+dimmest_brightest = 3
+dimmest_dimmest = 6
+dimmest_num_pts = 10
 
 
 

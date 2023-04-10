@@ -122,7 +122,7 @@ def start_openstartracker_server(ost_dir, testdir):
                             stderr=subprocess.PIPE,
                             cwd=ost_dir)
     sleep(5)
-    print('Server online!')
+    print('Done starting server')
     # os.set_blocking(proc.stderr.fileno(), False) # supposedly this makes readline nonblocking
     return proc
 

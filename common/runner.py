@@ -59,34 +59,49 @@ class LostDatabase:
         if self.db_path:
             os.unlink(self.db_path)
 
+def callgrind_annotate(xtree_file, event_name):
+    """Run callgrind_annotate on the given callgrind output, returning a dictionary of function names to counts"""
+    analyze_proc = subprocess.run(['callgrind_annotate', '--show='+event_name,
+                                   '--auto=no', '--context=0', '--inclusive=yes', '--threshold=100',
+                                   xtree_file],
+                                  check=True,
+                                  capture_output=True)
+    # Parse output into hashmap from fns to counts. Use the first instance of a function name when it occurs multiple times
+    result = {}
+    for line in analyze_proc.stdout.decode('utf-8').splitlines():
+        match = callgrind_annotate_re.match(line)
+        if match and not match.group(2) in result:
+            result[match.group(2)] = int(match.group(1).replace(',', ''))
+    return result
+
 def run_callgrind_on_lost(args):
     try:
         fd, callgrind_out_file = tempfile.mkstemp()
         os.close(fd)
         actual_args = ['valgrind', '--tool=callgrind', '--callgrind-out-file=' + callgrind_out_file] + prepare_lost_args(args)
         print('Running (callgrind): ' + ' '.join(actual_args))
-        proc = subprocess.run(actual_args,
-                              check=True,
-                              capture_output=True)
+        proc = subprocess.run(actual_args, check=True)
         print('Done (callgrind), sending to callgrind_annotate')
-        # Run callgrind_analyze on proc.stdout
-        analyze_proc = subprocess.run(['callgrind_annotate', '--auto=no', '--context=0', '--inclusive=yes', '--threshold=100',
-                                       callgrind_out_file],
-                                      input=proc.stdout,
-                                      check=True,
-                                      capture_output=True)
-
-        # Parse output into hashmap from fns to counts. Use the first instance of a function name when it occurs multiple times
-        result = {}
-        for line in analyze_proc.stdout.decode('utf-8').splitlines():
-            match = callgrind_annotate_re.match(line)
-            if match and not match.group(2) in result:
-                    result[match.group(2)] = int(match.group(1).replace(',', ''))
-        return result
+        return callgrind_annotate(callgrind_out_file, 'Ir')
 
     finally:
-        if callgrind_out_file:
+        if callgrind_out_file and os.path.exists(callgrind_out_file):
             os.remove(callgrind_out_file)
+
+def run_massif_on_lost(args):
+    try:
+        fd, xtree_out_file = tempfile.mkstemp()
+        os.close(fd)
+        actual_args = ['valgrind', '--tool=massif', '--xtree-memory=full',
+                       '--xtree-memory-file=' + xtree_out_file] + prepare_lost_args(args)
+        print('Running (massif): ' + ' '.join(actual_args))
+        proc = subprocess.run(actual_args, check=True)
+        print('Done (massif), sending to callgrind_annotate')
+        return callgrind_annotate(xtree_out_file, 'totB')
+
+    finally:
+        if xtree_out_file and os.path.exists(xtree_out_file):
+            os.remove(xtree_out_file)
 
 def run_openstartracker_calibrate(ost_dir, testdir):
     # Call calibrate.py testdir

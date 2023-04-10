@@ -3,4 +3,5 @@
 /lost
 /bright-star-catalog.tsv
 *.png
+*.json
 __pycache__

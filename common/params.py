@@ -88,6 +88,7 @@ dimmest_num_pts = 10
 
 low_noise_params = [
     '--generate-false-stars=200',
+    '--generate-cutoff-mag=5.0',
     '--generate-zero-mag-photons=20000',
     '--generate-saturation-photons=50',
     '--generate-exposure=0.2',

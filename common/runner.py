@@ -19,17 +19,17 @@ def maybe_to_num(s):
     return int(n) if n.is_integer() else n
 
 def prepare_lost_args(args):
-    return [os.getcwd() + '/lost', 'pipeline'] + list(map(str, args))
+    return [os.path.abspath('lost/lost'), 'pipeline'] + list(map(str, args))
 
 # Runs LOST with the given command-line parameters. Parses its output, returning a dictionary of
 # everything that got printed from comparators and similar.
 def run_lost(args):
     actual_args = prepare_lost_args(args)
-    print('Running: ' + ' '.join(actual_args))
+    print('Running: ' + ' '.join(actual_args), flush=True)
     proc = subprocess.run(actual_args,
                           check=False,
                           capture_output=True)
-    print('Done, stderr: ' + proc.stderr.decode('ascii'))
+    print('Done, stderr: ' + proc.stderr.decode('ascii'), flush=True)
     if proc.returncode != 0:
         raise RuntimeError('Nonzero exit code from LOST, %d' % proc.returncode)
     result = dict()
@@ -54,6 +54,7 @@ class LostDatabase:
         print('Creating database: lost ' + ' '.join(stringy_args), flush=True)
         subprocess.run([os.getcwd() + '/lost'] + stringy_args,
                        check=True)
+        print('Database created.', flush=True)
         return self.db_path
     def __exit__(self, *args):
         if self.db_path:
@@ -79,9 +80,9 @@ def run_callgrind_on_lost(args):
         fd, callgrind_out_file = tempfile.mkstemp()
         os.close(fd)
         actual_args = ['valgrind', '--tool=callgrind', '--callgrind-out-file=' + callgrind_out_file] + prepare_lost_args(args)
-        print('Running (callgrind): ' + ' '.join(actual_args))
+        print('Running (callgrind): ' + ' '.join(actual_args), flush=True)
         proc = subprocess.run(actual_args, check=True)
-        print('Done (callgrind), sending to callgrind_annotate')
+        print('Done (callgrind), sending to callgrind_annotate', flush=True)
         return callgrind_annotate(callgrind_out_file, 'Ir')
 
     finally:
@@ -94,9 +95,9 @@ def run_massif_on_lost(args):
         os.close(fd)
         actual_args = ['valgrind', '--tool=massif', '--xtree-memory=full',
                        '--xtree-memory-file=' + xtree_out_file] + prepare_lost_args(args)
-        print('Running (massif): ' + ' '.join(actual_args))
+        print('Running (massif): ' + ' '.join(actual_args), flush=True)
         proc = subprocess.run(actual_args, check=True)
-        print('Done (massif), sending to callgrind_annotate')
+        print('Done (massif), sending to callgrind_annotate', flush=True)
         return callgrind_annotate(xtree_out_file, 'totB')
 
     finally:
@@ -105,16 +106,16 @@ def run_massif_on_lost(args):
 
 def run_openstartracker_calibrate(ost_dir, testdir):
     # Call calibrate.py testdir
-    print('Running calibrate.py %s' % testdir)
+    print('Running calibrate.py %s' % testdir, flush=True)
     subprocess.run(['python3', 'tests/calibrate.py', os.path.abspath(testdir)],
                    check=True, cwd=ost_dir)
     assert os.path.exists(os.path.join(testdir, 'calibration.txt'))
-    print('Done calibrating, methinks')
+    print('Done calibrating, methinks', flush=True)
 
 def start_openstartracker_server(ost_dir, testdir):
     """Start the server, returning the process which should be terminated when appropriate"""
     # Run startracker.py testdir/calibration.txt 2023 testdir/median_image.png
-    print('Running startracker.py %s/calibration.txt 2023 %s/median_image.png' % (testdir, testdir))
+    print('Running startracker.py %s/calibration.txt 2023 %s/median_image.png' % (testdir, testdir), flush=True)
     proc = subprocess.Popen(['python3', 'tests/startracker.py',
                              os.path.abspath(os.path.join(testdir, 'calibration.txt')),
                              '2023',
@@ -122,13 +123,13 @@ def start_openstartracker_server(ost_dir, testdir):
                             stderr=subprocess.PIPE,
                             cwd=ost_dir)
     sleep(5)
-    print('Done starting server')
+    print('Done starting server', flush=True)
     # os.set_blocking(proc.stderr.fileno(), False) # supposedly this makes readline nonblocking
     return proc
 
 def solve_openstartracker(image, proc):
     # Send `rgb.solve_image('image')` to the server
-    print('Solving %s with openstartracker' % image)
+    print('Solving %s with openstartracker' % image, flush=True)
     # Just send the text to 127.0.0.1:8010 over TCP
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect(('127.0.0.1', 8010))
@@ -196,6 +197,7 @@ def run_c_tetra(tetra_params, num_images, centroid_data_p_path, image_data_p_pat
                           capture_output=True)
     print('Done running tetra', flush=True)
     tetra_output = proc.stdout.decode('ascii')
+    print(tetra_output)
     result = {}
     for line in tetra_output.splitlines():
         match = re.match(tetra_re, line)

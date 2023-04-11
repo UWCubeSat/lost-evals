@@ -22,8 +22,8 @@ with open('lost/bright-star-catalog.tsv') as bsc_file:
         ra = float(row[0])
         de = float(row[1])
         name = int(row[2])
-        x = np.sin(np.radians(ra)) * np.cos(np.radians(de))
-        y = np.cos(np.radians(ra)) * np.cos(np.radians(de))
+        x = np.cos(np.radians(ra)) * np.cos(np.radians(de))
+        y = np.sin(np.radians(ra)) * np.cos(np.radians(de))
         z = np.sin(np.radians(de))
         bsc_entries.append(((x,y,z),name))
 
@@ -39,7 +39,6 @@ for scenario in params.scenarios:
     tetra_stars = np.memmap(scenario.tetra_params.stars_path, dtype=tetra_stars_data_type, mode='r', shape=(num_tetra_star_vectors,))
 
     bsc_to_tetra = {}
-    max_bsc_to_tetra_dist = 1e-6
     # precalculate tetra vectors for speed
     tetra_unit_vectors = np.ndarray((num_tetra_star_vectors,3))
     for j in range(num_tetra_star_vectors):
@@ -55,8 +54,8 @@ for scenario in params.scenarios:
         distances = np.linalg.norm(tetra_unit_vectors - bsc_unit_vectors[i], axis=1)
         min_index = np.argmin(distances)
         min_distance = distances[min_index]
-        if min_distance < max_bsc_to_tetra_dist:
-            bsc_to_tetra[bsc_entries[i][1]] = min_index
+        # One might think it's a good idea to limit the maximum distance here, but because Tetra updates their stuff to the current year and we don't...nah
+        bsc_to_tetra[bsc_entries[i][1]] = min_index
 
     print(f"Running {scenario.human_name} C-Tetra", flush=True)
     input_centroids = scenario.read_input_centroids(scenarios_dir)
@@ -77,8 +76,8 @@ for scenario in params.scenarios:
         for j in range(num_centroids):
             x, y, name = input_centroids[i][j]
             # Is this the only way to assign a tuple to a numpy array in Python? I'm not gonna f around and find out
-            centroid_data[i * max_num_stars_per_image + j][0] = x
-            centroid_data[i * max_num_stars_per_image + j][1] = y
+            centroid_data[i * max_num_stars_per_image + j][0] = x-512
+            centroid_data[i * max_num_stars_per_image + j][1] = 512-y # hardcode alert! hardcode alert!
             if name is not None:
                 if name in bsc_to_tetra:
                     image_data[i * max_num_stars_per_image + j] = bsc_to_tetra[name]

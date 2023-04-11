@@ -60,7 +60,8 @@ class Scenario:
                 cur_centroids.append((run_results[f'actual_centroid_{i}_x'],
                                       run_results[f'actual_centroid_{i}_y'],
                                       # .get defaults to None but we specify it explicitly here because it's my first time using it and I feel like copilot is going to destroy my brain cells
-                                      run_results.get(f'input_centroid_{i}_id', None)))
+                                      # It's okay to just use the 0-th candidate, because we're going to map it to the nearest Tetra centroid anyway.
+                                      run_results.get(f'actual_centroid_{i}_expected_id_0', None)))
             output_centroids.append(cur_centroids)
 
         with open(os.path.join(scenarios_dir, self.machine_name, 'expected-attitudes.pkl'), 'wb') as f:

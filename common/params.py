@@ -64,8 +64,8 @@ centroid_shot_noise_base_args = centroid_base_args
 # proportionally with the saturation photons. This way, the effective brightness of the stars stays
 # the same, and we only are effectively editing the shot noise. We'll use an exposure of 1.0 for
 # simplicity.
-centroid_shot_noise_min_photoelectrons = 10000
-centroid_shot_noise_max_photoelectrons = 30000
+centroid_shot_noise_min_photoelectrons = 2000
+centroid_shot_noise_max_photoelectrons = 20000
 centroid_shot_noise_photoelectron_sensitivity_ratio = 100
 centroid_shot_noise_num_pts = 10
 

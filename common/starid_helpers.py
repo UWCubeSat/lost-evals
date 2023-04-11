@@ -42,10 +42,10 @@ def evaluate_starid(axes, special_paramss, x_vals):
 
     ax_availability.set_ylabel('Availability (%)')
     ax_availability.set_ylim(bottom=0, top=100)
-    ax_availability.legend()
+    ax_availability.legend(title='Availability')
 
     ax_error.set_ylabel('Error Rate (%)')
     ax_error.set_ylim(bottom=0)
-    ax_error.legend()
+    ax_error.legend(title='Error Rate')
 
         

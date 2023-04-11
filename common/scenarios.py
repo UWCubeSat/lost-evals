@@ -7,6 +7,14 @@ import quaternion
 import common.runner as runner
 
 @dataclass
+class TetraParams:
+    pattern_catalog_path: str
+    stars_path: str
+    max_fov: float
+    num_catalog_patterns: int
+    num_stars: int
+
+@dataclass
 class Scenario:
     """A scenario used in the comprehensive test"""
     human_name: str
@@ -16,6 +24,8 @@ class Scenario:
     lost_database_params: [str]
     lost_centroid_function_name: str
     lost_starid_function_name: str
+
+    tetra_params: TetraParams
 
     def image_paths(self, num_pngs, scenarios_dir):
         """Return a list of paths, one for each generated image"""
@@ -31,6 +41,7 @@ class Scenario:
                 os.remove(os.path.join(images_folder, f))
 
         expected_attitudes = []
+        input_centroids = [] # [[(x,y,id_name)]], inner array is centroids per image. id_name may be None
         for i in range(num_pngs):
             seed = i + 123123123
             run_results = runner.run_lost(self.generate_params +
@@ -38,15 +49,29 @@ class Scenario:
                                            '--generate-random-attitude=1',
                                            '--generate-seed', seed,
                                            '--plot-raw-input', os.path.join(scenarios_dir, self.machine_name, 'images', str(i) + '.png'),
-                                           '--print-expected-attitude=-'])
+                                           '--print-expected-attitude=-',
+                                           '--print-input-centroids=-'])
             expected_attitudes.append(np.quaternion(run_results['expected_attitude_real'],
                                                     run_results['expected_attitude_i'],
                                                     run_results['expected_attitude_j'],
                                                     run_results['expected_attitude_k']))
+            cur_centroids = []
+            for i in range(run_results['num_input_centroids']):
+                cur_centroids.append((run_results[f'input_centroid_{i}_x'],
+                                      run_results[f'input_centroid_{i}_y'],
+                                      # .get defaults to None but we specify it explicitly here because it's my first time using it and I feel like copilot is going to destroy my brain cells
+                                      run_results.get(f'input_centroid_{i}_id', None)))
+            input_centroids.append(cur_centroids)
+
         with open(os.path.join(scenarios_dir, self.machine_name, 'expected-attitudes.pkl'), 'wb') as f:
             pickle.dump(expected_attitudes, f)
+        with open(os.path.join(scenarios_dir, self.machine_name, 'input-centroids.pkl'), 'wb') as f:
+            pickle.dump(input_centroids, f)
 
     def read_expected_attitudes(self, scenarios_dir):
         with open(os.path.join(scenarios_dir, self.machine_name, 'expected-attitudes.pkl'), 'rb') as f:
-            expected_attitudes = pickle.load(f)
-        return expected_attitudes
+            return pickle.load(f)
+
+    def read_input_centroids(self, scenarios_dir):
+        with open(os.path.join(scenarios_dir, self.machine_name, 'input-centroids.pkl'), 'rb') as f:
+            return pickle.load(f)

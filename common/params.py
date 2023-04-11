@@ -2,7 +2,7 @@
 import math
 
 import common.runner as runner
-from common.scenarios import Scenario
+from common.scenarios import Scenario, TetraParams
 
 class StarIdAlgoParams:
     def __init__(self, name, pipeline_params, db_params):
@@ -39,7 +39,9 @@ centroid_num_trials = 100
 
 starid_base_args = [
     '--fov=25',
-    '--generate-cutoff-mag=4',
+    '--generate-cutoff-mag=5',
+    '--generate-perturb-centroids=0.3',
+    '--generate-false-stars=100',
 ]
 star_id_num_trials = 1000
 
@@ -138,7 +140,10 @@ scenarios = [
                             '--star-id-algo=py',
                             '--attitude-algo=dqm'],
              lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
-             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go'),
+             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go',
+             tetra_params = TetraParams('tetra_pattern_catalog_20_5.0', 'stars_5.0',
+                                        0.494, 132717936, 1560),
+             )
     # Scenario('20-deg FOV High Noise', '20-high-noise',
     #          ['--fov=20'] + high_noise_params),
     # # Higher FOV gives more stars but worse centroid accuracy

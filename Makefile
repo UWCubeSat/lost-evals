@@ -41,7 +41,7 @@ $(OST_CALIBRATION_DONE): comprehensive/calibrate-openstartracker.py $(SCENARIOS_
 	touch $@
 
 # Generated the PNGs and expected attitudes:
-$(SCENARIOS_GENERATE_DONE): comprehensive/generate-pngs.py common/scenarios.py
+$(SCENARIOS_GENERATE_DONE): comprehensive/generate-pngs.py
 	python3 comprehensive/generate-pngs.py $(SCENARIOS_PREFIX)
 	touch $@
 

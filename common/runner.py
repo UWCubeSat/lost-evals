@@ -178,3 +178,27 @@ def solve_openstartracker(image, proc):
 def stop_openstartracker(proc):
     proc.terminate()
     proc.wait()
+
+tetra_re = r'^([a-z0-9 _]+): ([0-9.]+)'
+
+def run_c_tetra(tetra_params, num_images, centroid_data_p_path, image_data_p_path):
+    # Run C-Tetra
+    c_tetra_args = [os.path.abspath('tetra/C_Tetra/Tetra'),
+                    str(num_images),
+                    str(tetra_params.max_fov),
+                    str(tetra_params.num_catalog_patterns),
+                    os.path.abspath(tetra_params.pattern_catalog_path),
+                    os.path.abspath(centroid_data_p_path),
+                    os.path.abspath(image_data_p_path)]
+    print('Running C-Tetra: ' + ' '.join(c_tetra_args), flush=True)
+    proc = subprocess.run(c_tetra_args,
+                          check=True,
+                          capture_output=True)
+    print('Done running tetra', flush=True)
+    tetra_output = proc.stdout.decode('ascii')
+    result = {}
+    for line in tetra_output.splitlines():
+        match = re.match(tetra_re, line)
+        if match:
+            result[match.group(1)] = int(float(match.group(2)))
+    return result

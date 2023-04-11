@@ -41,7 +41,7 @@ class Scenario:
                 os.remove(os.path.join(images_folder, f))
 
         expected_attitudes = []
-        input_centroids = [] # [[(x,y,id_name)]], inner array is centroids per image. id_name may be None
+        output_centroids = [] # [[(x,y,id_name)]], inner array is centroids per image. id_name may be None
         for i in range(num_pngs):
             seed = i + 123123123
             run_results = runner.run_lost(self.generate_params +
@@ -50,28 +50,28 @@ class Scenario:
                                            '--generate-seed', seed,
                                            '--plot-raw-input', os.path.join(scenarios_dir, self.machine_name, 'images', str(i) + '.png'),
                                            '--print-expected-attitude=-',
-                                           '--print-input-centroids=-'])
+                                           '--print-actual-centroids=-'])
             expected_attitudes.append(np.quaternion(run_results['expected_attitude_real'],
                                                     run_results['expected_attitude_i'],
                                                     run_results['expected_attitude_j'],
                                                     run_results['expected_attitude_k']))
             cur_centroids = []
-            for i in range(run_results['num_input_centroids']):
-                cur_centroids.append((run_results[f'input_centroid_{i}_x'],
-                                      run_results[f'input_centroid_{i}_y'],
+            for i in range(run_results['num_actual_centroids']):
+                cur_centroids.append((run_results[f'actual_centroid_{i}_x'],
+                                      run_results[f'actual_centroid_{i}_y'],
                                       # .get defaults to None but we specify it explicitly here because it's my first time using it and I feel like copilot is going to destroy my brain cells
                                       run_results.get(f'input_centroid_{i}_id', None)))
-            input_centroids.append(cur_centroids)
+            output_centroids.append(cur_centroids)
 
         with open(os.path.join(scenarios_dir, self.machine_name, 'expected-attitudes.pkl'), 'wb') as f:
             pickle.dump(expected_attitudes, f)
-        with open(os.path.join(scenarios_dir, self.machine_name, 'input-centroids.pkl'), 'wb') as f:
-            pickle.dump(input_centroids, f)
+        with open(os.path.join(scenarios_dir, self.machine_name, 'output-centroids.pkl'), 'wb') as f:
+            pickle.dump(output_centroids, f)
 
     def read_expected_attitudes(self, scenarios_dir):
         with open(os.path.join(scenarios_dir, self.machine_name, 'expected-attitudes.pkl'), 'rb') as f:
             return pickle.load(f)
 
-    def read_input_centroids(self, scenarios_dir):
-        with open(os.path.join(scenarios_dir, self.machine_name, 'input-centroids.pkl'), 'rb') as f:
+    def read_output_centroids(self, scenarios_dir):
+        with open(os.path.join(scenarios_dir, self.machine_name, 'output-centroids.pkl'), 'rb') as f:
             return pickle.load(f)

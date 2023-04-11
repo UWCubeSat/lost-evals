@@ -87,7 +87,6 @@ dimmest_num_pts = 10
 # COMPREHENSIVE
 
 low_noise_params = [
-    '--generate-false-stars=200',
     '--generate-cutoff-mag=5.0',
     '--generate-zero-mag-photons=20000',
     '--generate-saturation-photons=50',
@@ -132,7 +131,7 @@ comprehensive_columns = {
 
 scenarios = [
     Scenario('20-deg FOV Low Noise', '20-low-noise',
-             generate_params = ['--fov=20'] + low_noise_params,
+             generate_params = ['--fov=20', '--centroid-algo=cog'] + low_noise_params,
              lost_database_params = ['--kvector',
                                      '--kvector-max-distance=15',
                                      '--min-mag=5.5'],

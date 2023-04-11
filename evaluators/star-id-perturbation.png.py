@@ -9,7 +9,7 @@ from common.starid_helpers import evaluate_starid
 
 fig, ax = plt.subplots()
 
-perturbation_levels = np.linspace(0, params.perturbation_max_perturbation, num=params.perturbation_num_perturbations)
+perturbation_levels = np.linspace(0, params.perturbation_max_perturbation, num=params.perturbation_num_pts)
 
 # TODO set fov in params?
 fov_deg = 20

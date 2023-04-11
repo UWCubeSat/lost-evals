@@ -21,7 +21,7 @@ all: $(OUTFILES)
 comprehensive: $(OUT_PREFIX)/comprehensive.csv
 graphs: $(OUTFILES)
 
-$(OUT_PREFIX)/%: evaluators/%.py lost
+$(OUT_PREFIX)/%: evaluators/%.py
 	python3 $< $@
 
 $(OUT_PREFIX)/comprehensive.csv: comprehensive/combine-jsons.py common/params.py $(SCENARIO_JSONS)

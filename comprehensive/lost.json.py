@@ -50,8 +50,8 @@ for scenario in params.scenarios:
             'lost_desktop_starid_avg_us': starid_avg_us,
             'lost_desktop_total_avg_us': total_avg_us,
             'lost_attitude_error_deg': np.degrees(attitude_comparison['attitude_error']),
-            'lost_error_rate': attitude_comparison['error_rate'],
-            'lost_availability': attitude_comparison['availability'],
+            'lost_error_rate': attitude_comparison['error_rate'] * 100,
+            'lost_availability': attitude_comparison['availability'] * 100,
         }
 
 with open(output_file, 'w') as f:

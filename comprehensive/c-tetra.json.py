@@ -96,8 +96,8 @@ for scenario in params.scenarios:
 
     result[scenario.machine_name] = {
         'c_tetra_starid_avg_us': avg_runtime_us,
-        'c_tetra_availability': availability,
-        'c_tetra_error_rate': error_rate,
+        'c_tetra_availability': availability * 100,
+        'c_tetra_error_rate': error_rate * 100,
     }
 
 with open(out_file, 'w') as f:

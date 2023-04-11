@@ -25,4 +25,4 @@ column_name_map = params.comprehensive_columns
 index_name_map = dict([(s.machine_name, s.human_name) for s in params.scenarios])
 combined_df = combined_df[column_name_map.keys()].rename(columns=column_name_map, index=index_name_map)
 
-combined_df.to_csv(output_file, index=True, index_label='Scenario')
+combined_df.transpose().to_csv(output_file, index=True, index_label='Scenario')

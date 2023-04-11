@@ -52,7 +52,7 @@ class LostDatabase:
         os.close(fd)
         stringy_args = ['database'] + list(map(str, self.cli_args)) + ['--output', self.db_path]
         print('Creating database: lost ' + ' '.join(stringy_args), flush=True)
-        subprocess.run([os.getcwd() + '/lost'] + stringy_args,
+        subprocess.run([os.path.abspath('lost/lost')] + stringy_args,
                        check=True)
         print('Database created.', flush=True)
         return self.db_path
@@ -93,7 +93,7 @@ def run_massif_on_lost(args):
     try:
         fd, xtree_out_file = tempfile.mkstemp()
         os.close(fd)
-        actual_args = ['valgrind', '--tool=massif', '--xtree-memory=full',
+        actual_args = ['valgrind', '--tool=massif', '--massif-out-file=/dev/null', '--xtree-memory=full',
                        '--xtree-memory-file=' + xtree_out_file] + prepare_lost_args(args)
         print('Running (massif): ' + ' '.join(actual_args), flush=True)
         proc = subprocess.run(actual_args, check=True)

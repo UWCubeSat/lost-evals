@@ -15,7 +15,9 @@ OST_CALIBRATION_DONE    := $(SCENARIOS_PREFIX)/ost-calibration-done
 export PYTHONPATH := $(PWD)
 export OPENSTARTRACKER_DIR ?= openstartracker
 
-all: $(OUTFILES)
+all: graphs comprehensive
+
+graphs: $(OUTFILES)
 
 # Convenience when typing at cli:
 comprehensive: $(OUT_PREFIX)/comprehensive.csv
@@ -45,6 +47,9 @@ $(SCENARIOS_GENERATE_DONE): comprehensive/generate-pngs.py
 	python3 comprehensive/generate-pngs.py $(SCENARIOS_PREFIX)
 	touch $@
 
+lost:
+	$(MAKE) -C lost release
+
 # Force regeneration of images and, by consequence, all the jsons and comprehensive.csv
 clean-comprehensive:
 	rm -f $(SCENARIOS_GENERATE_DONE)
@@ -56,4 +61,4 @@ clean-jsons:
 clean:
 	rm -rf $(SCENARIOS_PREFIX) $(OUTFILES)
 
-.PHONY: all clean clean-comprehensive clean-jsons comprehensive graphs
+.PHONY: all clean clean-comprehensive clean-jsons comprehensive graphs lost

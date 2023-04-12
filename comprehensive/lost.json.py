@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import os
 import json
 import numpy as np
 import quaternion
@@ -52,6 +53,7 @@ for scenario in params.scenarios:
             'lost_attitude_error_deg': np.degrees(attitude_comparison['attitude_error']),
             'lost_error_rate': attitude_comparison['error_rate'] * 100,
             'lost_availability': attitude_comparison['availability'] * 100,
+            'lost_database_size': os.path.getsize(db),
         }
 
 with open(output_file, 'w') as f:

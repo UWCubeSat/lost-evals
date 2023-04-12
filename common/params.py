@@ -19,11 +19,11 @@ centroid_algos = [
     ('Gaussian Grid', ['--centroid-algo=ggrid', '--centroid-fit-radius=3']),
 ]
 
-database_catalog_params = ['--max-stars', 5000,
-                           '--min-separation', 0.5]
+database_catalog_params = ['--min-mag', 6.0,
+                           '--min-separation', 0.0]
 database_kvector_params = ['--kvector',
                            '--kvector-min-distance', 0.5,
-                           '--kvector-max-distance', 10,
+                           '--kvector-max-distance', 20,
                            '--kvector-distance-bins', 10000]
 database_tetra_params = ['--tetra', '--min-separation=0.0']
 
@@ -92,26 +92,27 @@ dimmest_num_pts = 10
 
 
 low_noise_params = [
+    '--generate-false-stars=50'
     '--generate-zero-mag-photons=20000',
     '--generate-saturation-photons=50',
     '--generate-exposure=0.2',
     '--generate-dark-current=0.25',
     '--generate-read-noise=0.02',
-    '--centroid-algo=lsfg2d', # for tetra, poor thing
-    '--centroid-mag-filter=7',
+    '--centroid-algo=cog', # for tetra, poor thing
+    '--centroid-mag-filter=5',
 ]
 
 high_noise_params = [
-    '--generate-false-stars=1000', # this is a lot, but many are too dim to be centroided so it's okay.
+    '--generate-false-stars=400', # this is a lot, but many are too dim to be centroided so it's okay.
     '--generate-zero-mag-photons=10000',
     '--generate-saturation-photons=25',
     '--generate-blur-ra=0.3',
     '--generate-blur-de=0',
     '--generate-blur-roll=4',
     '--generate-exposure=0.2',
-    '--generate-dark-current=0.02',
+    '--generate-dark-current=0.25',
     '--centroid-algo=cog', # motion blur will fck us up otherwise
-    '--centroid-mag-filter=7',
+    '--centroid-mag-filter=5',
 ]
 
 comprehensive_num_pngs = 100
@@ -142,25 +143,91 @@ comprehensive_columns = {
     # 'ost_error_rate': 'OST Error Rate (%)',
 
     'c_tetra_starid_avg_us': 'C-Tetra Star-ID Desktop Speed (μs)',
-    'c_tetra_availability': 'C-TETRA Availability (%)',
-    'c_tetra_error_rate': 'C-TETRA Error Rate (%)',
+    'c_tetra_availability': 'C-Tetra Availability (%)',
+    'c_tetra_error_rate': 'C-Tetra Error Rate (%)',
 }
 
 tetra_params_20 = TetraParams('tetra_pattern_catalog_20_5.0', 'stars_5.0', 0.494, 132717936, 1560)
 tetra_params_45 = TetraParams('tetra_pattern_catalog_45_4.0', 'stars_4.0', 1.111, 180118971, 500)
 
 comprehensive_py_20_db_params = ['--kvector',
-                                 '--kvector-max-distance=15',
-                                 '--min-mag=5.5']
+                                 '--kvector-max-distance=25',
+                                 '--min-mag=5.0']
 comprehensive_py_45_db_params = ['--kvector',
-                                 '--kvector-max-distance=35',
-                                 '--min-mag=4.7']
+                                 '--kvector-max-distance=45',
+                                 '--min-mag=4.5']
 comprehensive_tetra_20_db_params = ['--tetra',
                                     '--tetra-max-angle=15']
 comprehensive_tetra_45_db_params = ['--tetra',
                                     '--tetra-max-angle=35']
+fov20_params = ['--angular-tolerance=0.03']
+fov45_params = ['--angular-tolerance=0.1']
 
-scenarios = [
+low_noise_mag_filter = ['--centroid-filter-brightest=8']
+high_noise_mag_filter = ['--centroid-filter-brightest=12']
+
+all_pyramid_scenarios = [
+    Scenario('20-deg FOV Low Noise', '20-low-noise',
+             generate_params = ['--fov=20'] + low_noise_params,
+             lost_database_params = comprehensive_py_20_db_params,
+             lost_params = ['--fov=20',
+                            '--centroid-algo=cog',
+                            '--star-id-algo=py',
+                            '--attitude-algo=dqm']
+             + fov20_params
+             + low_noise_mag_filter,
+
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go',
+             tetra_params = tetra_params_20,
+             ),
+    Scenario('20-deg FOV High Noise', '20-high-noise',
+             generate_params = ['--fov=20'] + high_noise_params,
+             lost_database_params = comprehensive_py_20_db_params,
+             lost_params = ['--fov=20',
+                            '--centroid-algo=cog',
+                            '--star-id-algo=py',
+                            '--attitude-algo=dqm']
+             + fov20_params
+             + high_noise_mag_filter,
+
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go',
+             tetra_params = tetra_params_20,
+             ),
+    # Higher FOV gives more stars but worse centroid accuracy
+    Scenario('45-deg FOV Low Noise', '45-low-noise',
+             generate_params = ['--fov=45'] + low_noise_params,
+             lost_database_params = comprehensive_py_45_db_params,
+             lost_params = ['--fov=45',
+                            '--centroid-algo=cog',
+                            '--star-id-algo=py',
+                            '--attitude-algo=dqm']
+             + fov45_params
+             + low_noise_mag_filter,
+
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go',
+             tetra_params = tetra_params_45,
+             ),
+    Scenario('45-deg FOV High Noise', '45-high-noise',
+             generate_params = ['--fov=45'] + high_noise_params,
+             lost_database_params = comprehensive_py_45_db_params,
+             lost_params = ['--fov=45',
+                            '--centroid-algo=cog',
+                            '--star-id-algo=py',
+                            '--attitude-algo=dqm']
+             + fov45_params
+             + high_noise_mag_filter,
+
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go',
+             tetra_params = tetra_params_45,
+             ),
+
+]
+
+all_tetra_scenarios = [
     Scenario('20-deg FOV Low Noise', '20-low-noise',
              generate_params = ['--fov=20'] + low_noise_params,
              lost_database_params = comprehensive_tetra_20_db_params,
@@ -207,3 +274,59 @@ scenarios = [
              tetra_params = tetra_params_45,
              ),
 ]
+
+mixed_scenarios = [
+    Scenario('20-deg FOV Low Noise', '20-low-noise',
+             generate_params = ['--fov=20'] + low_noise_params,
+             lost_database_params = comprehensive_tetra_20_db_params,
+             lost_params = ['--fov=20',
+                            '--centroid-algo=cog',
+                            '--star-id-algo=tetra',
+                            '--attitude-algo=dqm'],
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::TetraStarIdAlgorithm::Go',
+             tetra_params = tetra_params_20,
+             ),
+    Scenario('20-deg FOV High Noise', '20-high-noise',
+             generate_params = ['--fov=20'] + high_noise_params,
+             lost_database_params = comprehensive_py_20_db_params,
+             lost_params = ['--fov=20',
+                            '--centroid-algo=cog',
+                            '--star-id-algo=py',
+                            '--attitude-algo=dqm']
+             + fov20_params
+             + high_noise_mag_filter,
+
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go',
+             tetra_params = tetra_params_20,
+             ),
+    Scenario('45-deg FOV Low Noise', '45-low-noise',
+             generate_params = ['--fov=45'] + low_noise_params,
+             lost_database_params = comprehensive_tetra_45_db_params,
+             lost_params = ['--fov=45',
+                            '--centroid-algo=cog',
+                            '--star-id-algo=tetra',
+                            '--attitude-algo=dqm']
+             + fov45_params
+             + low_noise_params,
+             lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+             lost_starid_function_name = 'lost::TetraStarIdAlgorithm::Go',
+             tetra_params = tetra_params_45,
+             ),
+  Scenario('45-deg FOV High Noise', '45-high-noise',
+           generate_params = ['--fov=45'] + high_noise_params,
+           lost_database_params = comprehensive_py_45_db_params,
+           lost_params = ['--fov=45',
+                          '--centroid-algo=cog',
+                          '--star-id-algo=py',
+                          '--attitude-algo=dqm']
+           + fov45_params
+           + high_noise_params,
+           lost_centroid_function_name = 'lost::CenterOfGravityAlgorithm::Go',
+           lost_starid_function_name = 'lost::PyramidStarIdAlgorithm::Go',
+           tetra_params = tetra_params_45,
+           ),
+]
+
+scenarios = mixed_scenarios

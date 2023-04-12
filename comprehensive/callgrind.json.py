@@ -24,11 +24,12 @@ for scenario in params.scenarios:
 
             callgrind_results = runner.run_callgrind_on_lost(all_params)
             centroid_instrss.append(callgrind_results[scenario.lost_centroid_function_name])
-            starid_instrss.append(callgrind_results[scenario.lost_starid_function_name])
+            # sometimes will be zero, because there weren't enough stars in the image.
+            starid_instrss.append(callgrind_results.get(scenario.lost_starid_function_name, 0))
 
             massif_results = runner.run_massif_on_lost(all_params)
             centroid_memorys.append(massif_results[scenario.lost_centroid_function_name])
-            starid_memorys.append(massif_results[scenario.lost_starid_function_name])
+            starid_memorys.append(massif_results.get(scenario.lost_starid_function_name, 0))
 
     centroid_avg_instrs = int(np.mean(centroid_instrss))
     starid_avg_instrs = int(np.mean(starid_instrss))

@@ -48,9 +48,9 @@ def evaluate_starid(axes, special_paramss, x_vals):
     ax_error.set_ylabel('Error Rate (%)')
     # Ensure there's lots of empty space above the error
     ymin, ymax = ax_error.get_ybound()
-    ax_error.set_ylim(bottom=0, top=max(ymax*3, 5.0))
+    ax_error.set_ylim(bottom=0, top=min(100, max(ymax*3, 5.0)))
     ax_error.set_ylim(bottom=0)
     ax_error.legend(title='Error Rate',
-                    loc='upper left')
+                    loc='upper right')
 
         

@@ -15,15 +15,15 @@ centroid_algos = [
     ('Center of Gravity', ['--centroid-algo=cog']),
     ('Iterative CoG', ['--centroid-algo=iwcog']),
     ('1D Gaussian Fit', ['--centroid-algo=lsgf1d']),
-    ('2D Gaussian Fit', ['--centroid-algo=lsgf2d', '--centroid-fit-radius=3']),
-    ('Gaussian Grid', ['--centroid-algo=ggrid', '--centroid-fit-radius=3']),
+    ('2D Gaussian Fit', ['--centroid-algo=lsgf2d']),
+    ('Gaussian Grid', ['--centroid-algo=ggrid']),
 ]
 
-database_catalog_params = ['--min-mag', 6.0,
-                           '--min-separation', 0.0]
+database_catalog_params = ['--min-mag', 5.5,
+                           '--min-separation', 0.5]
 database_kvector_params = ['--kvector',
                            '--kvector-min-distance', 0.5,
-                           '--kvector-max-distance', 20,
+                           '--kvector-max-distance', 12,
                            '--kvector-distance-bins', 10000]
 database_tetra_params = ['--tetra', '--min-separation=0.0']
 
@@ -38,7 +38,8 @@ centroid_base_args = ['--fov=25',
                       '--generate-saturation-photons=50',
                       '--generate-read-noise=0.04', # 2/50
                       '--generate-dark-current=0.2',
-                      '--centroid-filter-brightest=5']
+                      '--centroid-filter-brightest=5',
+                      '--centroid-fit-radius=3']
 centroid_num_trials = 100
 
 starid_base_args = [
@@ -81,7 +82,7 @@ false_base_args = []
 
 # DIMMEST VISIBLE STAR
 dimmest_brightest = 3
-dimmest_dimmest = 6
+dimmest_dimmest = 5.5
 dimmest_num_pts = 10
 
 

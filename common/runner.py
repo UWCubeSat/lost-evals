@@ -28,7 +28,8 @@ def run_lost(args):
     print('Running: ' + ' '.join(actual_args), flush=True)
     proc = subprocess.run(actual_args,
                           check=False,
-                          capture_output=True)
+                          capture_output=True,
+                          cwd='lost')
     print('Done, stderr: ' + proc.stderr.decode('ascii'), flush=True)
     if proc.returncode != 0:
         raise RuntimeError('Nonzero exit code from LOST, %d' % proc.returncode)

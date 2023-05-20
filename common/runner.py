@@ -54,7 +54,8 @@ class LostDatabase:
         stringy_args = ['database'] + list(map(str, self.cli_args)) + ['--output', self.db_path]
         print('Creating database: lost ' + ' '.join(stringy_args), flush=True)
         subprocess.run([os.path.abspath('lost/lost')] + stringy_args,
-                       check=True)
+                       check=True,
+                       cwd='lost')
         print('Database created.', flush=True)
         return self.db_path
     def __exit__(self, *args):

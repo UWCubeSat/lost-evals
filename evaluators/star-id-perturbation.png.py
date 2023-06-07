@@ -31,6 +31,6 @@ lost_special_paramss = list(map(lost_args_at_perturbation, perturbation_levels))
 evaluate_starid(ax, lost_special_paramss, perturbation_levels)
 
 ax.set_title('Star-ID Availability & Error Rate vs Centroid Error')
-ax.set_xlabel('Centroid Error stddev (pixels)')
+ax.set_xlabel('Centroid Error Stddev (pixels)')
 
 plt.savefig(sys.argv[1])

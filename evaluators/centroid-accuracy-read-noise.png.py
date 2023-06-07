@@ -14,7 +14,7 @@ special_paramss = [['--generate-read-noise', noise] for noise in read_noise_leve
 
 evaluate_centroid(ax, special_paramss, read_noise_levels)
 
-ax.set_title('Centroid error vs Read Noise')
-ax.set_xlabel('Read noise stddev (fraction of full-scale)')
+ax.set_title('Centroid Error vs Read Noise')
+ax.set_xlabel('Read Noise Stddev (fraction of full-scale)')
         
 plt.savefig(sys.argv[1])

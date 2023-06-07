@@ -14,6 +14,6 @@ special_paramss = [['--generate-cutoff-mag', m] for m in min_magnitudes]
 evaluate_starid(ax, special_paramss, min_magnitudes)
 
 ax.set_title('Star-ID Availability & Error Rate vs Dimmest Visible Star')
-ax.set_xlabel('Dimmest centroided star (magnitude)')
+ax.set_xlabel('Dimmest Centroided Star (magnitude)')
 
 plt.savefig(sys.argv[1])

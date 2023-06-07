@@ -20,7 +20,7 @@ special_paramss = list(map(params_at_photoelectrons, photoelectrons))
 
 evaluate_centroid(ax, special_paramss, photoelectrons)
 
-ax.set_title('Centroid error vs Photoelectrons (Constant effective brightness)')
-ax.set_xlabel('Photoelectrons for zero-magnitude star')
+ax.set_title('Centroid Error vs Photoelectrons (constant effective brightness)')
+ax.set_xlabel('Photoelectrons for Zero-Magnitude Star')
 
 plt.savefig(sys.argv[1])

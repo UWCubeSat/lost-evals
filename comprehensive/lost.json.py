@@ -10,8 +10,8 @@ import common.params as params
 import common.runner as runner
 import common.util as util
 
-output_file = sys.argv[1]
-scenarios_dir = sys.argv[2]
+output_file = os.path.abspath(sys.argv[1])
+scenarios_dir = os.path.abspath(sys.argv[2])
 
 result = {}
 for scenario in params.scenarios:

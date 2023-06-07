@@ -7,8 +7,8 @@ import numpy as np
 import common.runner as runner
 import common.params as params
 
-out_file = sys.argv[1]
-scenarios_dir = sys.argv[2]
+out_file = os.path.abspath(sys.argv[1])
+scenarios_dir = os.path.abspath(sys.argv[2])
 
 result = {}
 for scenario in params.scenarios:

@@ -5,7 +5,7 @@ import os
 
 import common.params as params
 
-scenarios_dir = sys.argv[1]
+scenarios_dir = os.path.abspath(sys.argv[1])
 
 for scenario in params.scenarios:
     # Create directory of scenario.machine_name

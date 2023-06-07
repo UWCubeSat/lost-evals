@@ -53,7 +53,7 @@ class LostDatabase:
         self.precreated_dbs_dir = precreated_dbs_dir
 
     def __enter__(self):
-        db_path = os.path.join(os.path.abspath(self.precreated_dbs_dir), '%s.lostdb' % ' '.join(self.cli_args))
+        db_path = os.path.join(os.path.abspath(self.precreated_dbs_dir), '%s.lostdb' % '_'.join(self.cli_args))
         if os.path.exists(db_path):
             print('Using existing database at %s' % db_path)
             return db_path

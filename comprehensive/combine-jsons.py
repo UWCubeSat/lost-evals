@@ -6,8 +6,8 @@ import os
 
 import common.params as params
 
-output_file = sys.argv[1]
-json_dir = sys.argv[2]
+output_file = os.path.abspath(sys.argv[1])
+json_dir = os.path.abspath(sys.argv[2])
 
 # Read all the JSONs and combine
 # The first level of key is the machine name of the scenario, the second level is the machine column name

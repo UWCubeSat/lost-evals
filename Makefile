@@ -58,7 +58,10 @@ clean-comprehensive:
 clean-jsons:
 	rm -f $(SCENARIO_JSONS)
 
-clean:
+clean-dbs:
+	rm -rf dbs/*.lostdb
+
+clean: clean-dbs
 	rm -rf $(SCENARIOS_PREFIX) $(OUTFILES)
 
-.PHONY: all clean clean-comprehensive clean-jsons comprehensive graphs lost
+.PHONY: all clean clean-comprehensive clean-jsons clean-dbs comprehensive graphs lost

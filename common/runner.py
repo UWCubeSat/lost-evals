@@ -45,22 +45,28 @@ class LostDatabase:
     Use this class via the `with` statement, eg `with LostDatabase(['--kvector', ...]) as db_path:`. The actual database won't be generated until __enter__, so in fact it can /only/ be used via the `with` statement.
     """
 
-    def __init__(self, cli_args):
+    def __init__(self, cli_args, precreated_dbs_dir='dbs'):
+        """
+        The precreated_db_path, if set, is where we'll look for the database before actually trying to create it, in case we're running on hardware that can't or shouldn't generate the DB from scratch. If using this option, be very careful to keep the cli_args and the manually generated database in sync!
+        """
         self.cli_args = cli_args
+        self.precreated_dbs_dir = precreated_dbs_dir
 
     def __enter__(self):
-        fd, self.db_path = tempfile.mkstemp()
-        os.close(fd)
-        stringy_args = ['database'] + list(map(str, self.cli_args)) + ['--output', self.db_path]
+        db_path = os.path.join(os.path.abspath(self.precreated_dbs_dir), '%s.lostdb' % ' '.join(self.cli_args))
+        if os.path.exists(db_path):
+            print('Using existing database at %s' % db_path)
+            return db_path
+
+        stringy_args = ['database'] + list(map(str, self.cli_args)) + ['--output', db_path]
         print('Creating database: lost ' + ' '.join(stringy_args), flush=True)
         subprocess.run([os.path.abspath('lost/lost')] + stringy_args,
                        check=True,
                        cwd='lost')
         print('Database created.', flush=True)
-        return self.db_path
+        return db_path
     def __exit__(self, *args):
-        if self.db_path:
-            os.unlink(self.db_path)
+        pass
 
 def callgrind_annotate(xtree_file, event_name):
     """Run callgrind_annotate on the given callgrind output, returning a dictionary of function names to counts"""
